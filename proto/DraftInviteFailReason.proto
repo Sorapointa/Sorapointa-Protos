@@ -1,0 +1,28 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+enum DraftInviteFailReason {
+  DRAFT_INVITE_FAIL_REASON_UNKNOWN = 0;
+  DRAFT_INVITE_FAIL_REASON_ACTIVITY_NOT_OPEN = 1;
+  DRAFT_INVITE_FAIL_REASON_ACTIVITY_PLAY_NOT_OPEN = 2;
+  DRAFT_INVITE_FAIL_REASON_SCENE_NOT_MEET = 3;
+  DRAFT_INVITE_FAIL_REASON_WORLD_NOT_MEET = 4;
+  DRAFT_INVITE_FAIL_REASON_PLAY_LIMIT_NOT_MEET = 5;
+}

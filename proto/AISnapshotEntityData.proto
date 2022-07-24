@@ -1,0 +1,36 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "AISnapshotEntitySkillCycle.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message AISnapshotEntityData {
+  float tick_time = 5;
+  uint32 tactic = 2;
+  repeated AISnapshotEntitySkillCycle finished_skill_cycles = 9;
+  float moved_distance = 4;
+  uint32 ai_target_id = 13;
+  uint32 threat_target_id = 3;
+  uint32 threat_list_size = 1;
+  uint32 entity_id = 15;
+  map<uint32, uint32> hitting_avatars = 7;
+  float distance_to_player = 11;
+  uint32 attack_target_id = 10;
+  float real_time = 14;
+}

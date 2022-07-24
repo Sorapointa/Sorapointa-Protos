@@ -1,0 +1,40 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "DropSubfieldType.proto";
+import "MusicBriefInfo.proto";
+import "MusicRecord.proto";
+import "Unk2700_OPEBMJPOOBL.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 6318
+// EnetChannelId: 0
+// EnetIsReliable: true
+message Unk2700_IPGJEAEFJMM_ServerRsp {
+  uint64 Unk2700_CEPGMKAHHCD = 15;
+  Unk2700_OPEBMJPOOBL Unk2700_KHBDAPGDOJA = 10;
+  int32 retcode = 2;
+  DropSubfieldType Unk2700_MJNIHFCKJMN = 14;
+  oneof Unk2700_MIPPJKBFLOO {
+    MusicRecord music_record = 4;
+  }
+  oneof Unk2700_ILHNBMNOMHO {
+    MusicBriefInfo music_brief_info = 1819;
+  }
+}

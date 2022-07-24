@@ -1,0 +1,34 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "AbilityInvokeEntry.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 1172
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message AbilityInvocationFixedNotify {
+  AbilityInvokeEntry invoke_6_th = 14;
+  AbilityInvokeEntry invoke_5_th = 8;
+  AbilityInvokeEntry invoke_4_th = 1;
+  AbilityInvokeEntry invoke_2_nd = 5;
+  AbilityInvokeEntry invoke_1_st = 10;
+  AbilityInvokeEntry invoke_3_rd = 12;
+}
