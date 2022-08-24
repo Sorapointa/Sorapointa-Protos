@@ -1,0 +1,49 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "Vector.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 6172
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message Unk3000_NMENEAHJGKE {
+  Vector source_pos = 10;
+  bool Unk3000_HAACAHAJJOC = 5;
+  bool Unk3000_GIIFEGOPHDF = 13;
+  int32 Unk3000_FNEDHNGIFNC = 15;
+  Unk3000_MPAGIMDCEDK query_type = 8;
+  Unk3000_BCDLJFDFBFH Unk3000_OBGPENBMEGG = 1;
+  Vector destination_pos = 9;
+  int32 query_id = 11;
+  uint32 scene_id = 6;
+
+  enum Unk3000_MPAGIMDCEDK {
+    Unk3000_MPAGIMDCEDK_OPTION_NONE = 0;
+    Unk3000_MPAGIMDCEDK_OPTION_NORMAL = 1;
+  }
+
+  enum Unk3000_BCDLJFDFBFH {
+    Unk3000_BCDLJFDFBFH_Unk3000_HLJABAKPIOI = 0;
+    Unk3000_BCDLJFDFBFH_Unk3000_ICILODFJDCO = 1;
+    Unk3000_BCDLJFDFBFH_Unk3000_IHILBIFGFEE = 2;
+    Unk3000_BCDLJFDFBFH_Unk3000_IDPBKAOFEJD = 3;
+  }
+}

@@ -1,0 +1,82 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GalleryStageType.proto";
+import "SceneGalleryBalloonInfo.proto";
+import "SceneGalleryBounceConjuringInfo.proto";
+import "SceneGalleryBrokenFloorInfo.proto";
+import "SceneGalleryBulletInfo.proto";
+import "SceneGalleryBuoyantCombatInfo.proto";
+import "SceneGalleryCrystalLinkInfo.proto";
+import "SceneGalleryFallInfo.proto";
+import "SceneGalleryFlowerInfo.proto";
+import "SceneGalleryHandballInfo.proto";
+import "SceneGalleryHideAndSeekInfo.proto";
+import "SceneGalleryHomeBalloonInfo.proto";
+import "SceneGalleryHomeSeekFurnitureInfo.proto";
+import "SceneGalleryInstableSprayInfo.proto";
+import "SceneGalleryIrodoriMasterInfo.proto";
+import "SceneGalleryIslandPartyDownHillInfo.proto";
+import "SceneGalleryIslandPartyRaftInfo.proto";
+import "SceneGalleryIslandPartySailInfo.proto";
+import "SceneGalleryLuminanceStoneChallengeInfo.proto";
+import "SceneGalleryMuqadasPotionInfo.proto";
+import "SceneGalleryProgressInfo.proto";
+import "SceneGallerySalvageEscortInfoInfo.proto";
+import "SceneGallerySalvagePreventInfo.proto";
+import "SceneGallerySummerTimeV2BoatInfo.proto";
+import "SceneGallerySumoInfo.proto";
+import "SceneGalleryTreasureSeelieInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message SceneGalleryInfo {
+  uint32 end_time = 11;
+  uint32 pre_start_end_time = 15;
+  GalleryStageType stage = 5;
+  uint32 owner_uid = 9;
+  uint32 player_count = 1;
+  repeated SceneGalleryProgressInfo progress_info_list = 4;
+  uint32 gallery_id = 2;
+  oneof info {
+    SceneGalleryBalloonInfo balloon_info = 14;
+    SceneGalleryFallInfo fall_info = 7;
+    SceneGalleryFlowerInfo flower_info = 8;
+    SceneGalleryBulletInfo bullet_info = 13;
+    SceneGalleryBrokenFloorInfo broken_floor_info = 10;
+    SceneGalleryHideAndSeekInfo hide_and_seek_info = 6;
+    SceneGalleryBuoyantCombatInfo buoyant_combat_info = 1384;
+    SceneGalleryBounceConjuringInfo bounce_conjuring_info = 708;
+    SceneGalleryHandballInfo handball_info = 1997;
+    SceneGallerySumoInfo sumo_info = 811;
+    SceneGallerySalvagePreventInfo salvage_prevent_info = 1700;
+    SceneGallerySalvageEscortInfoInfo salvage_escort_info = 759;
+    SceneGalleryHomeBalloonInfo home_balloon_info = 1034;
+    SceneGalleryCrystalLinkInfo crystal_link_info = 2004;
+    SceneGalleryIrodoriMasterInfo irodori_master_info = 1953;
+    SceneGalleryLuminanceStoneChallengeInfo luminance_stone_challenge_info = 106;
+    SceneGalleryHomeSeekFurnitureInfo home_seek_furniture_info = 1456;
+    SceneGalleryIslandPartyDownHillInfo island_party_down_hill_info = 462;
+    SceneGallerySummerTimeV2BoatInfo summer_time_v2_boat_info = 296;
+    SceneGalleryIslandPartyRaftInfo island_party_raft_info = 1805;
+    SceneGalleryIslandPartySailInfo island_party_sail_info = 1133;
+    SceneGalleryInstableSprayInfo instable_spray_info = 1196;
+    SceneGalleryMuqadasPotionInfo muqadas_potion_info = 865;
+    SceneGalleryTreasureSeelieInfo treasure_seelie_info = 1525;
+  }
+}

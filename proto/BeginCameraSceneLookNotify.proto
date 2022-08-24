@@ -1,0 +1,52 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "Vector.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 270
+// EnetChannelId: 0
+// EnetIsReliable: true
+message BeginCameraSceneLookNotify {
+  uint32 Unk3000_MNLLCJMPMNH = 1154;
+  float Unk2700_DHAHEKOGHBJ = 7;
+  bool is_set_screen_xy = 5;
+  Vector look_pos = 4;
+  bool is_recover_keep_current = 11;
+  bool Unk3000_GOPIFPMFEPB = 1375;
+  Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;
+  bool is_change_play_mode = 9;
+  uint32 Unk3000_IEFIKMHCKDH = 1103;
+  float screen_y = 15;
+  bool is_set_follow_pos = 13;
+  bool is_force = 12;
+  float Unk3000_OGCLMFFADBD = 1758;
+  uint32 entity_id = 1327;
+  float screen_x = 3;
+  bool is_force_walk = 10;
+  repeated string other_params = 1;
+  Vector follow_pos = 8;
+  bool is_allow_input = 2;
+  float duration = 14;
+
+  enum Unk2700_LNCHDDOOECD {
+    Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP = 0;
+    Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM = 1;
+  }
+}
