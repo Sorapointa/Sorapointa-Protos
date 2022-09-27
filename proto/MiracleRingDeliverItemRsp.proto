@@ -16,8 +16,8 @@
 
 syntax = "proto3";
 
-import "InterOpType.proto";
 import "InteractType.proto";
+import "InterOpType.proto";
 
 option java_package = "org.sorapointa.proto";
 

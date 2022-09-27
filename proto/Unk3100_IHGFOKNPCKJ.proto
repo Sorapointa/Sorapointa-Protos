@@ -1,0 +1,39 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "Vector.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 3160
+// EnetChannelId: 0
+// EnetIsReliable: true
+message Unk3100_IHGFOKNPCKJ {
+  Vector look_pos = 8;
+  uint32 template_id = 5;
+  Vector follow_pos = 2;
+  uint32 entity_id = 12;
+  repeated string other_params = 13;
+  Unk3100_DDADIDBLJGO Unk3100_JHIMHLNPLGA = 9;
+
+  enum Unk3100_DDADIDBLJGO {
+    Unk3100_DDADIDBLJGO_Unk3100_CHMICKLPAKA = 0;
+    Unk3100_DDADIDBLJGO_Unk3100_GEJFGKILBLO = 1;
+    Unk3100_DDADIDBLJGO_Unk3100_HAFBECHLCIE = 2;
+  }
+}

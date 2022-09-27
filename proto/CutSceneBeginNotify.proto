@@ -16,12 +16,15 @@
 
 syntax = "proto3";
 
+import "Unk3100_LFIMJOCPILC.proto";
+
 option java_package = "org.sorapointa.proto";
 
 // CmdId: 296
 // EnetChannelId: 0
 // EnetIsReliable: true
 message CutSceneBeginNotify {
-  uint32 cutscene_id = 14;
   bool is_wait_others = 9;
+  uint32 cutscene_id = 14;
+  repeated Unk3100_LFIMJOCPILC extra_param_list = 3;
 }

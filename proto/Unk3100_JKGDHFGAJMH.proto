@@ -1,0 +1,39 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "Unk3100_JKGDHFGAJMH_FirstStageInfo.proto";
+import "Unk3100_JKGDHFGAJMH_SecondStageInfo.proto";
+import "Unk3100_JKGDHFGAJMH_ThirdStageInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 20324
+// EnetChannelId: 0
+// EnetIsReliable: true
+message Unk3100_JKGDHFGAJMH {
+  bool Unk3100_CNJDDIKJHLL = 11;
+  uint32 stage_id = 9;
+  uint32 Unk3100_ONLIFLEFPBO = 12;
+  uint32 Unk3100_PPEIAMHIJBP = 6;
+  bool is_new_record = 1;
+  oneof info {
+    Unk3100_JKGDHFGAJMH_FirstStageInfo first_stage_info = 4;
+    Unk3100_JKGDHFGAJMH_SecondStageInfo second_stage_info = 10;
+    Unk3100_JKGDHFGAJMH_ThirdStageInfo third_stage_info = 8;
+  }
+}

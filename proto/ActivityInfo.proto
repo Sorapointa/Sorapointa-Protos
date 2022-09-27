@@ -56,6 +56,7 @@ import "MusicGameActivityDetailInfo.proto";
 import "PhotoActivityDetailInfo.proto";
 import "PlantFlowerActivityDetailInfo.proto";
 import "PotionActivityDetailInfo.proto";
+import "RockBoardExploreDetailInfo.proto";
 import "RogueDiaryActivityDetailInfo.proto";
 import "RoguelikeDungeonActivityDetailInfo.proto";
 import "SalesmanActivityDetailInfo.proto";
@@ -71,7 +72,9 @@ import "TreasureSeelieDetailInfo.proto";
 import "TrialAvatarActivityDetailInfo.proto";
 import "UgcActivityDetailInfo.proto";
 import "Unk2800_PHPHMILPOLC.proto";
+import "VintageDetailInfo.proto";
 import "WaterSpiritActivityDetailInfo.proto";
+import "WindFieldDetailInfo.proto";
 import "WinterCampActivityDetailInfo.proto";
 
 option java_package = "org.sorapointa.proto";
@@ -155,5 +158,8 @@ message ActivityInfo {
     InstableSprayDetailInfo instable_spray_info = 1043;
     MuqadasPotionDetailInfo muqadas_potion_info = 1157;
     TreasureSeelieDetailInfo treasure_seelie_info = 966;
+    RockBoardExploreDetailInfo rock_board_explore_info = 1078;
+    VintageDetailInfo vintage_info = 445;
+    WindFieldDetailInfo wind_field_info = 352;
   }
 }

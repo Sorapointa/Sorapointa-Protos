@@ -43,7 +43,7 @@ message GetPlayerTokenRsp {
   bool Unk2700_FLBKPCPGPDH = 2028;
   string encrypted_seed = 1493;
   bool is_proficient_player = 9;
-  uint32 Unk2800_BPJOBLNCBEI = 1172;
+  uint32 key_id = 1172;
   uint32 uid = 1;
   string account_uid = 12;
   bool is_guest = 4;

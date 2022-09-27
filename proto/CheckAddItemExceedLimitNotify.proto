@@ -23,9 +23,10 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 message CheckAddItemExceedLimitNotify {
   bool is_drop = 5;
+  ItemExceedLimitMsgType msg_type = 4;
   repeated uint32 exceeded_item_type_list = 10;
   repeated uint32 exceeded_item_list = 12;
-  ItemExceedLimitMsgType msg_type = 4;
+  uint32 reason = 14;
 
   enum ItemExceedLimitMsgType {
     ITEM_EXCEED_LIMIT_MSG_TYPE_DEFAULT = 0;

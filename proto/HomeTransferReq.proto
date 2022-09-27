@@ -24,4 +24,5 @@ option java_package = "org.sorapointa.proto";
 // IsAllowClient: true
 message HomeTransferReq {
   uint32 guid = 1;
+  bool Unk3100_KEMFDDMEBIG = 12;
 }

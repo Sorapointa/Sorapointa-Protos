@@ -42,6 +42,8 @@ import "SceneGallerySalvagePreventInfo.proto";
 import "SceneGallerySummerTimeV2BoatInfo.proto";
 import "SceneGallerySumoInfo.proto";
 import "SceneGalleryTreasureSeelieInfo.proto";
+import "SceneGalleryVintageHuntingInfo.proto";
+import "SceneGalleryWindFieldInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -78,5 +80,7 @@ message SceneGalleryInfo {
     SceneGalleryInstableSprayInfo instable_spray_info = 1196;
     SceneGalleryMuqadasPotionInfo muqadas_potion_info = 865;
     SceneGalleryTreasureSeelieInfo treasure_seelie_info = 1525;
+    SceneGalleryVintageHuntingInfo vintage_hunting_info = 254;
+    SceneGalleryWindFieldInfo wind_field_info = 1080;
   }
 }
