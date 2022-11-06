@@ -29,7 +29,7 @@ message ServerUpdateGlobalValueNotify {
   float value = 6;
 
   enum UpdateType {
-    UPDATE_TYPE_INVALUE = 0;
+    UPDATE_TYPE_INVALID = 0;
     UPDATE_TYPE_ADD = 1;
     UPDATE_TYPE_SET = 2;
   }

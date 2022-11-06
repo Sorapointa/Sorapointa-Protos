@@ -19,5 +19,5 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message AbilityMixinDoActionBySelfModifierElementDurabilityRatio {
-  float last_duability_ratio = 9;
+  float last_durability_ratio = 9;
 }
