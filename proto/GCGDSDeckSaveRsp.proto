@@ -22,7 +22,7 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message GCGDSDeckSaveRsp {
-  uint32 create_time = 14;
+  fixed32 create_time = 14;
   uint32 deck_id = 11;
   int32 retcode = 8;
   bool is_valid = 4;
