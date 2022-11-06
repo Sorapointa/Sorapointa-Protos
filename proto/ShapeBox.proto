@@ -22,8 +22,8 @@ option java_package = "org.sorapointa.proto";
 
 message ShapeBox {
   Vector center = 1;
-  Vector axis_0 = 2;
-  Vector axis_1 = 3;
-  Vector axis_2 = 4;
+  Vector axis0 = 2;
+  Vector axis1 = 3;
+  Vector axis2 = 4;
   Vector extents = 5;
 }

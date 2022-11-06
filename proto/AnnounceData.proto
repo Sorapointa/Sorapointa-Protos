@@ -26,6 +26,6 @@ message AnnounceData {
   uint32 begin_time = 4;
   uint32 center_system_frequency = 11;
   string dungeon_confirm_text = 2;
-  bool is_center_system_last5_every_minutes = 14;
+  bool is_center_system_last_5_every_minutes = 14;
   uint32 end_time = 10;
 }
