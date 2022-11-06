@@ -30,7 +30,7 @@ message GetPlayerTokenReq {
   uint32 channel_id = 15;
   string account_ext = 9;
   string country_code = 5;
-  string client_seed = 760;
+  string client_rand_key = 760;
   bool is_guest = 6;
   string birthday = 1718;
   uint32 sub_channel_id = 8;
@@ -38,7 +38,7 @@ message GetPlayerTokenReq {
   string client_ip_str = 3;
   string psn_id = 13;
   uint32 account_type = 1;
-  uint32 Unk2700_NOJPEHIBDJH = 995;
+  uint32 minors_reg_min_age = 995;
   uint32 cloud_client_ip = 14;
   uint32 key_id = 1787;
   uint32 uid = 2;

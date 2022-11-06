@@ -20,6 +20,6 @@ option java_package = "org.sorapointa.proto";
 
 message SummerTimeV2DungeonSettleInfo {
   bool is_success = 5;
-  uint32 Unk2800_ELHBCNPKOJG = 2;
-  uint32 Unk2800_HDEFJKGDNEH = 11;
+  uint32 taken_reward_count = 2;
+  uint32 cur_dungeon_reward_limit = 11;
 }

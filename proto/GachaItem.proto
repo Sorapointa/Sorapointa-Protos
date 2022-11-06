@@ -22,7 +22,7 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 
 message GachaItem {
-  ItemParam gacha_item_ = 7;
+  ItemParam gacha_item = 7;
   bool is_gacha_item_new = 6;
   bool is_flash_card = 8;
   repeated ItemParam token_item_list = 9;

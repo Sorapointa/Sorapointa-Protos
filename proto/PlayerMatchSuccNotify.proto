@@ -16,6 +16,7 @@
 
 syntax = "proto3";
 
+import "GCGMatchInfo.proto";
 import "GeneralMatchInfo.proto";
 import "MatchType.proto";
 
@@ -25,11 +26,12 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message PlayerMatchSuccNotify {
-  uint32 mechanicus_difficult_level = 1;
-  uint32 dungeon_id = 6;
-  MatchType match_type = 5;
-  uint32 mp_play_id = 15;
   GeneralMatchInfo general_match_info = 7;
+  uint32 mp_play_id = 15;
   uint32 host_uid = 3;
+  MatchType match_type = 5;
+  GCGMatchInfo gcg_match_info = 11;
   uint32 confirm_end_time = 2;
+  uint32 dungeon_id = 6;
+  uint32 mechanicus_difficult_level = 1;
 }

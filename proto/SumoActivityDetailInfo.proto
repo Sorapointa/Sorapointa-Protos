@@ -23,5 +23,5 @@ option java_package = "org.sorapointa.proto";
 message SumoActivityDetailInfo {
   uint32 difficulty_id = 11;
   map<uint32, SumoStageData> sumo_stage_map = 13;
-  uint32 Unk2700_NIJIAJMFLLD = 14;
+  uint32 last_stage_id = 14;
 }

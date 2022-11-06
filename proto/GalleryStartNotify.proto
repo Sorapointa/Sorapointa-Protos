@@ -24,10 +24,11 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message GalleryStartNotify {
-  uint32 gallery_id = 13;
   uint32 end_time = 6;
   uint32 player_count = 11;
   uint32 owner_uid = 9;
+  uint32 gallery_id = 13;
+  uint32 start_time = 5;
   oneof detail {
     GalleryFlowerStartParam flower_start_param = 15;
   }

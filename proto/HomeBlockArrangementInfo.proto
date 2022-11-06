@@ -19,11 +19,11 @@ syntax = "proto3";
 import "HomeAnimalData.proto";
 import "HomeBlockDotPattern.proto";
 import "HomeBlockFieldData.proto";
+import "HomeFurnitureCustomSuiteData.proto";
 import "HomeFurnitureData.proto";
+import "HomeFurnitureGroupData.proto";
 import "HomeFurnitureSuiteData.proto";
 import "HomeNpcData.proto";
-import "Unk2700_BIEMCDLIFOD.proto";
-import "Unk2700_GOHMLAFNBGF.proto";
 import "WeekendDjinnInfo.proto";
 
 option java_package = "org.sorapointa.proto";
@@ -32,7 +32,7 @@ message HomeBlockArrangementInfo {
   bool is_unlocked = 1;
   uint32 comfort_value = 2;
   repeated HomeAnimalData deploy_animal_list = 4;
-  repeated Unk2700_GOHMLAFNBGF Unk2700_HGIECHILOJL = 5;
+  repeated HomeFurnitureGroupData furniture_group_list = 5;
   repeated WeekendDjinnInfo weekend_djinn_info_list = 13;
   repeated HomeFurnitureSuiteData furniture_suite_list = 15;
   repeated HomeBlockFieldData field_list = 3;
@@ -41,5 +41,5 @@ message HomeBlockArrangementInfo {
   repeated HomeFurnitureData persistent_furniture_list = 9;
   repeated HomeFurnitureData deploy_furniure_list = 12;
   uint32 block_id = 6;
-  repeated Unk2700_BIEMCDLIFOD Unk2700_KJGLLEEHBPF = 14;
+  repeated HomeFurnitureCustomSuiteData furniture_custom_suite_list = 14;
 }

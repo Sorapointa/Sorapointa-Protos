@@ -46,8 +46,8 @@ message SceneMonsterInfo {
   uint32 ai_config_id = 19;
   uint32 level_route_id = 20;
   uint32 init_pose_id = 21;
-  bool Unk2800_JEGLENPDPNI = 22;
-  uint32 Unk3000_CCKJDCBDEKD = 23;
+  bool is_light = 22;
+  uint32 kill_num = 23;
   oneof content {
     SceneFishInfo fish_info = 50;
     FishtankFishInfo fishtank_fish_info = 51;

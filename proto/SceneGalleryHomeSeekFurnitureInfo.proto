@@ -19,8 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message SceneGalleryHomeSeekFurnitureInfo {
-  uint32 Unk2700_KDBENBBODGP = 6;
-  map<uint32, uint32> Unk2700_DDHOJHOICBL = 8;
-  uint32 Unk2700_LODFFCPFJLC = 12;
-  uint32 Unk2700_HLCIHCCGFFC = 9;
+  uint32 cur_tide_left_num = 6;
+  map<uint32, uint32> player_score_map = 8;
+  uint32 cur_tide_duration_time = 12;
+  uint32 cur_tide_total_num = 9;
 }

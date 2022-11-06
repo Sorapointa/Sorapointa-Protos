@@ -27,7 +27,7 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message EvtBulletHitNotify {
-  uint32 Unk2700_FEALLBIBHOL = 8;
+  uint32 single_bullet_id = 8;
   Vector hit_point = 15;
   Vector hit_normal = 11;
   int32 hit_box_index = 9;

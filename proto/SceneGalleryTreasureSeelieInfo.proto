@@ -20,5 +20,5 @@ option java_package = "org.sorapointa.proto";
 
 message SceneGalleryTreasureSeelieInfo {
   uint32 progress = 15;
-  uint32 Unk3000_MONNEPNGNCA = 14;
+  uint32 goal = 14;
 }

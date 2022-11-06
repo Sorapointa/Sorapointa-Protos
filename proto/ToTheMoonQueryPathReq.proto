@@ -1,0 +1,56 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "Vector.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 6172
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message ToTheMoonQueryPathReq {
+  Vector destination_pos = 9;
+  int32 fuzzy_range = 15;
+  OptionType query_type = 8;
+  AStarMethod astar_method = 1;
+  uint32 scene_id = 6;
+  int32 query_id = 11;
+  FilterType filter_type = 3;
+  bool refined = 13;
+  bool use_full_neighbor = 5;
+  Vector source_pos = 10;
+
+  enum OptionType {
+    OPTION_TYPE_NONE = 0;
+    OPTION_TYPE_NORMAL = 1;
+  }
+
+  enum AStarMethod {
+    A_STAR_METHOD_CLASSIC = 0;
+    A_STAR_METHOD_TENDENCY = 1;
+    A_STAR_METHOD_ADAPTIVE = 2;
+    A_STAR_METHOD_INFLECTION = 3;
+  }
+
+  enum FilterType {
+    FILTER_TYPE_ALL = 0;
+    FILTER_TYPE_AIR = 1;
+    FILTER_TYPE_WATER = 2;
+  }
+}

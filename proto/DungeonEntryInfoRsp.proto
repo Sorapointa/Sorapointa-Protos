@@ -17,7 +17,7 @@
 syntax = "proto3";
 
 import "DungeonEntryInfo.proto";
-import "Unk2800_MHCFAGCKGIB.proto";
+import "DungeonEntryPointInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -27,7 +27,7 @@ option java_package = "org.sorapointa.proto";
 message DungeonEntryInfoRsp {
   repeated DungeonEntryInfo dungeon_entry_list = 12;
   uint32 point_id = 15;
-  repeated Unk2800_MHCFAGCKGIB Unk2800_JJFLDCLMEHD = 4;
+  repeated DungeonEntryPointInfo dungeon_entry_point_list = 4;
   uint32 recommend_dungeon_id = 14;
   int32 retcode = 11;
 }

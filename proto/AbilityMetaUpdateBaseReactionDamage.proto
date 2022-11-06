@@ -22,6 +22,7 @@ option java_package = "org.sorapointa.proto";
 
 message AbilityMetaUpdateBaseReactionDamage {
   uint32 source_caster_id = 15;
+  AbilityString ability_name = 1;
   AbilityString global_value_key = 4;
   uint32 reaction_type = 8;
 }

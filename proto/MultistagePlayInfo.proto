@@ -16,6 +16,7 @@
 
 syntax = "proto3";
 
+import "CharAmusementInfo.proto";
 import "HideAndSeekStageInfo.proto";
 import "InBattleChessInfo.proto";
 import "InBattleFleurFairInfo.proto";
@@ -38,5 +39,6 @@ message MultistagePlayInfo {
     HideAndSeekStageInfo hide_and_seek_info = 108;
     InBattleChessInfo chess_info = 1758;
     IrodoriChessInfo irodori_chess_info = 531;
+    CharAmusementInfo char_amusement_info = 324;
   }
 }

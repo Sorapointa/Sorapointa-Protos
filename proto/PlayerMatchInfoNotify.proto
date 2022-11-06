@@ -24,12 +24,13 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message PlayerMatchInfoNotify {
-  uint32 mechanicus_difficult_level = 12;
-  uint32 estimate_match_cost_time = 3;
-  MatchType match_type = 11;
-  uint32 mp_play_id = 5;
   uint32 match_id = 8;
   uint32 match_begin_time = 4;
   uint32 dungeon_id = 10;
+  MatchType match_type = 11;
+  uint32 mechanicus_difficult_level = 12;
+  repeated uint32 match_param_list = 6;
+  uint32 estimate_match_cost_time = 3;
+  uint32 mp_play_id = 5;
   uint32 host_uid = 13;
 }

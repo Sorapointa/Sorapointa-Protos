@@ -16,16 +16,16 @@
 
 syntax = "proto3";
 
+import "MichiaeMatsuriChallengePositionInfo.proto";
+import "MichiaeMatsuriChestPositionInfo.proto";
 import "MichiaeMatsuriStage.proto";
-import "Unk2700_HGFFGMCODNC.proto";
-import "Unk2700_NAFAIMHFEFG.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message MichiaeMatsuriActivityDetailInfo {
-  repeated Unk2700_HGFFGMCODNC Unk2700_MPNNMCPOLAM = 6;
-  uint32 Unk2700_MAOAHHBCKIA = 13;
-  repeated uint32 Unk2700_BEHAAHHGCLK = 2;
-  repeated Unk2700_NAFAIMHFEFG Unk2700_LEKHKNKHIPO = 10;
+  repeated MichiaeMatsuriChallengePositionInfo challenge_pos_list = 6;
+  uint32 gain_crystal_exp = 13;
+  repeated uint32 unlocked_crystal_skill_list = 2;
+  repeated MichiaeMatsuriChestPositionInfo chest_pos_list = 10;
   repeated MichiaeMatsuriStage stage_list = 14;
 }

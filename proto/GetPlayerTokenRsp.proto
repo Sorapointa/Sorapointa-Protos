@@ -29,7 +29,7 @@ message GetPlayerTokenRsp {
   string country_code = 2013;
   bytes extra_bin_data = 3;
   string secret_key = 15;
-  uint32 Unk2700_NOJPEHIBDJH = 1561;
+  uint32 minors_reg_min_age = 1561;
   uint32 black_uid_end_time = 14;
   uint32 tag = 1635;
   string token = 11;
@@ -40,17 +40,17 @@ message GetPlayerTokenRsp {
   string msg = 7;
   uint32 account_type = 5;
   uint32 sub_channel_id = 1802;
-  bool Unk2700_FLBKPCPGPDH = 2028;
-  string encrypted_seed = 1493;
+  bool is_watchdog_uid = 2028;
+  string server_rand_key = 1493;
   bool is_proficient_player = 9;
   uint32 key_id = 1172;
   uint32 uid = 1;
   string account_uid = 12;
   bool is_guest = 4;
   string client_version_random_key = 1529;
-  repeated uint32 Unk2800_NNBFCEAOEPB = 1640;
+  repeated uint32 finish_collection_id_list = 1640;
   uint32 platform_type = 8;
   uint32 reg_platform = 1112;
   bool is_login_white_list = 573;
-  string seed_signature = 1140;
+  string sign = 1140;
 }

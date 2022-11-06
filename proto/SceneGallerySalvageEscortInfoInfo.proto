@@ -19,8 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message SceneGallerySalvageEscortInfoInfo {
-  uint32 Unk2700_NECHECIDCEG = 14;
-  uint32 Unk2700_AMJEKEJLOGJ = 3;
-  uint32 Unk2700_MCFMMIDNLIF = 7;
-  uint32 Unk2700_FFCCLGIFGIP = 11;
+  uint32 max_box_count = 14;
+  uint32 max_monster_count = 3;
+  uint32 box_count = 7;
+  uint32 monster_count = 11;
 }

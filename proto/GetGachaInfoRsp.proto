@@ -24,10 +24,10 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message GetGachaInfoRsp {
-  bool Unk3100_IDBLFJDHHPI = 6;
+  bool is_under_general_restrict = 6;
   uint32 gacha_random = 9;
   int32 retcode = 10;
-  bool Unk2700_LEEPELHDING = 2;
-  uint32 Unk2700_OJKKHDLEDCI = 5;
+  bool is_under_minors_restrict = 2;
+  uint32 daily_gacha_times = 5;
   repeated GachaInfo gacha_info_list = 13;
 }

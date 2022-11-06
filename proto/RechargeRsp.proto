@@ -23,6 +23,6 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 message RechargeRsp {
   int32 retcode = 12;
-  bool Unk2700_FGENAOBDIEA = 6;
+  bool is_show_minors_hint = 6;
   string product_id = 2;
 }

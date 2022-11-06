@@ -30,7 +30,7 @@ message HomeSceneArrangementInfo {
   bool is_set_born_pos = 10;
   repeated HomeBlockArrangementInfo block_arrangement_info_list = 8;
   uint32 scene_id = 2;
-  uint32 Unk2700_BJHAMKKECEI = 12;
+  uint32 bgm_id = 12;
   Vector djinn_pos = 9;
   HomeFurnitureData main_house = 14;
   uint32 comfort_value = 7;

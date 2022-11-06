@@ -25,7 +25,7 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message ClientAbilityChangeNotify {
-  bool Unk2200_FNAFDMAPLHP = 9;
+  bool is_init_hash = 9;
   uint32 entity_id = 2;
   repeated AbilityInvokeEntry invokes = 3;
 }

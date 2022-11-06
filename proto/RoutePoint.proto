@@ -24,6 +24,7 @@ option java_package = "org.sorapointa.proto";
 message RoutePoint {
   Vector position = 1;
   float arrive_range = 2;
+  bool has_reach_event = 3;
   oneof move_params {
     float velocity = 11;
     float time = 12;

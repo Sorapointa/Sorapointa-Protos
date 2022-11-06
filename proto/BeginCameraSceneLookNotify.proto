@@ -24,19 +24,19 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message BeginCameraSceneLookNotify {
-  uint32 Unk3000_MNLLCJMPMNH = 1154;
-  float Unk2700_DHAHEKOGHBJ = 7;
+  uint32 blend_type = 1154;
+  float custom_radius = 7;
   bool is_set_screen_xy = 5;
   Vector look_pos = 4;
   bool is_recover_keep_current = 11;
-  bool Unk3000_GOPIFPMFEPB = 1375;
-  Unk2700_LNCHDDOOECD Unk2700_HIAKNNCKHJB = 6;
+  bool is_abs_follow_pos = 1375;
+  KeepRotType keep_rot_type = 6;
   bool is_change_play_mode = 9;
-  uint32 Unk3000_IEFIKMHCKDH = 1103;
+  uint32 disable_protect = 1103;
   float screen_y = 15;
   bool is_set_follow_pos = 13;
   bool is_force = 12;
-  float Unk3000_OGCLMFFADBD = 1758;
+  float blend_duration = 1758;
   uint32 entity_id = 1327;
   float screen_x = 3;
   bool is_force_walk = 10;
@@ -45,8 +45,8 @@ message BeginCameraSceneLookNotify {
   bool is_allow_input = 2;
   float duration = 14;
 
-  enum Unk2700_LNCHDDOOECD {
-    Unk2700_LNCHDDOOECD_Unk2700_ACOENBMDFBP = 0;
-    Unk2700_LNCHDDOOECD_Unk2700_FKBLCDFLCOM = 1;
+  enum KeepRotType {
+    KEEP_ROT_TYPE_X = 0;
+    KEEP_ROT_TYPE_XY = 1;
   }
 }

@@ -16,18 +16,18 @@
 
 syntax = "proto3";
 
-import "Unk2700_FDEGJOCDDGH.proto";
-import "Unk2700_OCOKILBJIPJ.proto";
+import "ChallengeBrief.proto";
+import "CustomDungeonFinishType.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message CustomDungeonResultInfo {
-  bool Unk2700_BONNHGKDLFO = 12;
-  uint32 Unk2700_FBBEJKCDMEI = 9;
-  repeated Unk2700_FDEGJOCDDGH child_challenge_list = 6;
-  uint64 Unk2700_ONOOJBEABOE = 3;
-  Unk2700_OCOKILBJIPJ Unk2700_ONCDLPDHFAB = 7;
+  bool is_liked = 12;
+  uint32 got_coin_num = 9;
+  repeated ChallengeBrief child_challenge_list = 6;
+  uint64 dungeon_guid = 3;
+  CustomDungeonFinishType finish_type = 7;
   uint32 time_cost = 11;
-  bool Unk2700_IBDCFAMBGOK = 2;
-  bool Unk2700_HBFLKFOCKBF = 14;
+  bool is_arrive_finish = 2;
+  bool is_stored = 14;
 }

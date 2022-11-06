@@ -27,9 +27,9 @@ option java_package = "org.sorapointa.proto";
 message PathfindingEnterSceneReq {
   uint32 scene_id = 12;
   repeated uint32 activity_id = 14;
-  uint32 Unk2800_NCDFAFMGMIG = 15;
+  uint32 scene_tag_hash = 15;
   uint32 version = 6;
   bool is_editor = 11;
   repeated ObstacleInfo obstacles = 13;
-  uint32 Unk2800_MBDFGODMPFN = 4;
+  uint32 polygon_id = 4;
 }

@@ -23,5 +23,5 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message GetAllMailReq {
-  bool Unk2700_OPEHLDAGICF = 7;
+  bool is_collected = 7;
 }

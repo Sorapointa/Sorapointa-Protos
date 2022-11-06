@@ -1,0 +1,47 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "VintageMarketDealInfo.proto";
+import "VintageMarketStoreInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message VintageMarketInfo {
+  bool is_help_module_open = 1485;
+  bool is_store_content_interrupt = 15;
+  VintageMarketDealInfo deal_info = 11;
+  uint32 store_round = 7;
+  repeated uint32 store_round_income_list = 207;
+  bool is_store_content_finish = 5;
+  repeated uint32 cur_env_event_list = 8;
+  bool is_market_content_open = 10;
+  uint32 next_can_use_help_round = 1800;
+  bool is_market_content_finish = 2;
+  repeated uint32 viewed_strategy_list = 14;
+  uint32 prev_coin_c_num = 3;
+  map<uint32, bool> bargain_info_map = 6;
+  uint32 dividend_reward_count = 1798;
+  repeated uint32 cur_npc_event_list = 4;
+  bool is_help_in_cd = 366;
+  uint32 prev_coin_b_num = 1;
+  repeated VintageMarketStoreInfo open_store_list = 9;
+  uint32 help_skill_id = 760;
+  bool is_round_tips_view = 12;
+  bool is_strategy_module_open = 876;
+  repeated uint32 unlock_strategy_list = 13;
+}

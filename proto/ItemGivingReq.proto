@@ -28,10 +28,10 @@ message ItemGivingReq {
   map<uint64, uint32> item_guid_count_map = 15;
   uint32 giving_id = 13;
   repeated ItemParam item_param_list = 4;
-  Unk2800_LENCDFJACFN Unk2800_PHNIJJMECGN = 2;
+  ItemGivingRsp item_giving_type = 2;
 
-  enum Unk2800_LENCDFJACFN {
-    Unk2800_LENCDFJACFN_QUEST = 0;
-    Unk2800_LENCDFJACFN_Unk2800_HHHOPEHIPFG = 1;
+  enum ItemGivingRsp {
+    ITEM_GIVING_RSP_QUEST = 0;
+    ITEM_GIVING_RSP_GADGET = 1;
   }
 }

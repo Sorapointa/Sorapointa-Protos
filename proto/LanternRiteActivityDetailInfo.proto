@@ -16,17 +16,17 @@
 
 syntax = "proto3";
 
-import "Unk2700_JCNIPOJMFMH.proto";
-import "Unk2700_LLGDCAKMCKL.proto";
-import "Unk2700_MJGFEHOMKJE.proto";
+import "LanternProjectionInfo.proto";
+import "LanternRiteFireworksInfo.proto";
+import "SalvageStageInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message LanternRiteActivityDetailInfo {
-  Unk2700_JCNIPOJMFMH Unk2700_ONOHODJPIGK = 13;
-  repeated Unk2700_LLGDCAKMCKL Unk2700_PHKHIPLDOOA = 5;
-  Unk2700_MJGFEHOMKJE Unk2700_MPOCLGBFNAK = 8;
-  bool Unk2700_KGGCKHBIOED = 2;
+  LanternProjectionInfo projection_info = 13;
+  repeated SalvageStageInfo stage_info_list = 5;
+  LanternRiteFireworksInfo fireworks_info = 8;
+  bool is_mini_eldritch_dungeon_open = 2;
   bool is_content_closed = 14;
-  bool Unk2700_EOGEAIHJPFD = 6;
+  bool is_taken_skin_reward = 6;
 }

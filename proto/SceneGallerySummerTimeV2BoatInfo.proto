@@ -21,6 +21,6 @@ option java_package = "org.sorapointa.proto";
 message SceneGallerySummerTimeV2BoatInfo {
   uint32 param1 = 15;
   uint32 param3 = 3;
-  uint32 Unk2800_NGGPIECNHJA = 11;
+  uint32 used_time = 11;
   uint32 param2 = 7;
 }

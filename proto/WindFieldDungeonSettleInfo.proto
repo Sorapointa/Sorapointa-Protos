@@ -16,12 +16,12 @@
 
 syntax = "proto3";
 
-import "Unk3100_HJALLGOLFGL.proto";
+import "WindFieldDungeonFailReason.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message WindFieldDungeonSettleInfo {
-  repeated uint32 Unk3100_ABGAMIOBKAB = 11;
-  repeated uint32 Unk3100_MPGPNBOHCMC = 7;
-  Unk3100_HJALLGOLFGL Unk3100_AOFJAJACNAJ = 2;
+  repeated uint32 after_watcher_id_list = 11;
+  repeated uint32 before_watcher_id_list = 7;
+  WindFieldDungeonFailReason fail_reason = 2;
 }

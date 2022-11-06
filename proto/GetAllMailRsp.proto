@@ -26,6 +26,6 @@ option java_package = "org.sorapointa.proto";
 message GetAllMailRsp {
   int32 retcode = 8;
   repeated MailData mail_list = 14;
-  bool Unk2700_OPEHLDAGICF = 1;
+  bool is_collected = 1;
   bool is_truncated = 2;
 }

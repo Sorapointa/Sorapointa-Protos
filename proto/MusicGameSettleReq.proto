@@ -23,22 +23,22 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message MusicGameSettleReq {
-  repeated uint32 Unk2700_GDPKOANEDEB = 384;
-  uint32 Unk2700_NMHGADLANMM = 795;
-  repeated uint32 Unk2700_NNHGOCJLKFH = 4;
-  uint32 Unk2700_NCHHEJNFECG = 15;
+  repeated uint32 button_list = 384;
+  uint32 delay = 795;
+  repeated uint32 note_list = 4;
+  uint32 score_rating = 15;
   uint32 score = 9;
-  uint64 Unk2700_CEPGMKAHHCD = 6;
-  uint32 Unk2700_MMHHGALFHGA = 13;
-  bool Unk2700_CBLIJHDFKHA = 422;
+  uint64 ugc_guid = 6;
+  uint32 restart_times = 13;
+  bool is_custom_delay = 422;
   uint32 max_combo = 5;
-  uint32 Unk2700_FBLBGPHMLAL = 1058;
+  uint32 is_full_combo = 1058;
   float speed = 409;
-  bool Unk2700_IOKPIKJDEHG = 3;
+  bool is_save_score = 3;
   uint32 combo = 1;
   uint32 music_basic_id = 7;
-  uint32 Unk2700_DIMBABOGNEM = 2;
-  uint32 Unk2700_IOMOHEKJJLJ = 1953;
+  uint32 star_rating = 2;
+  uint32 volume = 1953;
   uint32 correct_hit = 14;
-  bool Unk2700_LKJNLDJAGGL = 1285;
+  bool is_custom_speed = 1285;
 }

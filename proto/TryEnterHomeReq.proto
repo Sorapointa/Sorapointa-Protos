@@ -24,6 +24,6 @@ option java_package = "org.sorapointa.proto";
 // IsAllowClient: true
 message TryEnterHomeReq {
   uint32 target_uid = 3;
-  bool Unk3100_KEMFDDMEBIG = 10;
+  bool is_transfer_to_safe_point = 10;
   uint32 target_point = 9;
 }

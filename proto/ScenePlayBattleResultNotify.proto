@@ -17,7 +17,7 @@
 syntax = "proto3";
 
 import "ScenePlayBattleSettlePlayerInfo.proto";
-import "Unk2700_OHOKEEGPPBG.proto";
+import "ScenePlayBattleSettleRewardInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -30,5 +30,5 @@ message ScenePlayBattleResultNotify {
   uint32 play_type = 15;
   uint32 play_id = 11;
   repeated ScenePlayBattleSettlePlayerInfo settle_player_info_list = 4;
-  repeated Unk2700_OHOKEEGPPBG Unk2700_HMENAAMGMBB = 14;
+  repeated ScenePlayBattleSettleRewardInfo settle_reward_info_list = 14;
 }

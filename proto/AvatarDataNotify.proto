@@ -28,7 +28,7 @@ message AvatarDataNotify {
   repeated uint32 owned_costume_list = 11;
   uint64 choose_avatar_guid = 8;
   map<uint32, AvatarTeam> avatar_team_map = 7;
-  repeated uint32 Unk3000_NIGPICLBHMA = 9;
+  repeated uint32 backup_avatar_team_order_list = 9;
   repeated uint64 temp_avatar_guid_list = 12;
   repeated uint32 owned_flycloak_list = 1;
   repeated AvatarInfo avatar_list = 6;

@@ -29,7 +29,7 @@ message EvtAvatarEnterFocusNotify {
   uint32 entity_id = 1;
   bool can_move = 10;
   bool enter_holding_focus_shoot = 13;
-  bool Unk2700_GACKGHEHEIK = 6;
+  bool disable_aim_layer = 6;
   bool use_auto_focus = 5;
   bool fast_focus = 3;
   bool show_cross_hair = 12;

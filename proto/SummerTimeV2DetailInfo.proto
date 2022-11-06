@@ -16,15 +16,15 @@
 
 syntax = "proto3";
 
-import "Unk2800_CGODFDDALAG.proto";
-import "Unk2800_CGPNLBNMPCM.proto";
+import "SummerTimeV2BoatStageInfo.proto";
+import "SummerTimeV2DungeonStageInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message SummerTimeV2DetailInfo {
-  repeated Unk2800_CGODFDDALAG Unk2800_PNBLCPIBKPO = 13;
-  uint32 Unk2800_HDEFJKGDNEH = 10;
+  repeated SummerTimeV2DungeonStageInfo dungeon_stage_info_list = 13;
+  uint32 cur_dungeon_reward_limit = 10;
   bool is_content_closed = 4;
-  uint32 Unk2800_ELHBCNPKOJG = 5;
-  repeated Unk2800_CGPNLBNMPCM Unk2800_MPKLJJIEHIB = 15;
+  uint32 taken_reward_count = 5;
+  repeated SummerTimeV2BoatStageInfo boat_stage_info_list = 15;
 }

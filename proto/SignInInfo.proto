@@ -16,14 +16,14 @@
 
 syntax = "proto3";
 
-import "Unk2700_HENCIJOPCIF.proto";
+import "SignInData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message SignInInfo {
   bool is_cond_satisfied = 7;
   repeated uint32 reward_day_list = 15;
-  repeated Unk2700_HENCIJOPCIF Unk2700_HBMMIEOFIEI = 12;
+  repeated SignInData signin_data_list = 12;
   uint32 config_id = 8;
   uint32 sign_in_count = 2;
   uint32 schedule_id = 3;

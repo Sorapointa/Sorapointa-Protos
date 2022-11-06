@@ -16,14 +16,14 @@
 
 syntax = "proto3";
 
-import "RogueDiaryStage.proto";
-import "Unk2700_PILILDPMNNA.proto";
+import "RogueDiaryProgress.proto";
+import "RogueDiaryStageInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message RogueDiaryActivityDetailInfo {
-  repeated RogueDiaryStage stage_list = 11;
+  repeated RogueDiaryStageInfo stage_list = 11;
   bool is_have_progress = 10;
   bool is_content_closed = 2;
-  Unk2700_PILILDPMNNA cur_progress = 7;
+  RogueDiaryProgress cur_progress = 7;
 }

@@ -18,11 +18,12 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 968
+// CmdId: 933
 // EnetChannelId: 0
 // EnetIsReliable: true
 // IsAllowClient: true
 message DungeonReviseLevelNotify {
-  uint32 revise_level = 7;
-  uint32 dungeon_id = 14;
+  uint32 scene_level = 5;
+  uint32 revise_level = 10;
+  uint32 dungeon_id = 3;
 }

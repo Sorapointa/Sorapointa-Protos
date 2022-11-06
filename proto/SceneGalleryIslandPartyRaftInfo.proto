@@ -16,15 +16,15 @@
 
 syntax = "proto3";
 
-import "Unk2800_FMAOEPEBKHB.proto";
+import "GalleryStartSource.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message SceneGalleryIslandPartyRaftInfo {
   uint32 coin = 6;
-  Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 7;
-  uint32 Unk2800_BAEEDEAADIA = 1;
-  uint32 Unk2800_EOFOECJJMLJ = 15;
+  GalleryStartSource start_source = 7;
+  uint32 component = 1;
+  uint32 fuel = 15;
   uint32 point_id = 12;
-  uint32 Unk2800_MKNGANDAJFJ = 4;
+  uint32 raft_entity_id = 4;
 }

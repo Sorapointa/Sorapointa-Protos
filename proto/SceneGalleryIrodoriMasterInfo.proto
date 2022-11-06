@@ -21,5 +21,5 @@ option java_package = "org.sorapointa.proto";
 message SceneGalleryIrodoriMasterInfo {
   uint32 level_id = 8;
   uint32 difficulty = 1;
-  bool Unk2700_FKDMOBOGMCM = 5;
+  bool is_cg_viewed = 5;
 }

@@ -19,5 +19,5 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message SceneGallerySalvagePreventInfo {
-  uint32 Unk2700_FFCCLGIFGIP = 7;
+  uint32 monster_count = 7;
 }

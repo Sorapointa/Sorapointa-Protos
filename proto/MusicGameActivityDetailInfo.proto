@@ -16,13 +16,13 @@
 
 syntax = "proto3";
 
-import "MusicBriefInfo.proto";
 import "MusicGameRecord.proto";
+import "UgcMusicBriefInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message MusicGameActivityDetailInfo {
-  repeated MusicBriefInfo Unk2700_HMNHCPMFDCP = 4;
-  repeated MusicBriefInfo Unk2700_FOFAFGKAEJM = 7;
+  repeated UgcMusicBriefInfo ugc_record_list = 4;
+  repeated UgcMusicBriefInfo ugc_search_list = 7;
   map<uint32, MusicGameRecord> music_game_record_map = 8;
 }

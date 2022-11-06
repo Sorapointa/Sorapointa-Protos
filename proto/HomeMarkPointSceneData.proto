@@ -26,5 +26,5 @@ message HomeMarkPointSceneData {
   Vector teapot_spirit_pos = 4;
   uint32 scene_id = 2;
   uint32 module_id = 5;
-  Vector Unk3100_ABBFBELGECB = 11;
+  Vector safe_point_pos = 11;
 }

@@ -16,16 +16,16 @@
 
 syntax = "proto3";
 
-import "Unk2700_AIGECAPPCKK.proto";
-import "Unk2700_AMJFIJNNGHC.proto";
-import "Unk2700_GCPNGHFNGDP.proto";
-import "Unk2700_JACACCPGMGC.proto";
+import "IrodoriChessData.proto";
+import "IrodoriFlowerData.proto";
+import "IrodoriMasterLevelInfo.proto";
+import "IrodoriPoetryData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message IrodoriActivityDetailInfo {
-  repeated Unk2700_JACACCPGMGC Unk2700_KLDGOEPJGNC = 11;
-  Unk2700_GCPNGHFNGDP Unk2700_BFPBLJAAPAL = 6;
-  Unk2700_AIGECAPPCKK Unk2700_AGGJBDLONGC = 8;
-  Unk2700_AMJFIJNNGHC Unk2700_MCMCCIEFMPD = 14;
+  repeated IrodoriMasterLevelInfo master_level_list = 11;
+  IrodoriFlowerData flower_data = 6;
+  IrodoriPoetryData poetry_data = 8;
+  IrodoriChessData chess_data = 14;
 }

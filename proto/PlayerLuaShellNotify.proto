@@ -16,7 +16,7 @@
 
 syntax = "proto3";
 
-import "Unk2700_JOEPIGNPDGH.proto";
+import "LuaShellType.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -24,7 +24,7 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message PlayerLuaShellNotify {
-  Unk2700_JOEPIGNPDGH Unk2700_JJMHFFHNJJO = 7;
+  LuaShellType shell_type = 7;
   uint32 id = 5;
   bytes lua_shell = 12;
   uint32 use_type = 10;

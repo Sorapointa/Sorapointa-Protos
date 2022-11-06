@@ -21,7 +21,7 @@ import "ArenaChallengeMonsterLevel.proto";
 option java_package = "org.sorapointa.proto";
 
 message ArenaChallengeActivityDetailInfo {
-  bool Unk2800_GNKHCICOIMC = 14;
+  bool is_finish_any_level = 14;
   map<uint32, uint32> level_open_time_map = 3;
   uint32 world_level = 15;
   repeated ArenaChallengeMonsterLevel level_list = 9;

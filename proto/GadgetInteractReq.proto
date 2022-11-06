@@ -30,6 +30,6 @@ message GadgetInteractReq {
   bool is_use_condense_resin = 15;
   InterOpType op_type = 5;
   ResinCostType resin_cost_type = 1;
-  uint32 Unk2700_DCPBGMKCHGJ = 2;
+  uint32 ui_interact_id = 2;
   uint32 gadget_entity_id = 4;
 }

@@ -34,5 +34,5 @@ message AbilityMetaModifierChange {
   uint32 apply_entity_id = 5;
   repeated ModifierProperty properties = 3;
   AbilityString parent_ability_override = 11;
-  bool Unk2700_PMJMNCFJPDC = 9;
+  bool is_durability_zero = 9;
 }

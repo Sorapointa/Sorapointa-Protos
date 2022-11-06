@@ -18,9 +18,9 @@ syntax = "proto3";
 
 import "AbilitySyncStateInfo.proto";
 import "AnimatorParameterValueInfoPair.proto";
+import "EntityClientExtraInfo.proto";
 import "EntityRendererChangedInfo.proto";
 import "SceneEntityAiInfo.proto";
-import "Unk2700_HFMDKDHCJCM.proto";
 import "Vector.proto";
 
 option java_package = "org.sorapointa.proto";
@@ -31,5 +31,5 @@ message EntityAuthorityInfo {
   SceneEntityAiInfo ai_info = 3;
   Vector born_pos = 4;
   repeated AnimatorParameterValueInfoPair pose_para_list = 5;
-  Unk2700_HFMDKDHCJCM Unk2700_KDGMOPELHNE = 6;
+  EntityClientExtraInfo client_extra_info = 6;
 }

@@ -25,7 +25,7 @@ option java_package = "org.sorapointa.proto";
 
 message AttackResult {
   bool is_resist_text = 1858;
-  uint32 Unk2700_GBANCFEPPIM = 1011;
+  uint32 create_count_sync_to_server = 1011;
   uint32 amplify_reaction_type = 2005;
   uint32 endure_break = 7;
   uint32 element_type = 5;

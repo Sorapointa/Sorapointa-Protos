@@ -21,7 +21,6 @@ option java_package = "org.sorapointa.proto";
 // CmdId: 350
 // EnetChannelId: 0
 // EnetIsReliable: true
-// IsAllowClient: true
 message TriggerCreateGadgetToEquipPartNotify {
   uint32 gadget_id = 1;
   uint32 entity_id = 13;

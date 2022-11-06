@@ -16,10 +16,10 @@
 
 syntax = "proto3";
 
-import "PotionStage.proto";
+import "PotionStageData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message PotionActivityDetailInfo {
-  repeated PotionStage stage_list = 10;
+  repeated PotionStageData stage_list = 10;
 }

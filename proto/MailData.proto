@@ -16,9 +16,9 @@
 
 syntax = "proto3";
 
+import "MailCollectState.proto";
 import "MailItem.proto";
 import "MailTextContent.proto";
-import "Unk2700_CBJEDMGOBPL.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -33,5 +33,5 @@ message MailData {
   bool is_attachment_got = 12;
   uint32 config_id = 13;
   repeated string argument_list = 14;
-  Unk2700_CBJEDMGOBPL Unk2700_NDPPGJKJOMH = 15;
+  MailCollectState collect_state = 15;
 }

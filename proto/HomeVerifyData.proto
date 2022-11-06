@@ -23,10 +23,10 @@ import "LanguageType.proto";
 option java_package = "org.sorapointa.proto";
 
 message HomeVerifyData {
-  string Unk2700_OAKBDKKBFHP = 7;
+  string aid = 7;
   fixed32 timestamp = 15;
   uint32 uid = 5;
-  HomeSceneArrangementMuipData Unk2700_CDELDBLKLDO = 9;
+  HomeSceneArrangementMuipData arrangement_data = 9;
   string region = 3;
   string token = 1;
   HomeVerifySceneData home_info = 6;

@@ -29,7 +29,7 @@ message EvtCreateGadgetNotify {
   bool is_async_load = 8;
   uint32 camp_type = 5;
   bool sight_group_with_owner = 10;
-  repeated uint32 Unk2700_BELOIHEIEAN = 889;
+  repeated uint32 target_entity_id_list = 889;
   ForwardType forward_type = 12;
   uint32 entity_id = 2;
   uint32 target_entity_id = 3;
@@ -37,12 +37,12 @@ message EvtCreateGadgetNotify {
   uint64 guid = 6;
   Vector init_euler_angles = 13;
   uint32 target_lock_point_index = 11;
-  repeated uint32 Unk2700_JDNFLLGJBGA = 1920;
+  repeated uint32 target_lock_point_index_list = 1920;
   Vector init_pos = 4;
   uint32 owner_entity_id = 9;
   uint32 room_id = 7;
-  bool Unk2700_JBOPENAGGAF = 25;
+  bool is_peer_id_from_player = 25;
   uint32 prop_owner_entity_id = 1;
-  bool Unk2700_IHIDGKPHFME = 379;
+  bool is_true_life_time_by_owner = 379;
   uint32 config_id = 14;
 }

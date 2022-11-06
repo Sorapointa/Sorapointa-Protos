@@ -17,8 +17,8 @@
 syntax = "proto3";
 
 import "InBattleChessSettleInfo.proto";
+import "InBattleIrodoriChessSettleInfo.proto";
 import "InBattleMechanicusSettleInfo.proto";
-import "IrodoriChessSettleInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -31,6 +31,6 @@ message MultistagePlaySettleNotify {
   oneof detail {
     InBattleMechanicusSettleInfo mechanicus_settle_info = 1402;
     InBattleChessSettleInfo chess_settle_info = 1283;
-    IrodoriChessSettleInfo irodori_chess_settle_info = 612;
+    InBattleIrodoriChessSettleInfo irodori_chess_settle_info = 612;
   }
 }

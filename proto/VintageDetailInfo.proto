@@ -16,19 +16,19 @@
 
 syntax = "proto3";
 
-import "Unk3100_AHIKHIOFBJJ.proto";
-import "Unk3100_FHDBCIIMLLP.proto";
-import "Unk3100_HEJFCDEKFOE.proto";
-import "Unk3100_IOJKKDNELHE.proto";
-import "Unk3100_NBBMHKJHJJI.proto";
+import "VintageBoothUsedItemData.proto";
+import "VintageCampChallengeStageData.proto";
+import "VintageHuntingStageData.proto";
+import "VintageMarketInfo.proto";
+import "VintagePresentStageData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message VintageDetailInfo {
-  Unk3100_NBBMHKJHJJI Unk3100_HPMEDDOLJEN = 2;
-  map<uint32, Unk3100_HEJFCDEKFOE> Unk3100_FOLAAJODNCM = 7;
-  Unk3100_AHIKHIOFBJJ Unk3100_ACDPMGMDILG = 5;
-  map<uint32, Unk3100_FHDBCIIMLLP> Unk3100_DLDFBOLFAKD = 13;
-  map<uint32, Unk3100_IOJKKDNELHE> Unk3100_JDOCJKEEEHO = 4;
+  VintageMarketInfo market_info = 2;
+  map<uint32, VintageHuntingStageData> hunting_stage_map = 7;
+  VintageBoothUsedItemData booth_data = 5;
+  map<uint32, VintageCampChallengeStageData> camp_stage_map = 13;
+  map<uint32, VintagePresentStageData> present_stage_map = 4;
   bool is_content_closed = 11;
 }

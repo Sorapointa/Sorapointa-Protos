@@ -36,10 +36,10 @@ message PlayerLoginReq {
   uint32 client_data_version = 688;
   string account_uid = 2;
   string client_version = 12;
-  string Unk2700_NGKCNPKKIKB = 772;
+  string security_library_md5 = 772;
   string country_code = 2000;
   string psn_id = 1268;
-  uint32 Unk2700_GPPBEMDGEHH = 431;
+  uint32 client_port = 431;
   string device_name = 9;
   string cps = 1163;
   uint64 login_rand = 3;
@@ -53,7 +53,7 @@ message PlayerLoginReq {
   bool is_editor = 8;
   string checksum_client_version = 861;
   bytes security_cmd_reply = 1995;
-  string Unk2700_JNDKPBBCACB = 1213;
+  string security_library_version = 1213;
   string birthday = 1652;
   string device_uuid = 4;
   uint32 client_token = 1546;

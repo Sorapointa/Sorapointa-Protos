@@ -22,7 +22,7 @@ message AbilityMixinElementShield {
   float sub_shield = 10;
   float shield = 8;
   uint32 absorb_type = 1;
-  uint32 Unk2700_PBKBDDLNBEA = 4;
+  uint32 player_num = 4;
   bool is_shield_broken = 9;
   float max_shield = 12;
 }

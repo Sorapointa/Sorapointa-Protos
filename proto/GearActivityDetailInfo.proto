@@ -16,12 +16,12 @@
 
 syntax = "proto3";
 
-import "Unk2800_BPOJIIDEADD.proto";
-import "Unk2800_JIPMJPAKIKE.proto";
+import "GearLevelData.proto";
+import "JigsawPictureData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message GearActivityDetailInfo {
-  repeated Unk2800_BPOJIIDEADD Unk2800_GBAPCBPMHNJ = 14;
-  Unk2800_JIPMJPAKIKE Unk2800_IHEHGOBCINC = 8;
+  repeated GearLevelData gear_level_data_list = 14;
+  JigsawPictureData jigsaw_picture_data = 8;
 }

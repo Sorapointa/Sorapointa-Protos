@@ -16,15 +16,15 @@
 
 syntax = "proto3";
 
-import "GachaStage.proto";
+import "GachaStageData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message GachaActivityDetailInfo {
-  repeated uint32 Unk2700_PIDHKNLDALB = 6;
-  repeated GachaStage gacha_stage_list = 4;
-  map<uint32, uint32> Unk2700_KOHKBCABICD = 8;
-  uint32 Unk2700_CDPAPBIOPCA = 3;
-  map<uint32, uint32> Unk2700_DACHHINLDDJ = 5;
-  uint32 Unk2700_FGFGLDIJJEK = 12;
+  repeated uint32 have_get_robot_list = 6;
+  repeated GachaStageData gacha_stage_list = 4;
+  map<uint32, uint32> have_reward_robot_num_map = 8;
+  uint32 tech_create_robot_id = 3;
+  map<uint32, uint32> robot_num_map = 5;
+  uint32 robot_finish_num = 12;
 }

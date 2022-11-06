@@ -16,11 +16,11 @@
 
 syntax = "proto3";
 
-import "PhotoStage.proto";
+import "PhotoPosData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message PhotoActivityDetailInfo {
   bool is_content_closed = 4;
-  repeated PhotoStage photo_stage_list = 12;
+  repeated PhotoPosData photo_pos_data_list = 12;
 }

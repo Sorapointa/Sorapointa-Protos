@@ -1,0 +1,35 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 23462
+// EnetChannelId: 0
+// EnetIsReliable: true
+message VintageMarketFinishStorePlayRsp {
+  repeated uint32 trigger_env_event_list = 8;
+  uint32 store_round = 12;
+  repeated uint32 trigger_npc_event_list = 10;
+  repeated uint32 low_attr_store_list = 11;
+  uint32 round_coin_b_income = 9;
+  uint32 round_delta_coin_c = 1;
+  map<uint32, uint32> store_income_map = 3;
+  int32 retcode = 7;
+  uint32 round_total_income = 14;
+  uint32 display_return_coin_b = 15;
+}

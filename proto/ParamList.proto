@@ -19,5 +19,5 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message ParamList {
-  repeated uint32 param_list_ = 1;
+  repeated uint32 param_list = 1;
 }

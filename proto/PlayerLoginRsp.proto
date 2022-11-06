@@ -47,7 +47,7 @@ message PlayerLoginRsp {
   bytes sc_info = 2024;
   int32 ability_hash_code = 12;
   string register_cps = 2040;
-  bool Unk3100_EDIDPOKBKHG = 1649;
+  bool is_login_rsp_split = 1649;
   bool is_use_ability_hash = 2;
   map<string, int32> ability_hash_map = 11;
   repeated ShortAbilityHashPair short_ability_hash_map = 250;

@@ -16,14 +16,14 @@
 
 syntax = "proto3";
 
-import "Unk2700_IBEKDNOGMLA.proto";
+import "IrodoriChessMysteryInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message IrodoriChessInfo {
-  Unk2700_IBEKDNOGMLA mystery_info = 3;
+  IrodoriChessMysteryInfo mystery_info = 3;
   uint32 left_monsters = 12;
-  repeated uint32 Unk2700_MABMPAAGHCJ = 13;
+  repeated uint32 selected_card_id_list = 13;
   uint32 building_points = 7;
-  uint32 Unk2700_CDOKENJJJMH = 4;
+  uint32 settle_score = 4;
 }

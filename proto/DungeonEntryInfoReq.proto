@@ -27,5 +27,5 @@ option java_package = "org.sorapointa.proto";
 message DungeonEntryInfoReq {
   uint32 point_id = 2;
   uint32 scene_id = 9;
-  repeated Uint32Pair Unk2800_GGAMJDFELPH = 4;
+  repeated Uint32Pair scene_point_id_list = 4;
 }

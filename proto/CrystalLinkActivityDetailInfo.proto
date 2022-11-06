@@ -16,11 +16,11 @@
 
 syntax = "proto3";
 
-import "Unk2700_IOLMLCCBAKP.proto";
+import "CrystalLinkLevelInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message CrystalLinkActivityDetailInfo {
-  repeated Unk2700_IOLMLCCBAKP Unk2700_FIKHCFMEOAJ = 3;
+  repeated CrystalLinkLevelInfo level_info_list = 3;
   uint32 difficulty_id = 7;
 }

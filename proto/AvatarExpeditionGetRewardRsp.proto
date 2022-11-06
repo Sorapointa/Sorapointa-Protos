@@ -25,7 +25,7 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message AvatarExpeditionGetRewardRsp {
-  repeated ItemParam Unk2700_HBKHOBPGCLH = 9;
+  repeated ItemParam extra_item_list = 9;
   repeated ItemParam item_list = 8;
   map<uint64, AvatarExpeditionInfo> expedition_info_map = 12;
   int32 retcode = 2;

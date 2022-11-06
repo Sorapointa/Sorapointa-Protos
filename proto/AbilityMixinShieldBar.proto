@@ -19,7 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message AbilityMixinShieldBar {
-  uint32 Unk2700_PBKBDDLNBEA = 14;
+  uint32 player_num = 14;
   float max_shield = 15;
   float shield = 12;
   uint32 element_type = 13;

@@ -22,7 +22,7 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message ItemGivingRsp {
-  uint32 Unk2700_MHIPHDFEOON = 1;
+  uint32 giving_group_id = 1;
   uint32 giving_id = 13;
   int32 retcode = 3;
 }

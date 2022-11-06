@@ -1,0 +1,38 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "RogueDiaryRoomInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+// CmdId: 8597
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message RogueDiaryDungeonInfoNotify {
+  uint32 stage_id = 12;
+  repeated uint32 round_monster_list = 15;
+  uint32 time = 4;
+  uint32 cur_room = 5;
+  uint32 cur_round = 6;
+  uint32 coin = 11;
+  uint32 difficulty = 8;
+  uint32 dungeon_id = 14;
+  repeated RogueDiaryRoomInfo room_list = 7;
+  repeated uint32 round_card_list = 10;
+}

@@ -24,6 +24,6 @@ message BuildingInfo {
   uint32 cost = 3;
   uint32 refund = 5;
   uint32 owner_uid = 6;
-  uint32 Unk2700_MDJOPHOHFDB = 7;
-  uint32 Unk2700_COFBIGLBNGP = 8;
+  uint32 current_num = 7;
+  uint32 max_num = 8;
 }

@@ -24,7 +24,7 @@ message GachaInfo {
   uint32 ten_cost_item_id = 2;
   uint32 end_time = 14;
   repeated uint32 display_up4_item_list = 1875;
-  uint32 Unk3100_JKILPCKLNPI = 469;
+  uint32 cur_schedule_daily_gacha_times = 469;
   repeated GachaUpInfo gacha_up_info_list = 1233;
   string gacha_prob_url = 8;
   string gacha_prefab_path = 15;

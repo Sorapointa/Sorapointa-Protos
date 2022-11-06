@@ -16,13 +16,13 @@
 
 syntax = "proto3";
 
-import "Unk2800_FMAOEPEBKHB.proto";
+import "GalleryStartSource.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message SceneGalleryIslandPartyDownHillInfo {
-  uint32 Unk2800_LBPCDCHOOLJ = 14;
-  Unk2800_FMAOEPEBKHB Unk2800_ENJGEFBCLOL = 15;
-  uint32 Unk2800_BKEFLDCEBLF = 5;
+  uint32 total_kill_monster_count = 14;
+  GalleryStartSource start_source = 15;
+  uint32 max_kill_monster_count = 5;
   uint32 coin = 13;
 }

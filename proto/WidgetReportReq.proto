@@ -23,7 +23,7 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message WidgetReportReq {
-  bool Unk2700_MFEHMLBNNAG = 5;
+  bool is_clear_sky_crystal_hint = 5;
   bool is_client_collect = 14;
   bool is_clear_hint = 13;
   uint32 material_id = 15;

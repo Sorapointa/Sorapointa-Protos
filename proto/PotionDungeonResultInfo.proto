@@ -21,8 +21,8 @@ option java_package = "org.sorapointa.proto";
 message PotionDungeonResultInfo {
   uint32 final_score = 8;
   uint32 left_time = 9;
-  uint32 Unk2700_FHEHGDABALE = 14;
-  uint32 Unk2700_HKFEBBCMBHL = 11;
+  uint32 difficulty_level = 14;
+  uint32 mode_id = 11;
   uint32 level_id = 4;
   uint32 stage_id = 2;
 }

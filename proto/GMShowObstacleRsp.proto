@@ -16,7 +16,7 @@
 
 syntax = "proto3";
 
-import "ObstacleInfo.proto";
+import "GMObstacleInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -25,5 +25,5 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 message GMShowObstacleRsp {
   int32 retcode = 5;
-  repeated ObstacleInfo obstacles = 6;
+  repeated GMObstacleInfo obstacles = 6;
 }

@@ -23,7 +23,6 @@ option java_package = "org.sorapointa.proto";
 // CmdId: 394
 // EnetChannelId: 0
 // EnetIsReliable: true
-// IsAllowClient: true
 message EntityAuthorityChangeNotify {
   repeated AuthorityChange authority_change_list = 15;
 }

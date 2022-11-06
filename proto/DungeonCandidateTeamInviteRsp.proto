@@ -23,5 +23,5 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 message DungeonCandidateTeamInviteRsp {
   int32 retcode = 12;
-  repeated uint32 Unk2700_OJEGACKKJAE = 7;
+  repeated uint32 invalid_player_uids = 7;
 }

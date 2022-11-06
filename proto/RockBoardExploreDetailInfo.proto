@@ -16,10 +16,10 @@
 
 syntax = "proto3";
 
-import "Unk3100_FKKBIDJONKF.proto";
+import "RockBoardExploreStageData.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message RockBoardExploreDetailInfo {
-  repeated Unk3100_FKKBIDJONKF Unk2800_PDBHCBCLFBM = 9;
+  repeated RockBoardExploreStageData stage_data_list = 9;
 }

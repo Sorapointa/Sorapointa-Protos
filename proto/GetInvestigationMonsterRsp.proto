@@ -27,5 +27,5 @@ option java_package = "org.sorapointa.proto";
 message GetInvestigationMonsterRsp {
   repeated InvestigationMonster monster_list = 10;
   int32 retcode = 1;
-  bool Unk2700_DEMFDHNFBBJ = 2;
+  bool is_for_mark = 2;
 }

@@ -17,7 +17,7 @@
 syntax = "proto3";
 
 import "OnlinePlayerInfo.proto";
-import "Unk3000_HKHFFDEMNKN.proto";
+import "PlayerWidgetInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -26,7 +26,7 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message WorldPlayerInfoNotify {
-  repeated Unk3000_HKHFFDEMNKN Unk3000_GCJLJCJAADG = 8;
+  repeated PlayerWidgetInfo player_widget_info_list = 8;
   repeated OnlinePlayerInfo player_info_list = 14;
   repeated uint32 player_uid_list = 11;
 }

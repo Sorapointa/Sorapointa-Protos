@@ -16,13 +16,13 @@
 
 syntax = "proto3";
 
-import "Unk2800_CEAECGGBOKL.proto";
+import "SummerTimeDungeonInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message EchoShellDetailInfo {
-  repeated Unk2800_CEAECGGBOKL Unk2800_KEMCFBCAMMM = 8;
+  repeated SummerTimeDungeonInfo summer_time_dungeon_list = 8;
   repeated uint32 shell_list = 13;
-  repeated uint32 Unk2800_BFONDMJGNKL = 4;
+  repeated uint32 pass_dungeon_list = 4;
   repeated uint32 taken_reward_list = 2;
 }

@@ -26,5 +26,5 @@ message MusicGameSettleRsp {
   uint32 music_basic_id = 5;
   bool is_new_record = 6;
   bool is_unlock_next_level = 2;
-  uint64 Unk2700_CEPGMKAHHCD = 10;
+  uint64 ugc_guid = 10;
 }

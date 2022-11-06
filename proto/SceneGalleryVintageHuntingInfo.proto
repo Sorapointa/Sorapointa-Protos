@@ -16,17 +16,17 @@
 
 syntax = "proto3";
 
-import "SceneGalleryVintageHuntingFirstStageInfo.proto";
-import "SceneGalleryVintageHuntingSecondStageInfo.proto";
-import "SceneGalleryVintageHuntingThirdStageInfo.proto";
+import "VintageHuntingFirstStageInfo.proto";
+import "VintageHuntingSecondStageInfo.proto";
+import "VintageHuntingThirdStageInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message SceneGalleryVintageHuntingInfo {
   uint32 stage_id = 7;
   oneof info {
-    SceneGalleryVintageHuntingFirstStageInfo first_stage_info = 2;
-    SceneGalleryVintageHuntingSecondStageInfo second_stage_info = 15;
-    SceneGalleryVintageHuntingThirdStageInfo third_stage_info = 12;
+    VintageHuntingFirstStageInfo first_stage_info = 2;
+    VintageHuntingSecondStageInfo second_stage_info = 15;
+    VintageHuntingThirdStageInfo third_stage_info = 12;
   }
 }

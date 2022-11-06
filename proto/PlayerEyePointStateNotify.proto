@@ -32,7 +32,7 @@ message PlayerEyePointStateNotify {
   uint32 region_config_id = 7;
   uint32 region_shape = 12;
   bool is_filter_stream_pos = 2;
-  int32 Unk2800_GBBMMIGJFCF = 5;
+  int32 fix_lod_level = 5;
   uint32 region_group_id = 4;
   oneof region_size {
     float sphere_radius = 255;

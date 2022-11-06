@@ -22,9 +22,13 @@ import "SceneGalleryBounceConjuringInfo.proto";
 import "SceneGalleryBrokenFloorInfo.proto";
 import "SceneGalleryBulletInfo.proto";
 import "SceneGalleryBuoyantCombatInfo.proto";
+import "SceneGalleryCharAmusementInfo.proto";
 import "SceneGalleryCrystalLinkInfo.proto";
+import "SceneGalleryEffigyChallengeV2Info.proto";
 import "SceneGalleryFallInfo.proto";
 import "SceneGalleryFlowerInfo.proto";
+import "SceneGalleryFungusFighterCaptureInfo.proto";
+import "SceneGalleryFungusFighterTrainingInfo.proto";
 import "SceneGalleryHandballInfo.proto";
 import "SceneGalleryHideAndSeekInfo.proto";
 import "SceneGalleryHomeBalloonInfo.proto";
@@ -48,13 +52,14 @@ import "SceneGalleryWindFieldInfo.proto";
 option java_package = "org.sorapointa.proto";
 
 message SceneGalleryInfo {
-  uint32 end_time = 11;
-  uint32 pre_start_end_time = 15;
   GalleryStageType stage = 5;
-  uint32 owner_uid = 9;
-  uint32 player_count = 1;
   repeated SceneGalleryProgressInfo progress_info_list = 4;
   uint32 gallery_id = 2;
+  uint32 start_time = 3;
+  uint32 end_time = 11;
+  uint32 owner_uid = 9;
+  uint32 player_count = 1;
+  uint32 pre_start_end_time = 15;
   oneof info {
     SceneGalleryBalloonInfo balloon_info = 14;
     SceneGalleryFallInfo fall_info = 7;
@@ -82,5 +87,9 @@ message SceneGalleryInfo {
     SceneGalleryTreasureSeelieInfo treasure_seelie_info = 1525;
     SceneGalleryVintageHuntingInfo vintage_hunting_info = 254;
     SceneGalleryWindFieldInfo wind_field_info = 1080;
+    SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 1328;
+    SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 882;
+    SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 422;
+    SceneGalleryCharAmusementInfo char_amusement_info = 1086;
   }
 }
