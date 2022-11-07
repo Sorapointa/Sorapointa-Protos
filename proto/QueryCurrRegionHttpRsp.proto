@@ -30,7 +30,7 @@ message QueryCurrRegionHttpRsp {
   bytes region_custom_config_encrypted = 12;
   bytes client_region_custom_config_encrypted = 13;
   oneof detail {
-    ForceUpdateInfo force_udpate = 4;
+    ForceUpdateInfo force_update = 4;
     StopServerInfo stop_server = 5;
   }
 }
