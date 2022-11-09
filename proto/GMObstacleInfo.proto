@@ -17,7 +17,6 @@
 syntax = "proto3";
 
 import "MathQuaternion.proto";
-import "ShapeType.proto";
 import "Vector.proto";
 import "Vector3Int.proto";
 
@@ -30,4 +29,9 @@ message GMObstacleInfo {
   MathQuaternion rotation = 3;
   Vector center = 8;
   Vector3Int extents = 15;
+
+  enum ShapeType {
+    OBSTACLE_SHAPE_CAPSULE = 0;
+    OBSTACLE_SHAPE_BOX = 1;
+  }
 }
