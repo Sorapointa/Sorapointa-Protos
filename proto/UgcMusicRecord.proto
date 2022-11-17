@@ -16,25 +16,11 @@
 
 syntax = "proto3";
 
-import "RecordUsage.proto";
-import "UgcMusicBriefInfo.proto";
-import "UgcMusicRecord.proto";
-import "UgcType.proto";
+import "UgcMusicTrack.proto";
 
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 6318
-// EnetChannelId: 0
-// EnetIsReliable: true
-message GetUgcRsp {
-  uint64 ugc_guid = 15;
-  UgcType ugc_type = 10;
-  int32 retcode = 2;
-  RecordUsage ugc_record_usage = 14;
-  oneof record {
-    UgcMusicRecord music_record = 4;
-  }
-  oneof brief {
-    UgcMusicBriefInfo music_brief_info = 1819;
-  }
+message UgcMusicRecord {
+  repeated UgcMusicTrack music_track_list = 4;
+  uint32 music_id = 13;
 }

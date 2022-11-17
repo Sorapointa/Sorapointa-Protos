@@ -17,6 +17,7 @@
 syntax = "proto3";
 
 import "UgcMusicBriefInfo.proto";
+import "UgcMusicRecord.proto";
 import "UgcType.proto";
 
 option java_package = "org.sorapointa.proto";
@@ -28,7 +29,7 @@ option java_package = "org.sorapointa.proto";
 message SaveUgcReq {
   UgcType ugc_type = 11;
   oneof record {
-    UgcMusicBriefInfo music_record = 2;
+    UgcMusicRecord music_record = 2;
   }
   oneof brief {
     UgcMusicBriefInfo music_brief_info = 1488;
