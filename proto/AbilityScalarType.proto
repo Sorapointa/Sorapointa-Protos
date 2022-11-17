@@ -19,7 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 enum AbilityScalarType {
-  ABILITY_SCALAR_TYPE_UNKNOW = 0;
+  ABILITY_SCALAR_TYPE_UNKNOWN = 0;
   ABILITY_SCALAR_TYPE_FLOAT = 1;
   ABILITY_SCALAR_TYPE_INT = 2;
   ABILITY_SCALAR_TYPE_BOOL = 3;
