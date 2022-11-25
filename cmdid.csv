@@ -441,7 +441,6 @@ DungeonRestartReq,961
 DungeonRestartResultNotify,940
 DungeonRestartRsp,929
 DungeonReviseLevelNotify,933
-DungeonReviseLevelNotify,968
 DungeonSettleNotify,999
 DungeonShowReminderNotify,997
 DungeonSlipRevivePointActivateReq,958
@@ -1204,6 +1203,7 @@ MiracleRingDropResultNotify,5231
 MiracleRingTakeRewardReq,5207
 MiracleRingTakeRewardRsp,5202
 MistTrialDunegonFailNotify,8135
+MistTrialFloorLevelNotify,968
 MistTrialGetChallengeMissionReq,8893
 MistTrialGetChallengeMissionRsp,8508
 MistTrialGetDungeonExhibitionDataReq,8740

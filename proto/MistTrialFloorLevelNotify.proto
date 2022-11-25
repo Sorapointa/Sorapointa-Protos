@@ -18,12 +18,11 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 8373
+// CmdId: 968
 // EnetChannelId: 0
 // EnetIsReliable: true
 // IsAllowClient: true
-message MistTrialSettleNotify {
-  map<uint32, uint32> exhibition_list_data_record_map = 15;
-  map<uint32, uint32> exhibition_list_data_result_map = 14;
-  uint32 dungeon_scene_id = 5;
+message MistTrialFloorLevelNotify {
+  uint32 floor_level = 7;
+  uint32 dungeon_scene_id = 14;
 }

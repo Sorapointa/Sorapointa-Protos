@@ -21,8 +21,8 @@ import "GCGPhaseType.proto";
 option java_package = "org.sorapointa.proto";
 
 message GCGMsgOpTimer {
-  uint64 begin_time = 9;
+  fixed64 begin_time = 9;
   GCGPhaseType phase = 3;
-  uint64 time_stamp = 13;
+  fixed64 time_stamp = 13;
   uint32 controller_id = 8;
 }

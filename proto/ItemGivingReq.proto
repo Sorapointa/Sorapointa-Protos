@@ -28,10 +28,10 @@ message ItemGivingReq {
   map<uint64, uint32> item_guid_count_map = 15;
   uint32 giving_id = 13;
   repeated ItemParam item_param_list = 4;
-  ItemGivingRsp item_giving_type = 2;
+  ItemGivingType item_giving_type = 2;
 
-  enum ItemGivingRsp {
-    ITEM_GIVING_RSP_QUEST = 0;
-    ITEM_GIVING_RSP_GADGET = 1;
+  enum ItemGivingType {
+    ITEM_GIVING_TYPE_QUEST = 0;
+    ITEM_GIVING_TYPE_GADGET = 1;
   }
 }
