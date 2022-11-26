@@ -20,7 +20,7 @@ option java_package = "org.sorapointa.proto";
 
 message IrodoriMasterLevelDetailInfo {
   bool is_finish = 1;
-  uint32 diffculty = 2;
+  uint32 difficulty = 2;
   uint32 min_finish_time = 8;
   bool is_have_try = 7;
 }
