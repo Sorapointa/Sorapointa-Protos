@@ -75,7 +75,7 @@ import "TreasureMapActivityDetailInfo.proto";
 import "TreasureSeelieActivityDetailInfo.proto";
 import "TrialAvatarActivityDetailInfo.proto";
 import "UgcActivityDetailInfo.proto";
-import "VintageDetailInfo.proto";
+import "VintageActivityDetailInfo.proto";
 import "WaterSpiritActivityDetailInfo.proto";
 import "WindFieldDetailInfo.proto";
 import "WinterCampActivityDetailInfo.proto";
@@ -163,7 +163,7 @@ message ActivityInfo {
     MuqadasPotionActivityDetailInfo muqadas_potion_info = 1157;
     TreasureSeelieActivityDetailInfo treasure_seelie_info = 966;
     RockBoardExploreDetailInfo rock_board_explore_info = 1078;
-    VintageDetailInfo vintage_info = 445;
+    VintageActivityDetailInfo vintage_info = 445;
     WindFieldDetailInfo wind_field_info = 352;
     FungusFighterDetailInfo fungus_fighter_info = 490;
     CharAmusementDetailInfo char_amusement_info = 1496;

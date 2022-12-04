@@ -20,5 +20,5 @@ option java_package = "org.sorapointa.proto";
 
 message AbilityMixinUGCTimeControl {
   uint64 start_move_time_ms = 13;
-  uint32 forward = 3;
+  uint32 start_move_time = 3;
 }

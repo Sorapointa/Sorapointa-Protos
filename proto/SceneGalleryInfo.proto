@@ -41,7 +41,7 @@ import "SceneGalleryIslandPartySailInfo.proto";
 import "SceneGalleryLuminanceStoneChallengeInfo.proto";
 import "SceneGalleryMuqadasPotionInfo.proto";
 import "SceneGalleryProgressInfo.proto";
-import "SceneGallerySalvageEscortInfoInfo.proto";
+import "SceneGallerySalvageEscortInfo.proto";
 import "SceneGallerySalvagePreventInfo.proto";
 import "SceneGallerySummerTimeV2BoatInfo.proto";
 import "SceneGallerySumoInfo.proto";
@@ -72,7 +72,7 @@ message SceneGalleryInfo {
     SceneGalleryHandballInfo handball_info = 1997;
     SceneGallerySumoInfo sumo_info = 811;
     SceneGallerySalvagePreventInfo salvage_prevent_info = 1700;
-    SceneGallerySalvageEscortInfoInfo salvage_escort_info = 759;
+    SceneGallerySalvageEscortInfo salvage_escort_info = 759;
     SceneGalleryHomeBalloonInfo home_balloon_info = 1034;
     SceneGalleryCrystalLinkInfo crystal_link_info = 2004;
     SceneGalleryIrodoriMasterInfo irodori_master_info = 1953;

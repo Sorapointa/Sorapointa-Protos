@@ -20,8 +20,8 @@ import "CharAmusementInfo.proto";
 import "HideAndSeekStageInfo.proto";
 import "InBattleChessInfo.proto";
 import "InBattleFleurFairInfo.proto";
+import "InBattleIrodoriChessInfo.proto";
 import "InBattleMechanicusInfo.proto";
-import "IrodoriChessInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -38,7 +38,7 @@ message MultistagePlayInfo {
     InBattleFleurFairInfo fleur_fair_info = 1064;
     HideAndSeekStageInfo hide_and_seek_info = 108;
     InBattleChessInfo chess_info = 1758;
-    IrodoriChessInfo irodori_chess_info = 531;
+    InBattleIrodoriChessInfo irodori_chess_info = 531;
     CharAmusementInfo char_amusement_info = 324;
   }
 }

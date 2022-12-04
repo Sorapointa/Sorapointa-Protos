@@ -18,9 +18,11 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-message InstableSpraySettleInfo {
-  uint32 stage_id = 1;
-  repeated uint32 score_list = 4;
-  bool is_new_record = 13;
-  uint32 difficulty = 5;
+// CmdId: 3012
+// EnetChannelId: 0
+// EnetIsReliable: true
+message SceneWeatherForecastRsp {
+  uint64 next_climate_time = 14;
+  repeated uint32 forcast_climate_list = 2;
+  int32 retcode = 4;
 }

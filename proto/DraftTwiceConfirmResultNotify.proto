@@ -22,6 +22,6 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message DraftTwiceConfirmResultNotify {
-  bool is_all_argee = 7;
+  bool is_all_agree = 7;
   uint32 draft_id = 1;
 }

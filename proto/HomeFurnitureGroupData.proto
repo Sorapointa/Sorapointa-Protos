@@ -22,5 +22,5 @@ option java_package = "org.sorapointa.proto";
 
 message HomeFurnitureGroupData {
   uint32 group_furniture_index = 8;
-  repeated HomeFurnitureData virtual_furniure_list = 3;
+  repeated HomeFurnitureData virtual_furniture_list = 3;
 }

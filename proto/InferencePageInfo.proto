@@ -16,11 +16,11 @@
 
 syntax = "proto3";
 
-import "InfernceWordInfo.proto";
+import "InferenceWordInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message InferencePageInfo {
   uint32 page_id = 3;
-  repeated InfernceWordInfo unlock_word_list = 15;
+  repeated InferenceWordInfo unlock_word_list = 15;
 }

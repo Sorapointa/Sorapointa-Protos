@@ -16,18 +16,9 @@
 
 syntax = "proto3";
 
-import "CompoundBoostTakeStatusType.proto";
-import "CompoundQueueData.proto";
-import "ItemParam.proto";
-
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 125
-// EnetChannelId: 0
-// EnetIsReliable: true
-message PlayerCompoundMaterialBoostRsp {
-  repeated ItemParam take_item_list = 2;
-  CompoundBoostTakeStatusType take_status = 6;
-  int32 retcode = 7;
-  repeated CompoundQueueData compound_queue_data_list = 1;
+message AbilityActionSetBulletTrackTarget {
+  uint32 chased_entity_id = 1;
+  uint32 lock_point_index = 2;
 }

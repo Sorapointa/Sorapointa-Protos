@@ -31,6 +31,6 @@ message EntityFightPropChangeReasonNotify {
   ChangeHpReason change_hp_reason = 14;
   PropChangeReason reason = 6;
   uint32 entity_id = 5;
-  ChangeEnergyReason change_energy_reson = 15;
+  ChangeEnergyReason change_energy_reason = 15;
   uint32 prop_type = 13;
 }

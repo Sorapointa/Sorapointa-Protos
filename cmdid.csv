@@ -618,8 +618,8 @@ FungusCultivateRsp,23532
 FungusFighterClearTrainingRuntimeDataReq,24137
 FungusFighterClearTrainingRuntimeDataRsp,22991
 FungusFighterPlotInfoNotify,22174
-FungusFighterRestartTraningDungeonReq,23980
-FungusFighterRestartTraningDungeonRsp,22890
+FungusFighterRestartTrainingDungeonReq,23980
+FungusFighterRestartTrainingDungeonRsp,22890
 FungusFighterRuntimeDataNotify,24674
 FungusFighterTrainingGallerySettleNotify,23931
 FungusFighterTrainingInfoNotify,5595
@@ -629,7 +629,7 @@ FungusFighterUseBackupFungusReq,21266
 FungusFighterUseBackupFungusRsp,23428
 FungusRenameReq,22006
 FungusRenameRsp,20066
-FunitureMakeMakeInfoChangeNotify,4898
+FunitureMakeInfoChangeNotify,4898
 FurnitureCurModuleArrangeCountNotify,4498
 FurnitureMakeBeHelpedNotify,4578
 FurnitureMakeCancelReq,4555
@@ -1202,7 +1202,7 @@ MiracleRingDestroyNotify,5244
 MiracleRingDropResultNotify,5231
 MiracleRingTakeRewardReq,5207
 MiracleRingTakeRewardRsp,5202
-MistTrialDunegonFailNotify,8135
+MistTrialDungeonFailNotify,8135
 MistTrialFloorLevelNotify,968
 MistTrialGetChallengeMissionReq,8893
 MistTrialGetChallengeMissionRsp,8508
@@ -1633,8 +1633,8 @@ SceneTeamUpdateNotify,1775
 SceneTimeNotify,245
 SceneTransToPointReq,239
 SceneTransToPointRsp,253
-SceneWeatherForcastReq,3110
-SceneWeatherForcastRsp,3012
+SceneWeatherForecastReq,3110
+SceneWeatherForecastRsp,3012
 SeaLampCoinNotify,2114
 SeaLampContributeItemReq,2123
 SeaLampContributeItemRsp,2139

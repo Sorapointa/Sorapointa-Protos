@@ -23,6 +23,6 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message AvatarEnterElementViewNotify {
-  bool is_triggerd = 3;
+  bool is_triggered = 3;
   uint32 avatar_entity_id = 12;
 }

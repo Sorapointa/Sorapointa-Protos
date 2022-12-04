@@ -18,9 +18,8 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-message HachiStageData {
-  bool is_open = 8;
-  bool is_finished = 12;
-  uint32 open_time = 5;
-  uint32 stage_id = 14;
-}
+// CmdId: 23980
+// EnetChannelId: 0
+// EnetIsReliable: true
+// IsAllowClient: true
+message FungusFighterRestartTrainingDungeonReq {}

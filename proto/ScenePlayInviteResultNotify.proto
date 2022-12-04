@@ -22,6 +22,6 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message ScenePlayInviteResultNotify {
-  bool is_all_argee = 11;
+  bool is_all_agree = 11;
   uint32 play_id = 15;
 }

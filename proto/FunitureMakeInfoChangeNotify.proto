@@ -16,10 +16,13 @@
 
 syntax = "proto3";
 
-import "HomeSeekFurnitureOneRecord.proto";
+import "FurnitureMakeInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
-message SeekFurnitureGalleryInfo {
-  repeated HomeSeekFurnitureOneRecord record_list = 5;
+// CmdId: 4898
+// EnetChannelId: 0
+// EnetIsReliable: true
+message FunitureMakeInfoChangeNotify {
+  FurnitureMakeInfo make_info = 1;
 }

@@ -18,11 +18,8 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-message CrystalLinkSettleInfo {
-  uint32 kill_elite_monster_num = 2;
-  uint32 final_score = 6;
-  uint32 level_id = 12;
-  bool is_new_record = 13;
-  uint32 difficulty_id = 9;
-  uint32 kill_normal_mosnter_num = 3;
+enum DungeonCandidateTeamPlayerDismissReason {
+  DUNGEON_CANDIDATE_TEAM_PLAYER_DISMISS_REASON_TPDR_NORMAL = 0;
+  DUNGEON_CANDIDATE_TEAM_PLAYER_DISMISS_REASON_TPDR_DIE = 1;
+  DUNGEON_CANDIDATE_TEAM_PLAYER_DISMISS_REASON_TPDR_DISCONNECT = 2;
 }

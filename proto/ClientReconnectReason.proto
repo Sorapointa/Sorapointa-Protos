@@ -19,6 +19,6 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 enum ClientReconnectReason {
-  CLIENT_RECONNECT_REASON_RECONNNECT_NONE = 0;
-  CLIENT_RECONNECT_REASON_RECONNNECT_QUIT_MP = 1;
+  CLIENT_RECONNECT_REASON_NONE = 0;
+  CLIENT_RECONNECT_REASON_QUIT_MP = 1;
 }

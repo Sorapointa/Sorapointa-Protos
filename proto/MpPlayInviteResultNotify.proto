@@ -23,5 +23,5 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 message MpPlayInviteResultNotify {
   uint32 mp_play_id = 11;
-  bool all_argee = 10;
+  bool all_agree = 10;
 }

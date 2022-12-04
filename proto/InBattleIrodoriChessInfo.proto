@@ -16,10 +16,14 @@
 
 syntax = "proto3";
 
+import "IrodoriChessMysteryInfo.proto";
+
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 23980
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
-message FungusFighterRestartTraningDungeonReq {}
+message InBattleIrodoriChessInfo {
+  IrodoriChessMysteryInfo mystery_info = 3;
+  uint32 left_monsters = 12;
+  repeated uint32 selected_card_id_list = 13;
+  uint32 building_points = 7;
+  uint32 settle_score = 4;
+}

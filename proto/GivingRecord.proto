@@ -25,5 +25,5 @@ message GivingRecord {
   uint32 giving_id = 3;
   uint32 last_group_id = 6;
   uint32 config_id = 2;
-  map<uint32, uint32> material_cnt_map = 15;
+  map<uint32, uint32> material_count_map = 15;
 }

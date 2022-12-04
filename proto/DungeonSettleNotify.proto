@@ -17,11 +17,11 @@
 syntax = "proto3";
 
 import "ChannelerSlabLoopDungeonResultInfo.proto";
-import "CrystalLinkSettleInfo.proto";
+import "CrystalLinkDungeonSettleInfo.proto";
 import "DungeonSettleExhibitionInfo.proto";
 import "EffigyChallengeDungeonResultInfo.proto";
 import "EffigyChallengeV2SettleInfo.proto";
-import "InstableSpraySettleInfo.proto";
+import "InstableSprayDungeonSettleInfo.proto";
 import "ParamList.proto";
 import "RoguelikeDungeonSettleInfo.proto";
 import "StrengthenPointData.proto";
@@ -52,9 +52,9 @@ message DungeonSettleNotify {
     ChannelerSlabLoopDungeonResultInfo channeler_slab_loop_dungeon_result_info = 686;
     EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 328;
     RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 1482;
-    CrystalLinkSettleInfo crystal_link_settle_info = 112;
+    CrystalLinkDungeonSettleInfo crystal_link_settle_info = 112;
     SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 1882;
-    InstableSpraySettleInfo instable_spray_settle_info = 193;
+    InstableSprayDungeonSettleInfo instable_spray_settle_info = 193;
     WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 1825;
     EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1802;
   }

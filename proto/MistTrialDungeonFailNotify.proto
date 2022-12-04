@@ -18,8 +18,9 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-enum DungeonCandidateTeamDismissReason {
-  DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_NORMAL = 0;
-  DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DIE = 1;
-  DUNGEON_CANDIDATE_TEAM_DISMISS_REASON_TPDR_DISCONNECT = 2;
+// CmdId: 8135
+// EnetChannelId: 0
+// EnetIsReliable: true
+message MistTrialDungeonFailNotify {
+  int32 dungeon_id = 9;
 }

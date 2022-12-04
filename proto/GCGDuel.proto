@@ -36,7 +36,7 @@ message GCGDuel {
   uint32 controller_id = 13;
   uint32 round = 15;
   uint32 cur_controller_id = 12;
-  repeated GCGPVEIntention intetion_list = 1;
+  repeated GCGPVEIntention intention_list = 1;
   GCGCostReviseInfo cost_revise = 10;
   repeated uint32 card_id_list = 4;
   repeated GCGCard card_list = 9;

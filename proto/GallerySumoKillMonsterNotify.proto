@@ -22,7 +22,7 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message GallerySumoKillMonsterNotify {
-  uint32 kill_normal_mosnter_num = 4;
+  uint32 kill_normal_monster_num = 4;
   uint32 score = 7;
   uint32 kill_elite_monster_num = 14;
   uint32 gallery_id = 11;

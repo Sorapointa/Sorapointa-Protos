@@ -20,7 +20,7 @@ option java_package = "org.sorapointa.proto";
 
 enum ClientInputType {
   CLIENT_INPUT_TYPE_NONE = 0;
-  CLIENT_INPUT_TYPE_KEYBORD_MOUSE = 1;
+  CLIENT_INPUT_TYPE_KEYBOARD_MOUSE = 1;
   CLIENT_INPUT_TYPE_GAMEPAD = 2;
   CLIENT_INPUT_TYPE_TOUCH_PANEL = 3;
 }

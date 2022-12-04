@@ -22,6 +22,6 @@ option java_package = "org.sorapointa.proto";
 
 message SpiceActivityDetailInfo {
   uint32 current_increase_avatar_fetter_times = 15;
-  repeated SpiceStageData spice_stage_list = 7;
+  repeated SpiceStageData spice_stage_data_list = 7;
   uint32 increase_avatar_fetter_limit_times = 13;
 }

@@ -24,6 +24,6 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message PlayerCompoundMaterialRsp {
-  CompoundQueueData compound_que_data = 5;
+  CompoundQueueData compound_queue_data = 5;
   int32 retcode = 12;
 }

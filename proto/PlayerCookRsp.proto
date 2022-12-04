@@ -25,7 +25,7 @@ option java_package = "org.sorapointa.proto";
 // EnetChannelId: 0
 // EnetIsReliable: true
 message PlayerCookRsp {
-  repeated ItemParam extral_item_list = 15;
+  repeated ItemParam extra_item_list = 15;
   uint32 cook_count = 12;
   repeated ItemParam item_list = 11;
   int32 retcode = 3;

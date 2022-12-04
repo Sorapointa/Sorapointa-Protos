@@ -16,13 +16,11 @@
 
 syntax = "proto3";
 
-import "FurnitureMakeMakeInfo.proto";
-
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 4898
+// CmdId: 22890
 // EnetChannelId: 0
 // EnetIsReliable: true
-message FunitureMakeMakeInfoChangeNotify {
-  FurnitureMakeMakeInfo make_info = 1;
+message FungusFighterRestartTrainingDungeonRsp {
+  int32 retcode = 11;
 }

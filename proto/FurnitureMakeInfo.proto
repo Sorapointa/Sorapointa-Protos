@@ -18,9 +18,7 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 22890
-// EnetChannelId: 0
-// EnetIsReliable: true
-message FungusFighterRestartTraningDungeonRsp {
-  int32 retcode = 11;
+message FurnitureMakeInfo {
+  uint32 furniture_id = 13;
+  uint32 make_count = 9;
 }

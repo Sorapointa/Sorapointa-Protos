@@ -20,6 +20,6 @@ option java_package = "org.sorapointa.proto";
 
 message SceneGallerySumoInfo {
   uint32 score = 2;
-  uint32 kill_normal_mosnter_num = 15;
+  uint32 kill_normal_monster_num = 15;
   uint32 kill_elite_monster_num = 14;
 }

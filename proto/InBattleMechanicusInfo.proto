@@ -24,7 +24,7 @@ import "InBattleMechanicusStageType.proto";
 option java_package = "org.sorapointa.proto";
 
 message InBattleMechanicusInfo {
-  uint32 left_monster = 5;
+  uint32 left_monster_num = 5;
   uint32 wait_seconds = 13;
   repeated uint32 entrance_list = 410;
   repeated uint32 exit_list = 115;

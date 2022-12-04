@@ -22,7 +22,7 @@ option java_package = "org.sorapointa.proto";
 
 message GachaActivityDetailInfo {
   repeated uint32 have_get_robot_list = 6;
-  repeated GachaStageData gacha_stage_list = 4;
+  repeated GachaStageData gacha_stage_data_list = 4;
   map<uint32, uint32> have_reward_robot_num_map = 8;
   uint32 tech_create_robot_id = 3;
   map<uint32, uint32> robot_num_map = 5;

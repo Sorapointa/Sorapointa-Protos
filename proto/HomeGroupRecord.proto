@@ -18,8 +18,8 @@ syntax = "proto3";
 
 import "HomeBalloonRecord.proto";
 import "HomeRacingRecord.proto";
+import "HomeSeekFurnitureAllRecord.proto";
 import "HomeStakeRecord.proto";
-import "SeekFurnitureGalleryInfo.proto";
 
 option java_package = "org.sorapointa.proto";
 
@@ -29,6 +29,6 @@ message HomeGroupRecord {
     HomeRacingRecord racing_gallery_info = 467;
     HomeBalloonRecord balloon_gallery_info = 1410;
     HomeStakeRecord stake_play_info = 347;
-    SeekFurnitureGalleryInfo seek_furniture_gallery_info = 1822;
+    HomeSeekFurnitureAllRecord seek_furniture_gallery_info = 1822;
   }
 }

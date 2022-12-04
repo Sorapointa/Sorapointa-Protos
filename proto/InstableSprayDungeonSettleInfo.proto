@@ -18,10 +18,9 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-// CmdId: 3110
-// EnetChannelId: 0
-// EnetIsReliable: true
-// IsAllowClient: true
-message SceneWeatherForcastReq {
-  uint32 weather_area_id = 15;
+message InstableSprayDungeonSettleInfo {
+  uint32 stage_id = 1;
+  repeated uint32 score_list = 4;
+  bool is_new_record = 13;
+  uint32 difficulty = 5;
 }

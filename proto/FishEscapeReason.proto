@@ -19,7 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 enum FishEscapeReason {
-  FISH_ESCAPE_REASON_FISN_ESCAPE_NONE = 0;
+  FISH_ESCAPE_REASON_NONE = 0;
   FISH_ESCAPE_REASON_SHOCKED = 1;
   FISH_ESCAPE_REASON_UNHOOK = 2;
 }

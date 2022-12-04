@@ -20,5 +20,5 @@ option java_package = "org.sorapointa.proto";
 
 message HomeVerifyBlockData {
   uint32 block_id = 10;
-  uint32 furnitures = 9;
+  uint32 furniture_count = 9;
 }

@@ -23,5 +23,5 @@ option java_package = "org.sorapointa.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message DungeonRestartResultNotify {
-  bool is_add_accpet = 9;
+  bool is_add_accept = 9;
 }

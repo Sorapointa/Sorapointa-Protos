@@ -18,9 +18,11 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-message SceneGallerySalvageEscortInfoInfo {
-  uint32 max_box_count = 14;
-  uint32 max_monster_count = 3;
-  uint32 box_count = 7;
-  uint32 monster_count = 11;
+message CrystalLinkDungeonSettleInfo {
+  uint32 kill_elite_monster_num = 2;
+  uint32 final_score = 6;
+  uint32 level_id = 12;
+  bool is_new_record = 13;
+  uint32 difficulty_id = 9;
+  uint32 kill_normal_monster_num = 3;
 }
