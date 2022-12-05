@@ -1,0 +1,39 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "MistTrialBestAvatar.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message MistTrialSettleNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8116;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  map<uint32, uint32> Unk3300_KFKHAACDJDJ = 5;
+  map<uint32, uint32> Unk3300_GMPEELLANLI = 2;
+  uint32 dungeon_scene_id = 12;
+  uint32 first_pass_time = 8;
+  MistTrialBestAvatar best_hit_avatar = 3;
+  repeated MistTrialBestAvatar best_avatar_list = 9;
+}

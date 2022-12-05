@@ -1,0 +1,34 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "FungusDetail.proto";
+import "FungusPlotStageDetail.proto";
+import "FungusTrainingDungeonDetail.proto";
+import "FungusTrainingProgressDetail.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message FungusFighterDetailInfo {
+  repeated FungusDetail fungus_detail_list = 6;
+  repeated uint32 Unk3300_GIHAKKAJHDH = 1;
+  repeated uint32 Unk3300_KGKFJJHFHAB = 8;
+  repeated FungusTrainingProgressDetail training_dungeon_progress_detail_list = 3;
+  repeated uint32 Unk3300_HPDOJOBPFMJ = 9;
+  repeated FungusPlotStageDetail plot_stage_detail_list = 11;
+  repeated FungusTrainingDungeonDetail training_dungeon_detail_list = 2;
+}

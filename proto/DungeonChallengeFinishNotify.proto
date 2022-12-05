@@ -1,0 +1,51 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "ChallengeFinishType.proto";
+import "ChannelerSlabLoopDungeonResultInfo.proto";
+import "CustomDungeonResultInfo.proto";
+import "EffigyChallengeDungeonResultInfo.proto";
+import "PotionDungeonResultInfo.proto";
+import "StrengthenPointData.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message DungeonChallengeFinishNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 916;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool is_new_record = 9;
+  uint32 current_value = 5;
+  ChallengeFinishType finish_type = 3;
+  map<uint32, StrengthenPointData> strengthen_point_data_map = 11;
+  uint32 challenge_record_type = 2;
+  bool is_success = 8;
+  uint32 challenge_index = 12;
+  uint32 time_cost = 7;
+  oneof detail {
+    ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1545;
+    EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 76;
+    PotionDungeonResultInfo potion_dungeon_result_info = 216;
+    CustomDungeonResultInfo custom_dungeon_result_info = 1678;
+  }
+}

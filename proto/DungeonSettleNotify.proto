@@ -1,0 +1,66 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "ChannelerSlabLoopDungeonResultInfo.proto";
+import "CrystalLinkDungeonSettleInfo.proto";
+import "DungeonSettleExhibitionInfo.proto";
+import "EffigyChallengeDungeonResultInfo.proto";
+import "EffigyChallengeV2SettleInfo.proto";
+import "InstableSprayDungeonSettleInfo.proto";
+import "ParamList.proto";
+import "RoguelikeDungeonSettleInfo.proto";
+import "StrengthenPointData.proto";
+import "SummerTimeV2DungeonSettleInfo.proto";
+import "TowerLevelEndNotify.proto";
+import "TrialAvatarFirstPassDungeonNotify.proto";
+import "WindFieldDungeonSettleInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message DungeonSettleNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 957;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  map<uint32, ParamList> settle_show = 6;
+  map<uint32, StrengthenPointData> strengthen_point_data_map = 7;
+  repeated DungeonSettleExhibitionInfo exhibition_info_list = 12;
+  uint32 use_time = 14;
+  bool is_success = 10;
+  uint32 close_time = 15;
+  uint32 dungeon_id = 9;
+  uint32 result = 5;
+  repeated uint32 fail_cond_list = 11;
+  uint32 create_player_uid = 2;
+  oneof detail {
+    TowerLevelEndNotify tower_level_end_notify = 1089;
+    TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 1117;
+    ChannelerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1394;
+    EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 254;
+    RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 1888;
+    CrystalLinkDungeonSettleInfo crystal_link_settle_info = 1840;
+    SummerTimeV2DungeonSettleInfo summer_time_v2_dungeon_settle_info = 285;
+    InstableSprayDungeonSettleInfo instable_spray_settle_info = 1794;
+    WindFieldDungeonSettleInfo wind_field_dungeon_settle_info = 1522;
+    EffigyChallengeV2SettleInfo effigy_challenge_v2_settle_info = 1913;
+  }
+}

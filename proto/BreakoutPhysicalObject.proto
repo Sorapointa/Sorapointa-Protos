@@ -1,0 +1,42 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "BreakoutBrickInfo.proto";
+import "BreakoutPhysicalObjectModifier.proto";
+import "BreakoutVector2.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message BreakoutPhysicalObject {
+  uint32 id = 1;
+  uint32 index = 2;
+  bool is_active = 3;
+  BreakoutVector2 pos = 4;
+  BreakoutVector2 move_dir = 5;
+  int32 speed = 6;
+  uint32 init_peer_id = 7;
+  uint32 state = 8;
+  uint32 element_type = 9;
+  uint32 element_reaction_buff = 10;
+  repeated BreakoutPhysicalObjectModifier modifier_list = 11;
+  int32 total_rotation = 12;
+  repeated BreakoutBrickInfo info_list = 13;
+  uint32 last_hit_peer_id = 14;
+  uint32 speed_increase_count = 15;
+  int32 offset = 16;
+}

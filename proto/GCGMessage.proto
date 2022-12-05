@@ -1,0 +1,93 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GCGMsgAddCards.proto";
+import "GCGMsgAddDice.proto";
+import "GCGMsgCardUpdate.proto";
+import "GCGMsgCharDie.proto";
+import "GCGMsgClientPerform.proto";
+import "GCGMsgCostDice.proto";
+import "GCGMsgCostRevise.proto";
+import "GCGMsgDiceReroll.proto";
+import "GCGMsgDiceRoll.proto";
+import "GCGMsgDuelDataChange.proto";
+import "GCGMsgGameOver.proto";
+import "GCGMsgModifyAdd.proto";
+import "GCGMsgModifyRemove.proto";
+import "GCGMsgMoveCard.proto";
+import "GCGMsgNewCard.proto";
+import "GCGMsgNoDamageSkillResult.proto";
+import "GCGMsgOpTimer.proto";
+import "GCGMsgPVEIntentionChange.proto";
+import "GCGMsgPVEIntentionInfo.proto";
+import "GCGMsgPass.proto";
+import "GCGMsgPhaseChange.proto";
+import "GCGMsgPhaseContinue.proto";
+import "GCGMsgReactionBegin.proto";
+import "GCGMsgReactionEnd.proto";
+import "GCGMsgRemoveCards.proto";
+import "GCGMsgSelectOnStage.proto";
+import "GCGMsgSelectOnStageByEffect.proto";
+import "GCGMsgSkillLimitsChange.proto";
+import "GCGMsgSkillResult.proto";
+import "GCGMsgTokenChange.proto";
+import "GCGMsgUpdateController.proto";
+import "GCGMsgUseSkill.proto";
+import "GCGMsgUseSkillEnd.proto";
+import "GCGMsgWaitingListChange.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message GCGMessage {
+  oneof message {
+    GCGMsgTokenChange token_change = 2;
+    GCGMsgPhaseChange phase_change = 10;
+    GCGMsgAddCards add_cards = 5;
+    GCGMsgRemoveCards remove_cards = 12;
+    GCGMsgSelectOnStage select_on_stage = 6;
+    GCGMsgDiceRoll dice_roll = 14;
+    GCGMsgDiceReroll dice_reroll = 15;
+    GCGMsgPass pass = 8;
+    GCGMsgCharDie char_die = 4;
+    GCGMsgSkillResult skill_result = 3;
+    GCGMsgCostDice cost_dice = 13;
+    GCGMsgAddDice add_dice = 7;
+    GCGMsgMoveCard move_card = 11;
+    GCGMsgUseSkill use_skill = 1;
+    GCGMsgNewCard new_card = 296;
+    GCGMsgUpdateController update_controller = 1111;
+    GCGMsgModifyAdd modify_add = 1733;
+    GCGMsgModifyRemove modify_remove = 2014;
+    GCGMsgUseSkillEnd use_skill_end = 1368;
+    GCGMsgDuelDataChange duel_data_change = 1791;
+    GCGMsgClientPerform client_perform = 1677;
+    GCGMsgGameOver game_over = 632;
+    GCGMsgOpTimer op_timer = 154;
+    GCGMsgWaitingListChange waiting_list_change = 1991;
+    GCGMsgCardUpdate card_update = 1702;
+    GCGMsgSelectOnStageByEffect select_on_stage_by_effect = 1737;
+    GCGMsgCostRevise cost_revise = 468;
+    GCGMsgPhaseContinue phase_continue = 1157;
+    GCGMsgPVEIntentionInfo pve_intention_info = 850;
+    GCGMsgPVEIntentionChange pve_intention_change = 1268;
+    GCGMsgSkillLimitsChange skill_limits_change = 710;
+    GCGMsgNoDamageSkillResult no_damage_skill_result = 773;
+    GCGMsgReactionBegin reaction_begin = 243;
+    GCGMsgReactionEnd reaction_end = 1172;
+  }
+}

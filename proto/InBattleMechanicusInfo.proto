@@ -1,0 +1,44 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "InBattleMechanicusCardInfo.proto";
+import "InBattleMechanicusMonsterInfo.proto";
+import "InBattleMechanicusPlayerInfo.proto";
+import "InBattleMechanicusStageType.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message InBattleMechanicusInfo {
+  repeated uint32 Unk3300_MNNDELKIBLG = 656;
+  repeated uint32 Unk3300_GHBEHPGBBIH = 683;
+  InBattleMechanicusStageType stage = 7;
+  uint32 Unk3300_EBOIGFMOKHK = 4;
+  uint32 wait_seconds = 13;
+  uint32 left_monster_num = 15;
+  uint64 Unk3300_IFIPKLOGEOF = 6;
+  repeated InBattleMechanicusPlayerInfo player_list = 12;
+  uint32 total_round = 1;
+  uint64 Unk3300_IAPINOLIALF = 14;
+  repeated InBattleMechanicusMonsterInfo monster_list = 9;
+  uint32 Unk3300_CIJALCAMHCD = 3;
+  uint64 wait_begin_time_us = 2;
+  repeated InBattleMechanicusCardInfo history_card_list = 5;
+  repeated InBattleMechanicusCardInfo pick_card_list = 8;
+  uint32 escaped_monster_num = 10;
+  uint32 round = 11;
+}

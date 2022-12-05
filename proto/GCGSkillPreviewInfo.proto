@@ -1,0 +1,37 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GCGSkillPreviewCardInfo.proto";
+import "GCGSkillPreviewElementReactionInfo.proto";
+import "GCGSkillPreviewExtraInfo.proto";
+import "GCGSkillPreviewHpInfo.proto";
+import "GCGSkillPreviewOnstageChangeInfo.proto";
+import "GCGSkillPreviewTokenChangeInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message GCGSkillPreviewInfo {
+  repeated GCGSkillPreviewOnstageChangeInfo change_onstage_character_list = 6;
+  repeated GCGSkillPreviewCardInfo Unk3300_DAJFJEDNLKK = 15;
+  uint32 skill_id = 12;
+  map<uint32, GCGSkillPreviewHpInfo> hp_info_map = 3;
+  repeated GCGSkillPreviewCardInfo Unk3300_AGNONGELFGC = 2;
+  GCGSkillPreviewExtraInfo extra_info = 11;
+  map<uint32, GCGSkillPreviewElementReactionInfo> reaction_info_map = 14;
+  map<uint32, GCGSkillPreviewTokenChangeInfo> card_token_change_map = 8;
+}

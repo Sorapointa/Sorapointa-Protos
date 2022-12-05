@@ -1,0 +1,45 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+message PlayerQuitFromMpNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 1844;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  enum QuitReason {
+    QUIT_REASON_INVALID = 0;
+    QUIT_REASON_HOST_NO_OTHER_PLAYER = 1;
+    QUIT_REASON_KICK_BY_HOST = 2;
+    QUIT_REASON_BACK_TO_MY_WORLD = 3;
+    QUIT_REASON_KICK_BY_HOST_LOGOUT = 4;
+    QUIT_REASON_KICK_BY_HOST_BLOCK = 5;
+    QUIT_REASON_BE_BLOCKED = 6;
+    QUIT_REASON_KICK_BY_HOST_ENTER_HOME = 7;
+    QUIT_REASON_HOST_SCENE_INVALID = 8;
+    QUIT_REASON_KICK_BY_PLAY = 9;
+    QUIT_REASON_KICK_BY_ISLAND_PARTY_GALLERY_START_FAILED = 10;
+  }
+
+  QuitReason reason = 2;
+}

@@ -1,0 +1,34 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+enum GCGGameBusinessType {
+  GCG_GAME_BUSINESS_TYPE_NONE = 0;
+  GCG_GAME_BUSINESS_TYPE_GM = 1;
+  GCG_GAME_BUSINESS_TYPE_MATCH = 2;
+  GCG_GAME_BUSINESS_TYPE_PVP = 3;
+  GCG_GAME_BUSINESS_TYPE_TAVERN_CHALLENGE = 4;
+  GCG_GAME_BUSINESS_TYPE_CONST_CHALLENGE = 5;
+  GCG_GAME_BUSINESS_TYPE_WORLD_CHALLENGE = 6;
+  GCG_GAME_BUSINESS_TYPE_BOSS_CHALLENGE = 7;
+  GCG_GAME_BUSINESS_TYPE_WEEK_CHALLENGE = 8;
+  GCG_GAME_BUSINESS_TYPE_BREAK_CHALLENGE = 9;
+  GCG_GAME_BUSINESS_TYPE_QUEST = 10;
+  GCG_GAME_BUSINESS_TYPE_GUIDE_GROUP = 11;
+}

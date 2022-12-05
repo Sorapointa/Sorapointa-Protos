@@ -1,0 +1,35 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+enum GalleryStopReason {
+  GALLERY_STOP_REASON_NONE = 0;
+  GALLERY_STOP_REASON_TIMEUP = 1;
+  GALLERY_STOP_REASON_CLIENT_INTERRUPT = 2;
+  GALLERY_STOP_REASON_LUA_INTERRUPT_SUCCESS = 3;
+  GALLERY_STOP_REASON_LUA_INTERRUPT_FAIL = 4;
+  GALLERY_STOP_REASON_OWNER_LEAVE_SCENE = 5;
+  GALLERY_STOP_REASON_PLAY_INIT_FAILED = 6;
+  GALLERY_STOP_REASON_OTHER_PLAYER_ENTER = 7;
+  GALLERY_STOP_REASON_AVATAR_DIE = 8;
+  GALLERY_STOP_REASON_FINISHED = 9;
+  GALLERY_STOP_REASON_FUNGUS_ALL_DIE = 10;
+  GALLERY_STOP_REASON_LIFE_COUNT_ZERO = 11;
+  GALLERY_STOP_REASON_Unk3300_DFPLGCGIIDM = 12;
+}

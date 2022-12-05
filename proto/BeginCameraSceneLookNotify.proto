@@ -1,0 +1,57 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "Vector.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message BeginCameraSceneLookNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 249;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  enum KeepRotType {
+    KEEP_ROT_TYPE_X = 0;
+    KEEP_ROT_TYPE_XY = 1;
+  }
+
+  float Unk3300_HKKCHCEMJIE = 1716;
+  bool Unk3300_DFPCMOFONNK = 15;
+  bool Unk3300_EELNOAICHOJ = 4;
+  bool Unk3300_ODADMBBFPAP = 7;
+  float duration = 2;
+  uint32 Unk3300_KCHKKBODNCJ = 1746;
+  float Unk3300_FIOLGCIKFLH = 10;
+  repeated string other_params = 9;
+  bool Unk3300_NJLBIMJDFHJ = 3;
+  bool Unk3300_AAOGBCCNJAF = 1224;
+  uint32 entity_id = 1403;
+  KeepRotType keep_rot_type = 11;
+  Vector Unk3300_PPCIDICMIEN = 8;
+  uint32 Unk3300_AJEENEOCFON = 965;
+  bool Unk3300_ONBDMCHFPDL = 5;
+  bool Unk3300_PIEFLAEGGBI = 6;
+  Vector Unk3300_FJDFGLNLMBN = 13;
+  bool Unk3300_ILMHDLHLKGJ = 1;
+  float Unk3300_HCLPGGAOIAC = 12;
+  float Unk3300_HFPCHFNFJKP = 14;
+}

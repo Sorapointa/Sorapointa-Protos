@@ -1,0 +1,97 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GalleryStageType.proto";
+import "SceneGalleryBalloonInfo.proto";
+import "SceneGalleryBounceConjuringInfo.proto";
+import "SceneGalleryBrokenFloorInfo.proto";
+import "SceneGalleryBulletInfo.proto";
+import "SceneGalleryBuoyantCombatInfo.proto";
+import "SceneGalleryCharAmusementInfo.proto";
+import "SceneGalleryCoinCollectInfo.proto";
+import "SceneGalleryCrystalLinkInfo.proto";
+import "SceneGalleryEffigyChallengeV2Info.proto";
+import "SceneGalleryFallInfo.proto";
+import "SceneGalleryFlowerInfo.proto";
+import "SceneGalleryFungusFighterCaptureInfo.proto";
+import "SceneGalleryFungusFighterTrainingInfo.proto";
+import "SceneGalleryHandballInfo.proto";
+import "SceneGalleryHideAndSeekInfo.proto";
+import "SceneGalleryHomeBalloonInfo.proto";
+import "SceneGalleryHomeSeekFurnitureInfo.proto";
+import "SceneGalleryInstableSprayInfo.proto";
+import "SceneGalleryIrodoriMasterInfo.proto";
+import "SceneGalleryIslandPartyDownHillInfo.proto";
+import "SceneGalleryIslandPartyRaftInfo.proto";
+import "SceneGalleryIslandPartySailInfo.proto";
+import "SceneGalleryLuminanceStoneChallengeInfo.proto";
+import "SceneGalleryMuqadasPotionInfo.proto";
+import "SceneGalleryProgressInfo.proto";
+import "SceneGallerySalvageEscortInfo.proto";
+import "SceneGallerySalvagePreventInfo.proto";
+import "SceneGallerySummerTimeV2BoatInfo.proto";
+import "SceneGallerySumoInfo.proto";
+import "SceneGalleryTreasureSeelieInfo.proto";
+import "SceneGalleryVintageHuntingInfo.proto";
+import "SceneGalleryWindFieldInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message SceneGalleryInfo {
+  uint32 pre_start_end_time = 14;
+  uint32 owner_uid = 9;
+  repeated SceneGalleryProgressInfo progress_info_list = 10;
+  uint32 gallery_id = 4;
+  uint32 start_time = 3;
+  uint32 player_count = 15;
+  uint32 end_time = 1;
+  GalleryStageType stage = 8;
+  oneof info {
+    SceneGalleryBalloonInfo balloon_info = 5;
+    SceneGalleryFallInfo fall_info = 7;
+    SceneGalleryFlowerInfo flower_info = 11;
+    SceneGalleryBulletInfo bullet_info = 12;
+    SceneGalleryBrokenFloorInfo broken_floor_info = 6;
+    SceneGalleryHideAndSeekInfo hide_and_seek_info = 13;
+    SceneGalleryBuoyantCombatInfo buoyant_combat_info = 1224;
+    SceneGalleryBounceConjuringInfo bounce_conjuring_info = 621;
+    SceneGalleryHandballInfo handball_info = 1835;
+    SceneGallerySumoInfo sumo_info = 877;
+    SceneGallerySalvagePreventInfo salvage_prevent_info = 1477;
+    SceneGallerySalvageEscortInfo salvage_escort_info = 732;
+    SceneGalleryHomeBalloonInfo home_balloon_info = 1866;
+    SceneGalleryCrystalLinkInfo crystal_link_info = 666;
+    SceneGalleryIrodoriMasterInfo irodori_master_info = 1679;
+    SceneGalleryLuminanceStoneChallengeInfo luminance_stone_challenge_info = 1847;
+    SceneGalleryHomeSeekFurnitureInfo home_seek_furniture_info = 540;
+    SceneGalleryIslandPartyDownHillInfo island_party_down_hill_info = 2047;
+    SceneGallerySummerTimeV2BoatInfo summer_time_v2_boat_info = 1890;
+    SceneGalleryIslandPartyRaftInfo island_party_raft_info = 244;
+    SceneGalleryIslandPartySailInfo island_party_sail_info = 633;
+    SceneGalleryInstableSprayInfo instable_spray_info = 75;
+    SceneGalleryMuqadasPotionInfo muqadas_potion_info = 496;
+    SceneGalleryTreasureSeelieInfo treasure_seelie_info = 16;
+    SceneGalleryVintageHuntingInfo vintage_hunting_info = 1470;
+    SceneGalleryWindFieldInfo wind_field_info = 1001;
+    SceneGalleryFungusFighterTrainingInfo fungus_fighter_training_info = 861;
+    SceneGalleryEffigyChallengeV2Info effigy_challenge_info = 1577;
+    SceneGalleryFungusFighterCaptureInfo fungus_fighter_capture_info = 711;
+    SceneGalleryCharAmusementInfo char_amusement_info = 152;
+    SceneGalleryCoinCollectInfo coin_collect_info = 1243;
+  }
+}

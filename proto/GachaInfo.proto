@@ -1,0 +1,50 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GachaUpInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message GachaInfo {
+  uint32 Unk3300_JLELMHELIDC = 5;
+  uint32 gacha_type = 7;
+  uint32 Unk3300_NMOKGFGDFFC = 954;
+  string Unk3300_GKDEEFNFCAC = 1532;
+  string Unk3300_FOGPKBALHPI = 15;
+  string Unk3300_HLPKLMGIBIB = 1;
+  uint32 begin_time = 14;
+  uint32 schedule_id = 8;
+  repeated uint32 Unk3300_LBLEBDLJDLL = 476;
+  uint32 Unk3300_GLPMIEMBGGL = 10;
+  string Unk3300_BCJONGECBOH = 4;
+  string Unk3300_JOGAHFBKHNJ = 114;
+  uint32 Unk3300_HLANONBCBLM = 245;
+  uint32 end_time = 2;
+  repeated uint32 Unk3300_COABNBJCKEO = 540;
+  uint32 Unk3300_MEDMCPFCIOO = 13;
+  uint32 Unk3300_BLLMPAJNCPI = 1275;
+  uint32 Unk3300_DBFMKAMNPCL = 9;
+  uint32 Unk3300_DDBOLMGHEKN = 6;
+  bool is_new_wish = 967;
+  uint32 Unk3300_JLBFLPEMAPP = 12;
+  uint32 Unk3300_KEIJFMKAKDH = 1580;
+  string Unk3300_ODFKNFOMAGE = 1259;
+  repeated GachaUpInfo gacha_up_info_list = 1585;
+  uint32 Unk3300_PLFMMOFNGAG = 3;
+  string Unk3300_OFOHDLDFCLF = 11;
+}

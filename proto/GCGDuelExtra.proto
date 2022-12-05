@@ -1,0 +1,38 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GCGChallengeData.proto";
+import "PlatformType.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message GCGDuelExtra {
+  repeated uint32 card_id_list = 1;
+  uint32 field_id = 2;
+  uint32 card_back_id = 3;
+  map<uint32, uint32> card_face_map = 4;
+  repeated GCGChallengeData challenge_list = 5;
+  uint32 score = 6;
+  bool is_match_ai = 7;
+  uint32 ai_deck_id = 8;
+  bool is_internal = 9;
+  repeated uint32 forbid_finish_challenge_list = 10;
+  uint32 level = 11;
+  uint32 client_version = 12;
+  PlatformType platform_type = 13;
+}

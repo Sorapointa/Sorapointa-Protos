@@ -1,0 +1,43 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "MatchType.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message PlayerMatchAgreedResultNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4165;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  enum Reason {
+    REASON_SUCC = 0;
+    REASON_TARGET_SCENE_CANNOT_ENTER = 1;
+    REASON_SELF_MP_UNAVAILABLE = 2;
+    REASON_OTHER_DATA_VERSION_NOT_LATEST = 3;
+    REASON_DATA_VERSION_NOT_LATEST = 4;
+  }
+
+  MatchType match_type = 12;
+  uint32 target_uid = 4;
+  Reason reason = 13;
+}

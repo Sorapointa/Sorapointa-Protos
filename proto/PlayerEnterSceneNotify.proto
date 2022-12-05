@@ -1,0 +1,49 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "EnterType.proto";
+import "Vector.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message PlayerEnterSceneNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 279;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  uint32 Unk3300_LIDGFMDDOOM = 1224;
+  bool Unk3300_LFFBNEBMAAG = 32;
+  uint32 world_level = 4;
+  Vector pos = 1;
+  bool Unk3300_OKMNOFOHKOB = 3;
+  uint32 Unk3300_LLHABHMLNAH = 13;
+  uint32 enter_scene_token = 6;
+  uint32 dungeon_id = 2;
+  uint32 scene_id = 11;
+  EnterType type = 12;
+  repeated uint32 scene_tag_id_list = 5;
+  uint64 scene_begin_time = 9;
+  uint32 Unk3300_OOLKIEKNKKN = 287;
+  uint32 target_uid = 8;
+  Vector prev_pos = 10;
+  string scene_transaction = 370;
+}

@@ -1,0 +1,43 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "CoopCg.proto";
+import "CoopPoint.proto";
+import "CoopReward.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message CoopChapter {
+  enum State {
+    STATE_CLOSE = 0;
+    STATE_COND_NOT_MEET = 1;
+    STATE_COND_MEET = 2;
+    STATE_ACCEPT = 3;
+  }
+
+  uint32 id = 9;
+  repeated CoopPoint coop_point_list = 12;
+  repeated uint32 Unk3300_MOOKBLFKOLC = 6;
+  State state = 7;
+  uint32 Unk3300_KDLGLOIIINH = 11;
+  repeated CoopReward coop_reward_list = 3;
+  repeated uint32 Unk3300_MJLMJBMGJPP = 4;
+  repeated CoopCg coop_cg_list = 2;
+  map<uint32, uint32> seen_ending_map = 15;
+  uint32 Unk3300_KMJHIMBIGJF = 8;
+}

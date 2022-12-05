@@ -1,0 +1,44 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GCGDiceSideType.proto";
+import "GCGPVEIntention.proto";
+import "GCGWaitingCharacter.proto";
+import "GCGZone.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message GCGPlayerField {
+  uint32 Unk3300_IKJMGAHCFPM = 5;
+  map<uint32, GCGZone> modify_zone_map = 7;
+  uint32 Unk3300_GGHKFFADEAL = 731;
+  GCGZone Unk3300_AOPJIOHMPOF = 10;
+  uint32 Unk3300_FDFPHNDOJML = 12;
+  GCGZone Unk3300_IPLMHKCNDLE = 1;
+  GCGZone Unk3300_EIHOMDLENMK = 9;
+  repeated GCGWaitingCharacter waiting_list = 2;
+  uint32 Unk3300_PBECINKKHND = 15;
+  uint32 controller_id = 6;
+  GCGZone Unk3300_INDJNJJJNKL = 11;
+  GCGZone Unk3300_EFNAEFBECHD = 4;
+  bool is_passed = 8;
+  repeated GCGPVEIntention intention_list = 304;
+  repeated GCGDiceSideType dice_side_list = 13;
+  uint32 Unk3300_FJNPFBIHFGD = 3;
+  uint32 Unk3300_GLNIFLOKBPM = 14;
+}

@@ -1,0 +1,33 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "SignInData.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message SignInInfo {
+  bool is_cond_satisfied = 1;
+  repeated SignInData signin_data_list = 10;
+  uint32 Unk3300_MNJELIDKMCF = 5;
+  uint32 schedule_id = 7;
+  uint32 Unk3300_NFNOKBNBLGE = 3;
+  repeated uint32 reward_day_list = 4;
+  uint32 begin_time = 6;
+  uint32 config_id = 9;
+  uint32 end_time = 8;
+}

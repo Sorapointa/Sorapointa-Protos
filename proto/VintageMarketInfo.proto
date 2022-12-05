@@ -1,0 +1,47 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "VintageMarketDealInfo.proto";
+import "VintageMarketStoreInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message VintageMarketInfo {
+  map<uint32, bool> bargain_info_map = 9;
+  bool Unk3300_FJDIMCJEAOB = 8;
+  repeated uint32 Unk3300_COKBOKAOCNJ = 1007;
+  uint32 help_skill_id = 760;
+  repeated uint32 Unk3300_ABHHACBDCFI = 7;
+  repeated VintageMarketStoreInfo open_store_list = 2;
+  repeated uint32 Unk3300_EDBJLBICEJF = 10;
+  bool Unk3300_PAMKPAOCJJJ = 11;
+  uint32 Unk3300_FOPKAIIAMFM = 1826;
+  bool Unk3300_NBNOJJBNJPB = 470;
+  VintageMarketDealInfo deal_info = 12;
+  uint32 store_round = 3;
+  repeated uint32 unlock_strategy_list = 13;
+  repeated uint32 Unk3300_AIAMBBODLBO = 14;
+  bool Unk3300_NDFHAGHBCFN = 6;
+  uint32 Unk3300_LMNLHHPMAMN = 1;
+  bool Unk3300_ALHLENELIEO = 1594;
+  uint32 Unk3300_ACJLANLBCGK = 1658;
+  uint32 Unk3300_HHKKEDDIGLA = 5;
+  bool Unk3300_KJDEFIBKBPE = 4;
+  bool Unk3300_ICJOCDGLFFD = 15;
+  bool Unk3300_NMHHGNPKBEL = 1721;
+}

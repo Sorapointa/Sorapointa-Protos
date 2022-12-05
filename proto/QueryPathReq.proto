@@ -1,0 +1,49 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "QueryFilter.proto";
+import "Vector.proto";
+import "Vector3Int.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message QueryPathReq {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 2379;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  enum OptionType {
+    OPTION_TYPE_NONE = 0;
+    OPTION_TYPE_NORMAL = 1;
+    OPTION_TYPE_FIRST_CAN_GO = 2;
+  }
+
+  QueryFilter filter = 7;
+  int32 query_id = 3;
+  repeated Vector destination_pos = 6;
+  OptionType query_type = 11;
+  Vector3Int Unk3300_LHNGPJFOMIK = 4;
+  uint32 scene_id = 2;
+  Vector source_pos = 8;
+  Vector3Int Unk3300_CLGJBBJDOLN = 5;
+}

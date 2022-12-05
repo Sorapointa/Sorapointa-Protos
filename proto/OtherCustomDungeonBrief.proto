@@ -1,0 +1,38 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "CustomDungeonAbstract.proto";
+import "CustomDungeonSetting.proto";
+import "CustomDungeonSocial.proto";
+import "SocialDetail.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message OtherCustomDungeonBrief {
+  bool is_adventure_dungeon = 12;
+  uint32 battle_min_cost_time = 10;
+  repeated uint32 tag_list = 13;
+  bool is_stored = 8;
+  uint32 dungeon_id = 15;
+  bool is_psn_platform = 1;
+  uint64 dungeon_guid = 7;
+  CustomDungeonSetting setting = 2;
+  CustomDungeonSocial social = 14;
+  CustomDungeonAbstract abstract = 4;
+  SocialDetail creator_detail = 11;
+}

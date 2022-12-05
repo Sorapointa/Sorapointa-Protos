@@ -1,0 +1,36 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "MathQuaternion.proto";
+import "Vector.proto";
+import "Vector3Int.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message ObstacleInfo {
+  enum ShapeType {
+    SHAPE_TYPE_OBSTACLE_SHAPE_CAPSULE = 0;
+    SHAPE_TYPE_OBSTACLE_SHAPE_BOX = 1;
+  }
+
+  MathQuaternion rotation = 11;
+  ShapeType shape = 2;
+  Vector3Int extents = 4;
+  Vector center = 7;
+  int32 obstacle_id = 10;
+}

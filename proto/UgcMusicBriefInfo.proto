@@ -1,0 +1,42 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+message UgcMusicBriefInfo {
+  uint32 Unk3300_OJOKFBJALIJ = 12;
+  bool Unk3300_NCDKCNOLGKB = 15;
+  uint32 Unk3300_KMMBLIMKJCM = 5;
+  repeated uint32 Unk3300_JEEBFPFEHHG = 526;
+  uint32 Unk3300_EGIGIOOKBAB = 42;
+  repeated uint32 Unk3300_HKBHAIMOBKO = 65;
+  uint32 Unk3300_MBKDGBNFPOA = 1625;
+  uint64 import_from_ugc_guid = 13;
+  uint64 ugc_guid = 8;
+  uint32 Unk3300_PBENMAHHGIL = 7;
+  bool Unk3300_FKIGPAJFPLG = 3;
+  uint32 version = 11;
+  bool is_psn_platform = 2;
+  uint32 Unk3300_PLNOFOHFAPE = 4;
+  uint32 Unk3300_CCMMPAHIMDO = 95;
+  string creator_nickname = 9;
+  uint32 music_id = 6;
+  bool Unk3300_GDNAPNAINBA = 10;
+  uint32 max_score = 1;
+  uint32 Unk3300_OBBMCFADNIN = 14;
+}

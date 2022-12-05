@@ -1,0 +1,41 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "GCGOperationAttack.proto";
+import "GCGOperationOnStageSelect.proto";
+import "GCGOperationPass.proto";
+import "GCGOperationPlayCard.proto";
+import "GCGOperationReboot.proto";
+import "GCGOperationRedraw.proto";
+import "GCGOperationReroll.proto";
+import "GCGOperationSurrender.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message GCGOperation {
+  oneof op {
+    GCGOperationRedraw op_redraw = 3;
+    GCGOperationOnStageSelect op_select_on_stage = 9;
+    GCGOperationReroll op_reroll = 4;
+    GCGOperationAttack op_attack = 7;
+    GCGOperationPass op_pass = 6;
+    GCGOperationPlayCard op_play_card = 15;
+    GCGOperationReboot op_reboot = 5;
+    GCGOperationSurrender op_surrender = 10;
+  }
+}

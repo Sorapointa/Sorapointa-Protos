@@ -1,0 +1,49 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "RogueCellInfo.proto";
+import "RoguelikeRuneRecord.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message EnterRoguelikeDungeonNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8657;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  float bonus_resource_prop = 11;
+  uint32 Unk3300_DBDABNIINEL = 4;
+  repeated RoguelikeRuneRecord rune_record_list = 12;
+  uint32 cur_level = 9;
+  uint32 dungeon_id = 5;
+  uint32 revise_monster_level = 1188;
+  bool Unk3300_PKPOKOAAOKF = 1469;
+  repeated uint32 explored_cell_list = 2;
+  repeated uint64 onstage_avatar_guid_list = 15;
+  uint32 stage_id = 6;
+  uint32 Unk3300_KLFDKOCGAHN = 2046;
+  bool Unk3300_GBHHLEDAGAM = 3;
+  uint32 Unk3300_IIIJDDNJEBB = 1;
+  repeated uint64 backstage_avatar_guid_list = 7;
+  uint32 Unk3300_PKDLOJADIPA = 10;
+  map<uint32, RogueCellInfo> cell_info_map = 14;
+}

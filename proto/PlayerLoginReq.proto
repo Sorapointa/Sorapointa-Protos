@@ -1,0 +1,76 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "AdjustTrackingInfo.proto";
+import "TrackingIOInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message PlayerLoginReq {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 156;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  //   IS_ALLOW_CLIENT = 1;
+  // }
+
+  string device_uuid = 5;
+  uint32 target_uid = 10;
+  bytes extra_bin_data = 2046;
+  string platform = 4;
+  string Unk3300_LNPPCJMBOMN = 1334;
+  uint32 channel_id = 1565;
+  string Unk3300_EJBMMPBPDBE = 2040;
+  uint32 language_type = 11;
+  uint32 client_data_version = 847;
+  uint32 Unk3300_FDNAJOFMOAK = 7;
+  string Unk3300_BBAABEHNFOE = 868;
+  string online_id = 577;
+  uint32 Unk3300_PMGFBMJNNCL = 82;
+  string Unk3300_EAMDLGIILGK = 12;
+  string birthday = 875;
+  uint32 tag = 525;
+  string account_uid = 14;
+  string Unk3300_NALKBABGLDG = 15;
+  uint32 Unk3300_IADFJHNFKIB = 1458;
+  bool is_editor = 1;
+  string token = 8;
+  uint32 reg_platform = 424;
+  string Unk3300_CHDCMLIBMPO = 581;
+  uint32 Unk3300_OOBHAIIIPHH = 85;
+  uint32 Unk3300_NDLANBEIGEG = 1320;
+  string country_code = 104;
+  uint32 Unk3300_PIPLDEAPMMN = 1790;
+  TrackingIOInfo tracking_io_info = 1713;
+  bool is_transfer = 624;
+  string Unk3300_BIAKNIALBFJ = 828;
+  string client_version = 2;
+  bool is_guest = 13;
+  string Unk3300_OBJKBHMKJGM = 6;
+  uint32 target_home_owner_uid = 899;
+  string psn_id = 1146;
+  bytes Unk3300_ILHAIPDJIMH = 874;
+  uint32 Unk3300_OFFHPAFIFGD = 1028;
+  uint64 login_rand = 9;
+  AdjustTrackingInfo adjust_tracking_info = 64;
+  bytes Unk3300_FCDEBMBICIJ = 256;
+  uint32 platform_type = 3;
+  string Unk3300_CFLCCIICKDE = 1983;
+}

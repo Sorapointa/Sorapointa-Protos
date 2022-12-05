@@ -1,0 +1,33 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "SeaLampSectionInfo.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message SeaLampActivityInfo {
+  uint32 day_index = 14;
+  bool is_content_closed = 15;
+  repeated SeaLampSectionInfo section_info_list = 1;
+  uint32 mechanicus_id = 7;
+  uint32 first_day_start_time = 6;
+  uint32 sea_lamp_coin = 11;
+  uint32 popularity = 2;
+  bool Unk3300_JMPCJGJHPIH = 13;
+  bool Unk3300_BAJIGNGJALG = 9;
+}

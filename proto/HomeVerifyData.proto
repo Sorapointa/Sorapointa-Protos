@@ -1,0 +1,34 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+import "HomeSceneArrangementMuipData.proto";
+import "HomeVerifySceneData.proto";
+import "LanguageType.proto";
+
+option java_package = "org.sorapointa.proto";
+
+message HomeVerifyData {
+  HomeVerifySceneData home_info = 4;
+  HomeSceneArrangementMuipData arrangement_data = 9;
+  fixed32 timestamp = 11;
+  string token = 1;
+  string aid = 10;
+  LanguageType lang = 6;
+  uint32 uid = 2;
+  string region = 7;
+}

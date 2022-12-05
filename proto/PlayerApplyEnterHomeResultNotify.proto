@@ -1,0 +1,46 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+message PlayerApplyEnterHomeResultNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 4793;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  enum Reason {
+    REASON_PLAYER_JUDGE = 0;
+    REASON_PLAYER_ENTER_OPTION_REFUSE = 1;
+    REASON_PLAYER_ENTER_OPTION_DIRECT = 2;
+    REASON_SYSTEM_JUDGE = 3;
+    REASON_HOST_IN_MATCH = 4;
+    REASON_PS_PLAYER_NOT_ACCEPT_OTHERS = 5;
+    REASON_OPEN_STATE_NOT_OPEN = 6;
+    REASON_HOST_IN_EDIT_MODE = 7;
+    REASON_PRIOR_CHECK = 8;
+  }
+
+  uint32 target_uid = 9;
+  string target_nickname = 2;
+  bool is_agreed = 13;
+  Reason reason = 5;
+}
