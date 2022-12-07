@@ -27,16 +27,16 @@ message GetScenePointRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 Unk3300_NFDMMIOFECO = 9;
-  repeated uint32 Unk3300_FKANNCGJEFJ = 15;
+  repeated uint32 unlock_area_list = 9;
+  repeated uint32 locked_point_list = 15;
   int32 retcode = 13;
-  repeated uint32 Unk3300_FGPKDGFLJOF = 3;
-  repeated uint32 Unk3300_PIGCABAAMMB = 10;
-  repeated uint32 Unk3300_NAPMOOABHLJ = 1;
-  repeated uint32 Unk3300_JFBPMPADAPA = 11;
-  repeated uint32 Unk3300_IJJGKIAMEJA = 6;
-  repeated uint32 Unk3300_JCGMJCEODCM = 7;
+  repeated uint32 unhide_point_list = 3;
+  repeated uint32 hide_point_list = 10;
+  repeated uint32 group_unlimit_point_list = 1;
+  repeated uint32 not_interact_dungeon_entry_list = 11;
+  repeated uint32 to_be_explore_dungeon_entry_list = 6;
+  repeated uint32 not_explored_dungeon_entry_list = 7;
   uint32 belong_uid = 12;
-  repeated uint32 Unk3300_GEDEFAIHKMH = 2;
+  repeated uint32 unlocked_point_list = 2;
   uint32 scene_id = 8;
 }

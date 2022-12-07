@@ -38,6 +38,6 @@ message MarkMapReq {
   }
 
   Operation op = 3;
-  MapMarkPoint Unk3300_IEBKBPOBECB = 6;
-  MapMarkPoint Unk3300_BGFDGKONNBI = 13;
+  MapMarkPoint old = 6;
+  MapMarkPoint mark = 13;
 }

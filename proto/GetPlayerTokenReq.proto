@@ -33,7 +33,7 @@ message GetPlayerTokenReq {
   uint32 platform_type = 2;
   bool is_guest = 14;
   string online_id = 12;
-  uint32 Unk3300_FDNAJOFMOAK = 6;
+  uint32 account_type = 6;
   uint32 channel_id = 8;
   string client_rand_key = 400;
   string Unk3300_PHNOHCKIHIA = 3;

@@ -17,13 +17,13 @@
 syntax = "proto3";
 
 import "ChannelerSlabChallenge.proto";
-import "ChannelerSlabOneofDungeon.proto";
+import "ChannelerSlabOneoffDungeon.proto";
 
 option java_package = "org.sorapointa.proto";
 
 message ChannelerSlabChallengeStage {
   bool is_open = 4;
-  ChannelerSlabOneofDungeon dungeon_info = 12;
+  ChannelerSlabOneoffDungeon dungeon_info = 12;
   uint32 open_time = 13;
   uint32 stage_id = 1;
   repeated ChannelerSlabChallenge challenge_list = 2;

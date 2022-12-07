@@ -36,7 +36,7 @@ message GetPlayerTokenRsp {
   uint32 key_id = 134;
   string sign = 1666;
   string secret_key = 15;
-  uint32 Unk3300_FDNAJOFMOAK = 8;
+  uint32 account_type = 8;
   uint32 channel_id = 676;
   bytes extra_bin_data = 5;
   uint64 secret_key_seed = 3;

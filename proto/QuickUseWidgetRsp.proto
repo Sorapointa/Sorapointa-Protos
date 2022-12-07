@@ -17,7 +17,7 @@
 syntax = "proto3";
 
 import "ClientCollectorData.proto";
-import "OneofGatherPointDetectorData.proto";
+import "OneoffGatherPointDetectorData.proto";
 import "SkyCrystalDetectorQuickUseResult.proto";
 
 option java_package = "org.sorapointa.proto";
@@ -34,7 +34,7 @@ message QuickUseWidgetRsp {
   uint32 material_id = 11;
   int32 retcode = 12;
   oneof param {
-    OneofGatherPointDetectorData detector_data = 14;
+    OneoffGatherPointDetectorData detector_data = 14;
     ClientCollectorData client_collector_data = 10;
     SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;
   }

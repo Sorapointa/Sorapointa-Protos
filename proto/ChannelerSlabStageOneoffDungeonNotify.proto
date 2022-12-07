@@ -18,8 +18,15 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-message ChannelerSlabOneofDungeon {
-  uint32 dungeon_id = 6;
-  bool is_done = 1;
-  uint32 reward_id = 5;
+message ChannelerSlabStageOneoffDungeonNotify {
+  // enum CmdId {
+  //   option allow_alias = true;
+  //   NONE = 0;
+  //   CMD_ID = 8692;
+  //   ENET_CHANNEL_ID = 0;
+  //   ENET_IS_RELIABLE = 1;
+  // }
+
+  bool is_done = 6;
+  uint32 stage_id = 13;
 }

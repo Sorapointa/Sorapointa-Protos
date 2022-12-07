@@ -18,15 +18,14 @@ syntax = "proto3";
 
 option java_package = "org.sorapointa.proto";
 
-message ChannelerSlabOneOfDungeonInfoRsp {
+message ChannelerSlabOneOffDungeonInfoNotify {
   // enum CmdId {
   //   option allow_alias = true;
   //   NONE = 0;
-  //   CMD_ID = 8270;
+  //   CMD_ID = 8015;
   //   ENET_CHANNEL_ID = 0;
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 scheme_buff_id_list = 10;
-  int32 retcode = 5;
+  repeated uint32 scheme_buff_id_list = 8;
 }

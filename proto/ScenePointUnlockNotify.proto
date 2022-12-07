@@ -27,9 +27,9 @@ message ScenePointUnlockNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 Unk3300_PIGCABAAMMB = 10;
-  repeated uint32 Unk3300_FKANNCGJEFJ = 5;
+  repeated uint32 hide_point_list = 10;
+  repeated uint32 locked_point_list = 5;
   uint32 scene_id = 11;
   repeated uint32 point_list = 6;
-  repeated uint32 Unk3300_FGPKDGFLJOF = 1;
+  repeated uint32 unhide_point_list = 1;
 }
