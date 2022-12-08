@@ -41,7 +41,7 @@ message PlayerLoginReq {
   uint32 language_type = 11;
   uint32 client_data_version = 847;
   uint32 account_type = 7;
-  string Unk3300_BBAABEHNFOE = 868;
+  string security_library_md5 = 868;
   string online_id = 577;
   uint32 Unk3300_PMGFBMJNNCL = 82;
   string device_name = 12;
@@ -60,7 +60,7 @@ message PlayerLoginReq {
   uint32 Unk3300_PIPLDEAPMMN = 1790;
   TrackingIOInfo tracking_io_info = 1713;
   bool is_transfer = 624;
-  string Unk3300_BIAKNIALBFJ = 828;
+  string security_library_version = 828;
   string client_version = 2;
   bool is_guest = 13;
   string system_version = 6;

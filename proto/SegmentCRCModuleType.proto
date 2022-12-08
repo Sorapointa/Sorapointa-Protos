@@ -1,0 +1,30 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+enum SegmentCRCModuleType {
+  SEGMENT_CRC_MODULE_TYPE_NONE = 0;
+  SEGMENT_CRC_MODULE_TYPE_PC_UNITYPLAYER = 1;
+  SEGMENT_CRC_MODULE_TYPE_PC_USERASSEMBLY = 2;
+  SEGMENT_CRC_MODULE_TYPE_PC_XLUA = 3;
+  SEGMENT_CRC_MODULE_TYPE_ANDROID_LIBIL2CPP = 11;
+  SEGMENT_CRC_MODULE_TYPE_ANDROID_LIBUNITY = 12;
+  SEGMENT_CRC_MODULE_TYPE_ANDROID_LIBXLUA = 13;
+  SEGMENT_CRC_MODULE_TYPE_IOS_HK4E = 21;
+}

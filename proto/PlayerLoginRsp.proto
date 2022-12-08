@@ -36,7 +36,7 @@ message PlayerLoginRsp {
   bytes player_data = 2;
   string client_silence_md5 = 16;
   double total_tick_time = 530;
-  bool Unk3300_LLIJKLDBHNN = 5;
+  bool is_use_ability_hash = 5;
   bool is_audit = 930;
   string birthday = 1387;
   bool Unk3300_HGFNECIJDLN = 13;
@@ -50,7 +50,7 @@ message PlayerLoginRsp {
   uint32 client_silence_data_version = 1;
   uint32 target_uid = 15;
   string register_cps = 99;
-  bool Unk3300_CANONIPHMDI = 1522;
+  bool is_sc_open = 1522;
   bool Unk3300_IIHDKKNJPGD = 8;
   uint32 player_data_version = 14;
   bytes sc_info = 1888;

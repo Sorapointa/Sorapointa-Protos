@@ -1,0 +1,29 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+enum MonsterGuestBanDrop {
+  MONSTER_GUEST_BAN_DROP_NONE = 0;
+  MONSTER_GUEST_BAN_DROP_DIE_EXP = 1;
+  MONSTER_GUEST_BAN_DROP_DIE_LUA = 2;
+  MONSTER_GUEST_BAN_DROP_DIE_EXCEL = 4;
+  MONSTER_GUEST_BAN_DROP_DIE_ACTIVITY = 8;
+  MONSTER_GUEST_BAN_DROP_HP = 16;
+  MONSTER_GUEST_BAN_DROP_SUBFIELD = 32;
+}
