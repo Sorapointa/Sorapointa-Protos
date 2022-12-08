@@ -22,10 +22,10 @@ option java_package = "org.sorapointa.proto";
 
 message HomeBasicInfo {
   uint64 exp = 3;
-  uint32 Unk3300_AKPAPPGOFGN = 11;
-  uint32 Unk3300_GNFGFIIGHEA = 14;
+  uint32 home_owner_uid = 11;
+  uint32 cur_room_scene_id = 14;
   string owner_nick_name = 6;
-  uint32 Unk3300_KGCBFKGGHDD = 4;
+  uint32 cur_module_id = 4;
   HomeLimitedShopInfo limited_shop_info = 13;
   bool is_in_edit_mode = 7;
   uint32 level = 9;

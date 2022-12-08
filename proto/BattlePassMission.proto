@@ -27,8 +27,8 @@ message BattlePassMission {
   }
 
   uint32 cur_progress = 10;
-  uint32 Unk3300_MBOMOLFKPPO = 9;
-  uint32 Unk3300_DAHDCJNCALE = 14;
+  uint32 mission_type = 9;
+  uint32 reward_battle_pass_point = 14;
   uint32 total_progress = 12;
   uint32 mission_id = 15;
   MissionStatus mission_status = 11;

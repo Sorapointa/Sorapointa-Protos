@@ -27,11 +27,11 @@ message TowerBriefDataNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_OLBDJEGPDFE = 6;
-  uint32 Unk3300_ILDODKDADMI = 9;
+  uint32 last_level_index = 6;
+  uint32 next_schedule_change_time = 9;
   bool is_finished_entrance_floor = 14;
-  uint32 Unk3300_CFKJBOIJDBD = 1;
+  uint32 last_floor_index = 1;
   uint32 tower_schedule_id = 11;
-  uint32 Unk3300_KGHOIIAEIHH = 8;
-  uint32 Unk3300_CNMMBJABMKA = 7;
+  uint32 schedule_start_time = 8;
+  uint32 total_star_num = 7;
 }

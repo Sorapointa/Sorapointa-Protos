@@ -32,11 +32,11 @@ message TowerAllDataRsp {
   // }
 
   uint32 Unk3300_HCDFJBHMHHF = 6;
-  uint32 Unk3300_ILDODKDADMI = 8;
+  uint32 next_schedule_change_time = 8;
   bool is_first_interact = 5;
   uint32 tower_schedule_id = 1;
   uint32 Unk3300_JBACKENDHDG = 10;
-  uint32 Unk3300_KGHOIIAEIHH = 610;
+  uint32 schedule_start_time = 610;
   int32 retcode = 11;
   uint32 Unk3300_OHCHCJGJIDK = 4;
   uint32 Unk3300_BBHKBDDFPFE = 2;

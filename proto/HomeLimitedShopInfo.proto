@@ -22,9 +22,9 @@ option java_package = "org.sorapointa.proto";
 
 message HomeLimitedShopInfo {
   uint32 uid = 9;
-  uint32 Unk3300_FKGDIDFIBAA = 8;
+  fixed32 next_guest_open_time = 8;
   Vector djinn_rot = 11;
-  uint32 Unk3300_DLIEFPNMGFC = 5;
+  fixed32 next_open_time = 5;
   Vector djinn_pos = 2;
-  uint32 Unk3300_NOJPDKDPPPA = 15;
+  fixed32 next_close_time = 15;
 }

@@ -19,7 +19,7 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message HomeResource {
-  uint32 Unk3300_LJCAIDECBND = 6;
+  uint32 store_limit = 6;
   fixed32 next_refresh_time = 13;
-  uint32 Unk3300_LINAPIIPNOB = 1;
+  uint32 store_value = 1;
 }

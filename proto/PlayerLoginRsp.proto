@@ -33,8 +33,8 @@ message PlayerLoginRsp {
   // }
 
   uint64 login_rand = 9;
-  bytes Unk3300_DHCMDHHDLFF = 2;
-  string Unk3300_HMGCPAGLDHB = 16;
+  bytes player_data = 2;
+  string client_silence_md5 = 16;
   double total_tick_time = 530;
   bool Unk3300_LLIJKLDBHNN = 5;
   bool is_audit = 930;
@@ -49,11 +49,11 @@ message PlayerLoginRsp {
   ResVersionConfig res_version_config = 808;
   uint32 client_silence_data_version = 1;
   uint32 target_uid = 15;
-  string Unk3300_NEICPFBPNPD = 99;
+  string register_cps = 99;
   bool Unk3300_CANONIPHMDI = 1522;
   bool Unk3300_IIHDKKNJPGD = 8;
   uint32 player_data_version = 14;
-  bytes Unk3300_MOPDDGHMKBD = 1888;
+  bytes sc_info = 1888;
   string country_code = 360;
   ResVersionConfig next_res_version_config = 1688;
   bool Unk3300_IADLIIMGDMC = 17;
@@ -64,7 +64,7 @@ message PlayerLoginRsp {
   map<string, int32> ability_hash_map = 3;
   int32 ability_hash_code = 12;
   uint32 client_data_version = 10;
-  string Unk3300_OPGDBOLKLJA = 1299;
+  string client_md5 = 1299;
   int32 retcode = 7;
   repeated FeatureBlockInfo feature_block_info_list = 138;
 }

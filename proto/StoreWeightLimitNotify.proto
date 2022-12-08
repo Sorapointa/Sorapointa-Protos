@@ -29,7 +29,7 @@ message StoreWeightLimitNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_ICDKCEOJKKG = 14;
+  uint32 reliquary_count_limit = 14;
   uint32 Unk3300_NIKMCBLHFNJ = 10;
   uint32 Unk3300_OONMFCGDMMF = 5;
   uint32 Unk3300_JGPODDEKAPB = 1;

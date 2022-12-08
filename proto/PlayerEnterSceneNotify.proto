@@ -42,7 +42,7 @@ message PlayerEnterSceneNotify {
   EnterType type = 12;
   repeated uint32 scene_tag_id_list = 5;
   uint64 scene_begin_time = 9;
-  uint32 Unk3300_OOLKIEKNKKN = 287;
+  uint32 enter_reason = 287;
   uint32 target_uid = 8;
   Vector prev_pos = 10;
   string scene_transaction = 370;

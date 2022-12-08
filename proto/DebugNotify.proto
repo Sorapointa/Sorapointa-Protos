@@ -29,8 +29,8 @@ message DebugNotify {
   // }
 
   enum Retcode {
-    RETCODE_SUCC = 0;
-    RETCODE_FAIL = 1;
+    SUCC = 0;
+    FAIL = 1;
   }
 
   uint32 id = 1;

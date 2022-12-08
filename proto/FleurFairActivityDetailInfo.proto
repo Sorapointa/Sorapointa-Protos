@@ -26,9 +26,9 @@ message FleurFairActivityDetailInfo {
   uint32 Unk3300_KONOCAMIIIE = 3;
   repeated FleurFairChapterInfo chapter_info_list = 5;
   bool is_dungeon_unlocked = 6;
-  map<uint32, FleurFairDungeonSectionInfo> Unk3300_HNFNMCKHAJK = 8;
+  map<uint32, FleurFairDungeonSectionInfo> dungeon_section_info_map = 8;
   bool is_content_closed = 13;
-  map<uint32, FleurFairMinigameInfo> Unk3300_FICFGHJNCOA = 9;
+  map<uint32, FleurFairMinigameInfo> minigame_info_map = 9;
   uint32 Unk3300_LOFLGOOIMNH = 10;
   uint32 content_close_time = 4;
 }

@@ -50,7 +50,7 @@ message GetPlayerTokenRsp {
   int32 retcode = 2;
   string client_version_random_key = 1152;
   string psn_id = 242;
-  bool Unk3300_PPGJMLBGJED = 9;
+  bool is_proficient_player = 9;
   uint32 platform_type = 10;
   uint32 reg_platform = 646;
   StopServerInfo stop_server = 1897;

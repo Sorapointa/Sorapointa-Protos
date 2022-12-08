@@ -1,0 +1,45 @@
+// Sorapointa - A server software re-implementation for a certain anime game, and avoid sorapointa.
+// Copyright (C) 2022  Sorapointa Team
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Affero General Public License as
+// published by the Free Software Foundation, either version 3 of the
+// License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Affero General Public License for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+syntax = "proto3";
+
+option java_package = "org.sorapointa.proto";
+
+enum ENetReason {
+  E_NET_REASON_ENET_TIMEOUT = 0;
+  E_NET_REASON_ENET_CLIENT_CLOSE = 1;
+  E_NET_REASON_ENET_CLIENT_REBIND_FAIL = 2;
+  E_NET_REASON_ENET_CLIENT_SHUTDOWN = 3;
+  E_NET_REASON_ENET_SERVER_RELOGIN = 4;
+  E_NET_REASON_ENET_SERVER_KICK = 5;
+  E_NET_REASON_ENET_SERVER_SHUTDOWN = 6;
+  E_NET_REASON_ENET_NOT_FOUND_SESSION = 7;
+  E_NET_REASON_ENET_LOGIN_UNFINISHED = 8;
+  E_NET_REASON_ENET_PACKET_FREQ_TOO_HIGH = 9;
+  E_NET_REASON_ENET_PING_TIMEOUT = 10;
+  E_NET_REASON_ENET_TRANFER_FAILED = 11;
+  E_NET_REASON_ENET_SERVER_KILL_CLIENT = 12;
+  E_NET_REASON_ENET_CHECK_MOVE_SPEED = 13;
+  E_NET_REASON_ENET_ACCOUNT_PASSWORD_CHANGE = 14;
+  E_NET_REASON_ENET_SECURITY_KICK = 15;
+  E_NET_REASON_ENET_LUA_SHELL_TIMEOUT = 16;
+  E_NET_REASON_ENET_SDKFAIL_KICK = 17;
+  E_NET_REASON_ENET_PACKET_COST_TIME = 18;
+  E_NET_REASON_ENET_PACKET_UNION_FREQ = 19;
+  E_NET_REASON_ENET_WAIT_SND_MAX = 20;
+  E_NET_REASON_ENET_CLIENT_CONNECT_KEY = 1234567890;
+  E_NET_REASON_ENET_CLIENT_EDITOR_CONNECT_KEY = 987654321;
+}

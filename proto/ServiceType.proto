@@ -16,32 +16,28 @@
 
 syntax = "proto3";
 
-import "ResVersionConfig.proto";
-
 option java_package = "org.sorapointa.proto";
 
-message DataResVersionNotify {
-  // enum CmdId {
-  //   option allow_alias = true;
-  //   NONE = 0;
-  //   CMD_ID = 153;
-  //   ENET_CHANNEL_ID = 0;
-  //   ENET_IS_RELIABLE = 1;
-  // }
-
-  enum DataResVersionOpType {
-    DATA_RES_VERSION_OP_TYPE_NONE = 0;
-    DATA_RES_VERSION_OP_TYPE_RELOGIN = 1;
-    DATA_RES_VERSION_OP_TYPE_MP_RELOGIN = 2;
-  }
-
-  uint32 client_silence_data_version = 13;
-  DataResVersionOpType op_type = 6;
-  string client_silence_version_suffix = 3;
-  string client_version_suffix = 9;
-  bool is_data_need_relogin = 15;
-  string client_silence_md5 = 12;
-  uint32 client_data_version = 5;
-  string client_md5 = 2;
-  ResVersionConfig res_version_config = 7;
+enum ServiceType {
+  SERVICE_TYPE_NONE = 0;
+  SERVICE_TYPE_CLIENT = 1;
+  SERVICE_TYPE_GATE = 2;
+  SERVICE_TYPE_GAME = 3;
+  SERVICE_TYPE_NODE = 4;
+  SERVICE_TYPE_DB = 5;
+  SERVICE_TYPE_SNS = 6;
+  SERVICE_TYPE_DISPATCH = 7;
+  SERVICE_TYPE_MUIP = 8;
+  SERVICE_TYPE_OFFLINE_MSG = 9;
+  SERVICE_TYPE_MAIL = 10;
+  SERVICE_TYPE_MP = 11;
+  SERVICE_TYPE_HTTPPROXY = 12;
+  SERVICE_TYPE_ACTIVITY = 13;
+  SERVICE_TYPE_PATHFINDING = 14;
+  SERVICE_TYPE_SOCIAL = 15;
+  SERVICE_TYPE_OA = 16;
+  SERVICE_TYPE_MATCH = 17;
+  SERVICE_TYPE_OFFLINE_OP = 18;
+  SERVICE_TYPE_TOTHEMOON = 19;
+  SERVICE_TYPE_GCG = 20;
 }

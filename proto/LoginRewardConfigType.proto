@@ -16,32 +16,9 @@
 
 syntax = "proto3";
 
-import "ResVersionConfig.proto";
-
 option java_package = "org.sorapointa.proto";
 
-message DataResVersionNotify {
-  // enum CmdId {
-  //   option allow_alias = true;
-  //   NONE = 0;
-  //   CMD_ID = 153;
-  //   ENET_CHANNEL_ID = 0;
-  //   ENET_IS_RELIABLE = 1;
-  // }
-
-  enum DataResVersionOpType {
-    DATA_RES_VERSION_OP_TYPE_NONE = 0;
-    DATA_RES_VERSION_OP_TYPE_RELOGIN = 1;
-    DATA_RES_VERSION_OP_TYPE_MP_RELOGIN = 2;
-  }
-
-  uint32 client_silence_data_version = 13;
-  DataResVersionOpType op_type = 6;
-  string client_silence_version_suffix = 3;
-  string client_version_suffix = 9;
-  bool is_data_need_relogin = 15;
-  string client_silence_md5 = 12;
-  uint32 client_data_version = 5;
-  string client_md5 = 2;
-  ResVersionConfig res_version_config = 7;
+enum LoginRewardConfigType {
+  LOGIN_REWARD_CONFIG_TYPE_IMMEDIDATE = 0;
+  LOGIN_REWARD_CONFIG_TYPE_FIRST = 1;
 }
