@@ -23,6 +23,6 @@ message FurnitureMakeData {
   uint32 avatar_id = 5;
   uint32 make_id = 10;
   uint32 index = 6;
-  uint32 Unk3300_GDIBLADMJIC = 8;
-  uint32 Unk3300_GBDHFLEFJLG = 7;
+  uint32 dur_time = 8;
+  fixed32 accelerate_time = 7;
 }

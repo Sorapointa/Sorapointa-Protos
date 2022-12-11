@@ -22,7 +22,7 @@ option java_package = "org.sorapointa.proto";
 
 message EvtAnimatorStateChangedInfo {
   float fade_duration = 4;
-  uint32 Unk3300_BKBPGIAOBEL = 11;
+  uint32 to_state_hash = 11;
   uint32 Unk3300_NMCCLIKMOEN = 1;
   Vector pos = 5;
   bool Unk3300_KLMEKMGFGPD = 3;

@@ -34,8 +34,8 @@ message CheckAddItemExceedLimitNotify {
     ITEM_EXCEED_LIMIT_MSG_TYPE_DIALOG_NONBLOCK = 3;
   }
 
-  repeated uint32 Unk3300_PKJMEJKAPBI = 4;
-  repeated uint32 Unk3300_GPDPCJLHBDE = 11;
+  repeated uint32 exceeded_item_list = 4;
+  repeated uint32 exceeded_item_type_list = 11;
   uint32 reason = 9;
   bool is_drop = 14;
   ItemExceedLimitMsgType msg_type = 6;

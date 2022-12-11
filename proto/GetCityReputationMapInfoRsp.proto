@@ -28,8 +28,8 @@ message GetCityReputationMapInfoRsp {
   // }
 
   int32 retcode = 13;
-  repeated uint32 Unk3300_DAIGHHPJHOO = 4;
+  repeated uint32 unlock_hunting_city_list = 4;
   bool Unk3300_GJFNOPNMFNG = 12;
   bool Unk3300_NCMHMODIIKM = 5;
-  repeated uint32 Unk3300_PAPBOHKOMFK = 15;
+  repeated uint32 reward_city_list = 15;
 }

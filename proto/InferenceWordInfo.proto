@@ -19,9 +19,9 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message InferenceWordInfo {
-  bool Unk3300_BFOGKOHIEEJ = 12;
+  bool is_submit = 12;
   uint32 unlock_by_word_id = 11;
-  bool Unk3300_PKBCAOHGNLM = 10;
+  bool is_associate = 10;
   uint32 word_id = 2;
-  bool Unk3300_JPHLECOIGKF = 3;
+  bool is_interpret = 3;
 }

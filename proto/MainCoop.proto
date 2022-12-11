@@ -26,8 +26,8 @@ message MainCoop {
   }
 
   Status status = 6;
-  map<uint32, int32> Unk3300_JFPLEDLNJPF = 5;
-  map<uint32, int32> Unk3300_OMEEMFJFKBH = 7;
+  map<uint32, int32> normal_var_map = 5;
+  map<uint32, int32> temp_var_map = 7;
   uint32 self_confidence = 9;
   uint32 id = 1;
   repeated uint32 save_point_id_list = 10;

@@ -27,6 +27,6 @@ message WatcherChangeNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 Unk3300_ELDNONOCFMM = 10;
-  repeated uint32 Unk3300_FDMJACFMOLG = 5;
+  repeated uint32 removed_watcher_list = 10;
+  repeated uint32 new_watcher_list = 5;
 }

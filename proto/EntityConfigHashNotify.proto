@@ -30,7 +30,7 @@ message EntityConfigHashNotify {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  repeated EntityConfigHashEntry Unk3300_NAMDIKJILAI = 1;
-  repeated EntityConfigHashEntry Unk3300_BLBEKMDGCMB = 2;
-  repeated EntityConfigHashEntry Unk3300_NLMPHBGMOEN = 9;
+  repeated EntityConfigHashEntry avatar_entry_list = 1;
+  repeated EntityConfigHashEntry combat_entry_list = 2;
+  repeated EntityConfigHashEntry ability_entry_list = 9;
 }

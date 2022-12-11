@@ -28,9 +28,9 @@ message ReportTrackingIOInfoNotify {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  string Unk3300_KGGPDKGDELG = 13;
+  string client_tz = 13;
   string Unk3300_DJHKHEFPCDK = 10;
   string Unk3300_PIBFPDAMJLE = 6;
   string Unk3300_CNPIGDOEJPB = 8;
-  string Unk3300_GEJJKDLGFPH = 3;
+  string rydevicetype = 3;
 }

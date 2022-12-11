@@ -32,12 +32,12 @@ message CoopChapter {
 
   uint32 id = 9;
   repeated CoopPoint coop_point_list = 12;
-  repeated uint32 Unk3300_MOOKBLFKOLC = 6;
+  repeated uint32 finish_dialog_list = 6;
   State state = 7;
-  uint32 Unk3300_KDLGLOIIINH = 11;
+  uint32 total_end_count = 11;
   repeated CoopReward coop_reward_list = 3;
-  repeated uint32 Unk3300_MJLMJBMGJPP = 4;
+  repeated uint32 lock_reason_list = 4;
   repeated CoopCg coop_cg_list = 2;
   map<uint32, uint32> seen_ending_map = 15;
-  uint32 Unk3300_KMJHIMBIGJF = 8;
+  uint32 finished_end_count = 8;
 }

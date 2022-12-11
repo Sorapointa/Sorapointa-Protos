@@ -27,6 +27,6 @@ message ClientNewMailNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_FBDGCFAALFN = 13;
-  uint32 Unk3300_MANJMCPELLJ = 2;
+  uint32 not_got_attachment_num = 13;
+  uint32 not_read_num = 2;
 }

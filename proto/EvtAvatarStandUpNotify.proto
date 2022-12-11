@@ -28,8 +28,8 @@ message EvtAvatarStandUpNotify {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  int32 Unk3300_EBPACPNPKKJ = 13;
+  int32 direction = 13;
   uint64 chair_id = 3;
   uint32 entity_id = 5;
-  int32 Unk3300_IMNGNLLMEFJ = 11;
+  int32 perform_id = 11;
 }

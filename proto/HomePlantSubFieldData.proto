@@ -22,8 +22,8 @@ option java_package = "org.sorapointa.proto";
 
 message HomePlantSubFieldData {
   HomePlantFieldStatus field_status = 5;
-  uint32 Unk3300_IELHEAAMAKG = 7;
+  uint32 home_gather_id = 7;
   repeated uint32 entity_id_list = 12;
   fixed32 end_time = 6;
-  uint32 Unk3300_GAJHLGKLBBK = 9;
+  uint32 seed_id = 9;
 }

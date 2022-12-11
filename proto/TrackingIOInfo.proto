@@ -19,10 +19,10 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message TrackingIOInfo {
-  string Unk3300_KGGPDKGDELG = 10;
+  string client_tz = 10;
   string Unk3300_PIBFPDAMJLE = 12;
   string Unk3300_NMDNLHLAKAM = 7;
-  string Unk3300_GEJJKDLGFPH = 5;
+  string rydevicetype = 5;
   string Unk3300_CNPIGDOEJPB = 2;
   string Unk3300_CCOGBICMHKG = 9;
   string Unk3300_DJHKHEFPCDK = 1;

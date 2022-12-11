@@ -97,7 +97,7 @@ message ActivityInfo {
   repeated ActivityPushTipsData activity_push_tips_data_list = 1867;
   uint32 activity_id = 13;
   repeated uint32 taken_reward_list = 1889;
-  uint32 Unk3300_GCEAKEMMJEA = 697;
+  uint32 selected_avatar_reward_id = 697;
   map<uint32, uint32> activity_coin_map = 36;
   uint32 first_day_start_time = 786;
   bool Unk3300_ABJKLALKLDG = 1486;

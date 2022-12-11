@@ -27,6 +27,6 @@ message ServerCondMeetQuestListUpdateNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 Unk3300_MGBDKFMBGBO = 10;
-  repeated uint32 Unk3300_HIEMKEJOFPO = 4;
+  repeated uint32 add_quest_id_list = 10;
+  repeated uint32 del_quest_id_list = 4;
 }

@@ -24,9 +24,9 @@ message VehicleLocationInfo {
   Vector rot = 5;
   uint32 owner_uid = 11;
   repeated uint32 uid_list = 4;
-  float Unk3300_MLICEAKLOIH = 2;
+  float cur_hp = 2;
   Vector pos = 9;
   uint32 gadget_id = 1;
   uint32 entity_id = 14;
-  float Unk3300_MNNMOCIIEAJ = 15;
+  float max_hp = 15;
 }

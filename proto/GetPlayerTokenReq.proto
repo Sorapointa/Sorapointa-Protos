@@ -47,5 +47,5 @@ message GetPlayerTokenReq {
   string account_token = 9;
   string country_code = 11;
   string birthday = 292;
-  uint32 Unk3300_IADFJHNFKIB = 7;
+  uint32 sub_channel_id = 7;
 }

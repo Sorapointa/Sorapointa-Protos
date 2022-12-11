@@ -21,8 +21,8 @@ import "AbilityString.proto";
 option java_package = "org.sorapointa.proto";
 
 message AbilityMetaUpdateBaseReactionDamage {
-  uint32 Unk3300_OIPAEGAMCLI = 2;
-  uint32 Unk3300_CAKEJCJKHOA = 13;
+  uint32 reaction_type = 2;
+  uint32 source_caster_id = 13;
   AbilityString ability_name = 6;
   AbilityString global_value_key = 14;
 }

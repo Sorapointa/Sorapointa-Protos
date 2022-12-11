@@ -19,8 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message CompoundQueueData {
-  uint32 Unk3300_NCEHJAAHOKM = 5;
-  uint32 Unk3300_COMIGCMIPLE = 14;
-  uint32 Unk3300_JHJNOPCPPAD = 10;
+  uint32 wait_count = 5;
+  uint32 output_time = 14;
+  uint32 output_count = 10;
   uint32 compound_id = 12;
 }

@@ -35,9 +35,9 @@ message ShopGoods {
   uint32 Unk3300_OMKIFIMDGDN = 1037;
   uint32 buy_limit = 8;
   uint32 Unk3300_MBGOMHNBHMG = 777;
-  uint32 Unk3300_KKKNKNOLICI = 2;
+  uint32 scoin = 2;
   uint32 max_level = 1;
-  uint32 Unk3300_MICPGJCIAPE = 1770;
+  uint32 single_limit = 1770;
   uint32 Unk3300_NJCPAJBCEPH = 505;
   uint32 begin_time = 12;
   uint32 disable_type = 4;

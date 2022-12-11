@@ -19,8 +19,8 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message TowerMonthlyBrief {
-  uint32 Unk3300_AIFHPHDGEIE = 3;
-  uint32 Unk3300_CPNOLKAKHEJ = 6;
-  uint32 Unk3300_LEMOMFLHBLA = 9;
+  uint32 best_floor_index = 3;
+  uint32 total_star_count = 6;
+  uint32 best_level_index = 9;
   uint32 tower_schedule_id = 13;
 }

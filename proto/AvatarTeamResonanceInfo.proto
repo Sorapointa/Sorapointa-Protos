@@ -21,6 +21,6 @@ option java_package = "org.sorapointa.proto";
 message AvatarTeamResonanceInfo {
   uint64 avatar_guid = 9;
   uint32 entity_id = 8;
-  repeated uint32 Unk3300_MBJEEEEEJCE = 15;
-  repeated uint32 Unk3300_LPAKGGBBDNJ = 13;
+  repeated uint32 add_team_resonance_id_list = 15;
+  repeated uint32 del_team_resonance_id_list = 13;
 }

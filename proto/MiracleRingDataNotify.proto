@@ -29,7 +29,7 @@ message MiracleRingDataNotify {
 
   bool is_gadget_created = 15;
   uint32 gadget_entity_id = 7;
-  uint32 Unk3300_OONPDLMPLNC = 9;
+  uint32 miracle_ring_cd = 9;
   uint32 Unk3300_POIAEGJNEKP = 8;
   uint32 last_take_reward_time = 12;
 }

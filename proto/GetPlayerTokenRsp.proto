@@ -46,7 +46,7 @@ message GetPlayerTokenRsp {
   string birthday = 1847;
   uint32 tag = 1099;
   string client_ip_str = 1382;
-  uint32 Unk3300_IADFJHNFKIB = 1038;
+  uint32 sub_channel_id = 1038;
   int32 retcode = 2;
   string client_version_random_key = 1152;
   string psn_id = 242;

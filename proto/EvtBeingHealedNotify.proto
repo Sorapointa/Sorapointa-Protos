@@ -27,8 +27,8 @@ message EvtBeingHealedNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  float Unk3300_LCLOFCCIJKH = 2;
-  float Unk3300_ECNBKHHADDJ = 3;
+  float real_heal_amount = 2;
+  float heal_amount = 3;
   uint32 target_id = 4;
   uint32 source_id = 6;
 }

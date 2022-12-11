@@ -27,13 +27,13 @@ message RogueStageInfo {
   uint32 Unk3300_GGHMFKNHPAJ = 2;
   RogueShowAvatarTeamInfo avatar_team = 8;
   bool is_taken_reward = 9;
-  bool Unk3300_HMCJOLLKMMB = 14;
+  bool is_explored = 14;
   repeated RoguelikeRuneRecord rune_record_list = 5;
   bool Unk3300_HMAELBBOFDN = 6;
-  uint32 Unk3300_CMMGKMMMOAL = 3;
+  uint32 coin_c_num = 3;
   bool is_open = 13;
   uint32 stage_id = 7;
-  uint32 Unk3300_DABPFCPCNCB = 4;
+  uint32 max_passed_level = 4;
   uint32 cur_level = 12;
   uint32 Unk3300_OHHBEPOICLI = 1;
   uint32 Unk3300_HPKFHLLCJBM = 275;

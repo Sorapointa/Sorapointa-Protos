@@ -32,7 +32,7 @@ message PersonalLineAllDataRsp {
   uint32 cur_finished_daily_task_count = 12;
   repeated LockedPersonallineData locked_personal_line_list = 10;
   int32 retcode = 2;
-  repeated uint32 Unk3300_BHLEGLEICFJ = 1;
-  repeated uint32 Unk3300_BGCIGNEGBIN = 6;
+  repeated uint32 can_be_unlocked_personal_line_list = 1;
+  repeated uint32 ongoing_personal_line_list = 6;
   uint32 legendary_key_count = 5;
 }

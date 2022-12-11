@@ -30,12 +30,12 @@ message PlayerEnterSceneNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_LIDGFMDDOOM = 1224;
-  bool Unk3300_LFFBNEBMAAG = 32;
+  uint32 world_type = 1224;
+  bool is_skip_ui = 32;
   uint32 world_level = 4;
   Vector pos = 1;
-  bool Unk3300_OKMNOFOHKOB = 3;
-  uint32 Unk3300_LLHABHMLNAH = 13;
+  bool is_first_login_enter_scene = 3;
+  uint32 prev_scene_id = 13;
   uint32 enter_scene_token = 6;
   uint32 dungeon_id = 2;
   uint32 scene_id = 11;

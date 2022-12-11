@@ -26,12 +26,12 @@ message ParentQuest {
   repeated InferencePageInfo inference_page_list = 5;
   repeated int32 quest_var = 7;
   uint64 video_key = 11;
-  uint32 Unk3300_BOMOHKDHMNH = 15;
+  uint32 parent_quest_state = 15;
   ParentQuestRandomInfo random_info = 9;
   uint32 parent_quest_id = 3;
   bool is_random = 12;
   repeated ChildQuest child_quest_list = 8;
   bool is_finished = 1;
   map<uint32, uint32> time_var_map = 2;
-  uint32 Unk3300_PCIHJLPPHNJ = 14;
+  uint32 quest_var_seq = 14;
 }

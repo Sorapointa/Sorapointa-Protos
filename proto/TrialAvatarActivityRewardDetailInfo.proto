@@ -20,7 +20,7 @@ option java_package = "org.sorapointa.proto";
 
 message TrialAvatarActivityRewardDetailInfo {
   uint32 trial_avatar_index_id = 4;
-  bool Unk3300_IFEPGCKHODL = 14;
-  bool Unk3300_NEJLGBBFDPH = 5;
+  bool received_reward = 14;
+  bool passed_dungeon = 5;
   uint32 reward_id = 11;
 }

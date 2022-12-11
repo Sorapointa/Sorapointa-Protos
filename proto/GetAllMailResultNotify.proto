@@ -29,10 +29,10 @@ message GetAllMailResultNotify {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_LMCAADPAICM = 13;
+  uint32 page_index = 13;
   string transaction = 14;
   bool is_collected = 12;
   int32 retcode = 7;
   repeated MailData mail_list = 2;
-  uint32 Unk3300_PGJIHELKCEA = 6;
+  uint32 total_page_count = 6;
 }

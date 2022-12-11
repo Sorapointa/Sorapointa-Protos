@@ -37,5 +37,5 @@ message CombineRsp {
   uint32 combine_id = 10;
   repeated ItemParam cost_item_list = 15;
   int32 retcode = 1;
-  repeated ItemParam Unk3300_FLHNPFGNNBM = 4;
+  repeated ItemParam result_item_list = 4;
 }

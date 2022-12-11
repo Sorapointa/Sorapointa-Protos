@@ -22,12 +22,12 @@ option java_package = "org.sorapointa.proto";
 
 message DungeonEntryInfo {
   uint32 end_time = 14;
-  uint32 Unk3300_KNKFCOKMECI = 9;
+  uint32 max_boss_chest_num = 9;
   bool is_passed = 13;
   WeeklyBossResinDiscountInfo weekly_boss_resin_discount_info = 6;
   uint32 dungeon_id = 8;
   uint32 Unk3300_IDMPGPKMMEH = 5;
   uint32 next_refresh_time = 10;
-  uint32 Unk3300_ONLALCCKIEE = 3;
+  uint32 next_boss_chest_refresh_time = 3;
   uint32 start_time = 11;
 }

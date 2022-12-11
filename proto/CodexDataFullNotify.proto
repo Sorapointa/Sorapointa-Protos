@@ -30,7 +30,7 @@ message CodexDataFullNotify {
   // }
 
   repeated CodexTypeData type_data_list = 14;
-  uint32 Unk3300_ODPDLGEKIEM = 4;
-  uint32 Unk3300_DCMJLCIFCEH = 13;
+  uint32 last_read_pushtips_codex_id = 4;
+  uint32 last_read_pushtips_type_id = 13;
   repeated uint32 recent_viewed_pushtips_list = 1;
 }

@@ -22,9 +22,9 @@ import "Vector.proto";
 option java_package = "org.sorapointa.proto";
 
 message HomeMarkPointSceneData {
-  Vector Unk3300_ONJJJEPFKJI = 9;
+  Vector teapot_spirit_pos = 9;
   uint32 scene_id = 6;
-  Vector Unk3300_HFNOINGPMJP = 11;
+  Vector safe_point_pos = 11;
   uint32 module_id = 8;
   repeated HomeMarkPointFurnitureData furniture_list = 13;
 }

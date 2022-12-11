@@ -22,9 +22,9 @@ import "GCGZoneType.proto";
 option java_package = "org.sorapointa.proto";
 
 message GCGMsgMoveCard {
-  GCGZoneType Unk3300_EJHNJMBJBKG = 9;
+  GCGZoneType to = 9;
   repeated uint32 fail_guid_list = 2;
-  GCGZoneType Unk3300_NJILOBDEECC = 14;
+  GCGZoneType from = 14;
   uint32 controller_id = 4;
   GCGReason reason = 13;
   repeated uint32 card_guid_list = 5;

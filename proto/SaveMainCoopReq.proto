@@ -28,9 +28,9 @@ message SaveMainCoopReq {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  map<uint32, int32> Unk3300_JFPLEDLNJPF = 14;
+  map<uint32, int32> normal_var_map = 14;
   uint32 self_confidence = 6;
   uint32 id = 13;
   uint32 save_point_id = 2;
-  map<uint32, int32> Unk3300_OMEEMFJFKBH = 12;
+  map<uint32, int32> temp_var_map = 12;
 }
