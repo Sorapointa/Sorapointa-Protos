@@ -31,8 +31,8 @@ message TakeFurnitureMakeRsp {
   // }
 
   int32 retcode = 15;
-  repeated ItemParam Unk3300_JDHFPCBOGFH = 5;
+  repeated ItemParam return_item_list = 5;
   FurnitureMakeSlot furniture_make_slot = 14;
-  repeated ItemParam Unk3300_EOLDJAMHDHM = 10;
+  repeated ItemParam output_item_list = 10;
   uint32 make_id = 3;
 }

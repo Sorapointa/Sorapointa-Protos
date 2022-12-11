@@ -24,8 +24,8 @@ option java_package = "org.sorapointa.proto";
 message BartenderActivityDetailInfo {
   bool is_content_closed = 15;
   repeated BartenderLevelInfo unlock_level_list = 10;
-  repeated uint32 Unk3300_BPCBOANPBHF = 3;
-  repeated uint32 Unk3300_OGPLCBFDHCF = 6;
+  repeated uint32 unlock_item_list = 3;
+  repeated uint32 unlock_formula_list = 6;
   repeated BartenderTaskInfo unlock_task_list = 5;
   bool is_develop_module_open = 9;
 }

@@ -25,12 +25,12 @@ option java_package = "org.sorapointa.proto";
 
 message BattlePassSchedule {
   uint32 schedule_id = 5;
-  uint32 Unk3300_MAAJDKMIODC = 2;
+  uint32 point = 2;
   uint32 level = 7;
-  bool Unk3300_KODFJENCJLE = 8;
-  uint32 Unk3300_ELMNFBOLEOA = 14;
-  bool Unk3300_KALOGHHMJJE = 12;
-  uint32 Unk3300_FILCIPPAHHL = 4;
+  bool is_extra_paid_reward_taken = 8;
+  uint32 cur_cycle_points = 14;
+  bool is_viewed = 12;
+  uint32 paid_platform_flags = 4;
   BattlePassCycle cur_cycle = 11;
   uint32 begin_time = 1;
   BattlePassUnlockStatus unlock_status = 15;

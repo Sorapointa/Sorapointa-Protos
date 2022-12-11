@@ -39,6 +39,6 @@ message GCGPlayerField {
   bool is_passed = 8;
   repeated GCGPVEIntention intention_list = 304;
   repeated GCGDiceSideType dice_side_list = 13;
-  uint32 Unk3300_FJNPFBIHFGD = 3;
+  uint32 deck_card_num = 3;
   uint32 Unk3300_GLNIFLOKBPM = 14;
 }

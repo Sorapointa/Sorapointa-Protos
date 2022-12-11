@@ -22,7 +22,7 @@ import "Uint32Pair.proto";
 option java_package = "org.sorapointa.proto";
 
 message GCGMsgPhaseChange {
-  GCGPhaseType Unk3300_JDPADLFFFDK = 15;
-  GCGPhaseType Unk3300_GNAIDDMDEBN = 3;
+  GCGPhaseType before_phase = 15;
+  GCGPhaseType after_phase = 3;
   repeated Uint32Pair allow_controller_map = 11;
 }

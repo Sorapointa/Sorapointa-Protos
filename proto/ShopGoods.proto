@@ -26,19 +26,19 @@ message ShopGoods {
   repeated ItemParam cost_item_list = 7;
   uint32 bought_num = 14;
   repeated uint32 pre_goods_id_list = 9;
-  uint32 Unk3300_DFEDKIOCOBL = 5;
+  uint32 min_level = 5;
   uint32 Unk3300_NMOPAGJFHOO = 11;
   uint32 hcoin = 6;
   uint32 end_time = 3;
   uint32 next_refresh_time = 10;
-  uint32 Unk3300_DBJCMMBHBNI = 13;
+  uint32 goods_id = 13;
   uint32 Unk3300_OMKIFIMDGDN = 1037;
-  uint32 Unk3300_EHKFICBACKC = 8;
+  uint32 buy_limit = 8;
   uint32 Unk3300_MBGOMHNBHMG = 777;
   uint32 Unk3300_KKKNKNOLICI = 2;
-  uint32 Unk3300_CEOMHBNDAOP = 1;
+  uint32 max_level = 1;
   uint32 Unk3300_MICPGJCIAPE = 1770;
   uint32 Unk3300_NJCPAJBCEPH = 505;
   uint32 begin_time = 12;
-  uint32 Unk3300_OODCCOAIGHI = 4;
+  uint32 disable_type = 4;
 }

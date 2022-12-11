@@ -30,7 +30,7 @@ message DoGachaRsp {
   // }
 
   bool Unk3300_OHFMHIHJHPJ = 1812;
-  uint32 Unk3300_JLELMHELIDC = 3;
+  uint32 left_gacha_times = 3;
   repeated GachaItem gacha_item_list = 9;
   bool Unk3300_HBILIAEIHNK = 1887;
   uint32 gacha_type = 10;
@@ -40,11 +40,11 @@ message DoGachaRsp {
   uint32 gacha_times = 4;
   uint32 Unk3300_GLPMIEMBGGL = 15;
   uint32 Unk3300_KEIJFMKAKDH = 12;
-  uint32 Unk3300_DBFMKAMNPCL = 13;
-  uint32 Unk3300_JLBFLPEMAPP = 8;
-  uint32 Unk3300_MEDMCPFCIOO = 2;
+  uint32 ten_cost_item_id = 13;
+  uint32 cost_item_num = 8;
+  uint32 ten_cost_item_num = 2;
   uint32 Unk3300_HLANONBCBLM = 1550;
-  uint32 Unk3300_PLFMMOFNGAG = 7;
+  uint32 cost_item_id = 7;
   uint32 gacha_schedule_id = 14;
   uint32 daily_gacha_times = 467;
   int32 retcode = 11;

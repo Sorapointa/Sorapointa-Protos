@@ -19,11 +19,11 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message ForgeQueueData {
-  uint32 Unk3300_KDIPLNBHGDH = 1;
+  uint32 next_finish_timestamp = 1;
   uint32 forge_id = 5;
-  uint32 Unk3300_GJEECHKDEBD = 7;
-  uint32 Unk3300_OOOJNABGHOM = 4;
-  uint32 Unk3300_PJCKFNNIMNM = 15;
+  uint32 finish_count = 7;
+  uint32 queue_id = 4;
+  uint32 total_finish_timestamp = 15;
   uint32 avatar_id = 12;
-  uint32 Unk3300_PJKHPCIMAID = 3;
+  uint32 unfinish_count = 3;
 }

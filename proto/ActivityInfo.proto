@@ -101,7 +101,7 @@ message ActivityInfo {
   map<uint32, uint32> activity_coin_map = 36;
   uint32 first_day_start_time = 786;
   bool Unk3300_ABJKLALKLDG = 1486;
-  uint32 Unk3300_DMILOONBELH = 3;
+  uint32 activity_type = 3;
   bool Unk3300_CBCEHLJJOGI = 1375;
   uint32 begin_time = 1;
   bool Unk3300_MDBDPIBEGGH = 12;

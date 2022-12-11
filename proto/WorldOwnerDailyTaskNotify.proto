@@ -30,7 +30,7 @@ message WorldOwnerDailyTaskNotify {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  uint32 Unk3300_FJOJFPPPOFP = 4;
+  uint32 filter_city_id = 4;
   repeated DailyTaskInfo task_list = 2;
-  uint32 Unk3300_NADIOIJGPHE = 9;
+  uint32 finished_daily_task_num = 9;
 }

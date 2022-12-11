@@ -23,6 +23,6 @@ option java_package = "org.sorapointa.proto";
 message PlayerHomeCompInfo {
   FriendEnterHomeOption friend_enter_home_option = 13;
   repeated uint32 seen_module_id_list = 5;
-  repeated uint32 Unk3300_PBEFIJCEKMH = 2;
-  repeated uint32 Unk3300_JJPCFPAKFLM = 11;
+  repeated uint32 unlocked_module_id_list = 2;
+  repeated uint32 levelup_reward_got_level_list = 11;
 }

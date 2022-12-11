@@ -22,7 +22,7 @@ message GCGDSCardData {
   uint32 num = 11;
   uint32 face_type = 5;
   uint32 card_id = 4;
-  repeated uint32 Unk3300_CIGGHHIHJFM = 14;
-  repeated uint32 Unk3300_OAFMDJCPCJH = 6;
+  repeated uint32 proficiency_reward_taken_idx_list = 14;
+  repeated uint32 unlock_face_type_list = 6;
   uint32 proficiency = 10;
 }

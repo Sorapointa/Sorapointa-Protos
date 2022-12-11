@@ -32,8 +32,8 @@ message GCGDSDataNotify {
 
   uint32 cur_deck_id = 8;
   repeated GCGDSDeckData deck_list = 3;
-  repeated uint32 Unk3300_GEBHJAGKEID = 10;
+  repeated uint32 unlock_card_back_id_list = 10;
   repeated GCGDSCardData card_list = 9;
-  repeated uint32 Unk3300_AAEAECGPHBH = 5;
-  repeated uint32 Unk3300_JJCEINFHKOG = 6;
+  repeated uint32 unlock_field_id_list = 5;
+  repeated uint32 unlock_deck_id_list = 6;
 }

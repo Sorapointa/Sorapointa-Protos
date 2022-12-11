@@ -27,8 +27,8 @@ message QueryCodexMonsterBeKilledNumRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 Unk3300_ALELNLIODAO = 11;
-  repeated uint32 Unk3300_INHAGEELNNC = 5;
+  repeated uint32 be_killed_num_list = 11;
+  repeated uint32 be_captured_num_list = 5;
   int32 retcode = 2;
   repeated uint32 codex_id_list = 10;
 }
