@@ -22,5 +22,5 @@ message TowerLevelStarCondData {
   bool Unk3300_KBCFDFOAJMM = 14;
   bool Unk3300_CPBCNACKAAK = 5;
   uint32 Unk3300_JGOLBFMJBCL = 11;
-  uint32 Unk3300_MGHNDJAACME = 12;
+  uint32 cond_value = 12;
 }

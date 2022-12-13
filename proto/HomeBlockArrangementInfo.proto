@@ -29,7 +29,7 @@ import "WeekendDjinnInfo.proto";
 option java_package = "org.sorapointa.proto";
 
 message HomeBlockArrangementInfo {
-  repeated HomeFurnitureData Unk3300_GMMAIDIJOJM = 10;
+  repeated HomeFurnitureData deploy_furniure_list = 10;
   repeated HomeAnimalData deploy_animal_list = 7;
   repeated HomeFurnitureSuiteData furniture_suite_list = 3;
   repeated WeekendDjinnInfo weekend_djinn_info_list = 5;
@@ -40,6 +40,6 @@ message HomeBlockArrangementInfo {
   repeated HomeFurnitureGroupData furniture_group_list = 8;
   repeated HomeBlockFieldData field_list = 13;
   uint32 comfort_value = 9;
-  repeated HomeFurnitureData Unk3300_DEIECJCAFLN = 12;
+  repeated HomeFurnitureData persistent_furniture_list = 12;
   repeated HomeFurnitureCustomSuiteData furniture_custom_suite_list = 4;
 }

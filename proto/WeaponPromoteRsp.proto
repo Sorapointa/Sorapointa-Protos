@@ -27,8 +27,8 @@ message WeaponPromoteRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_GGFCIPAKKDP = 4;
+  uint32 old_promote_level = 4;
   uint64 target_weapon_guid = 11;
-  uint32 Unk3300_MBEBIACJNBB = 5;
+  uint32 cur_promote_level = 5;
   int32 retcode = 8;
 }

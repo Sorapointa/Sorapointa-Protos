@@ -89,7 +89,7 @@ message ActivityInfo {
   bool is_finished = 8;
   uint32 cur_score = 1268;
   uint32 schedule_id = 7;
-  uint32 Unk3300_JAEALAIOOID = 1870;
+  uint32 score_limit = 1870;
   bool Unk3300_ICNJJKDHPCH = 14;
   repeated uint32 Unk3300_BGNIBLKCPCA = 11;
   bool Unk3300_NEPKLLBJFKK = 1645;

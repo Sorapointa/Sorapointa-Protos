@@ -27,10 +27,10 @@ message GachaWishRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  uint32 Unk3300_NMOKGFGDFFC = 6;
-  uint32 Unk3300_KEIJFMKAKDH = 15;
+  uint32 wish_progress = 6;
+  uint32 wish_item_id = 15;
   uint32 gacha_schedule_id = 11;
   int32 retcode = 13;
-  uint32 Unk3300_BLLMPAJNCPI = 10;
+  uint32 wish_max_progress = 10;
   uint32 gacha_type = 8;
 }

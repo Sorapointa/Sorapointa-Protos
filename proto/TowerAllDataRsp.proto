@@ -45,7 +45,7 @@ message TowerAllDataRsp {
   repeated TowerFloorRecord tower_floor_record_list = 13;
   TowerMonthlyBrief monthly_brief = 9;
   uint32 Unk3300_LEKODCFPINJ = 7;
-  map<uint32, uint32> Unk3300_PJPEEJACFJH = 3;
+  map<uint32, uint32> skip_floor_granted_reward_item_map = 3;
   bool is_finished_entrance_floor = 15;
   map<uint32, uint32> floor_open_time_map = 14;
 }

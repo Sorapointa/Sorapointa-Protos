@@ -29,7 +29,7 @@ message PlayerCookReq {
   // }
 
   uint32 recipe_id = 1;
-  uint32 Unk3300_NDPHNNOFEBL = 5;
-  uint32 Unk3300_JPICLIDLIEC = 7;
+  uint32 qte_quality = 5;
+  uint32 cook_count = 7;
   uint32 assist_avatar = 12;
 }

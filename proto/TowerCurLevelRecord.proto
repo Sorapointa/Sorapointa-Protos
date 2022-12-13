@@ -23,8 +23,8 @@ option java_package = "org.sorapointa.proto";
 message TowerCurLevelRecord {
   repeated uint32 buff_id_list = 14;
   bool is_upper_part = 4;
-  uint32 Unk3300_KPGBPDIJJJJ = 6;
+  uint32 cur_level_index = 6;
   bool is_empty = 1;
   repeated TowerTeam tower_team_list = 8;
-  uint32 Unk3300_PMHCLPFPHBJ = 9;
+  uint32 cur_floor_id = 9;
 }

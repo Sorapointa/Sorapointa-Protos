@@ -27,10 +27,10 @@ message WeaponAwakenRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  map<uint32, uint32> Unk3300_IKJALGGLHOM = 3;
+  map<uint32, uint32> cur_affix_level_map = 3;
   uint64 avatar_guid = 8;
   int32 retcode = 9;
   uint64 target_weapon_guid = 14;
-  map<uint32, uint32> Unk3300_AMMAMKJDEMG = 15;
+  map<uint32, uint32> old_affix_level_map = 15;
   uint32 target_weapon_awaken_level = 2;
 }

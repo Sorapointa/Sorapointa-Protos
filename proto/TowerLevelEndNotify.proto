@@ -35,9 +35,9 @@ message TowerLevelEndNotify {
     CONTINUE_STATE_TYPE_CAN_ENTER_NEXT_FLOOR = 2;
   }
 
-  uint32 Unk3300_BOPIBKGAMID = 2;
+  uint32 continue_state = 2;
   repeated uint32 finished_star_cond_list = 6;
-  uint32 Unk3300_AHBGPMBHPMO = 4;
+  uint32 next_floor_id = 4;
   bool is_success = 15;
   repeated ItemParam reward_item_list = 10;
 }

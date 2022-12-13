@@ -30,9 +30,9 @@ message StoreWeightLimitNotify {
   // }
 
   uint32 reliquary_count_limit = 14;
-  uint32 Unk3300_NIKMCBLHFNJ = 10;
-  uint32 Unk3300_OONMFCGDMMF = 5;
-  uint32 Unk3300_JGPODDEKAPB = 1;
+  uint32 furniture_count_limit = 10;
+  uint32 material_count_limit = 5;
+  uint32 weapon_count_limit = 1;
   uint32 weight_limit = 8;
   StoreType store_type = 9;
 }

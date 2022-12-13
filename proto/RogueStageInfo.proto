@@ -29,7 +29,7 @@ message RogueStageInfo {
   bool is_taken_reward = 9;
   bool is_explored = 14;
   repeated RoguelikeRuneRecord rune_record_list = 5;
-  bool Unk3300_HMAELBBOFDN = 6;
+  bool is_in_combat = 6;
   uint32 coin_c_num = 3;
   bool is_open = 13;
   uint32 stage_id = 7;

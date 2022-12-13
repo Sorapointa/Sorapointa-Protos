@@ -27,10 +27,10 @@ message ReliquaryPromoteRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated uint32 Unk3300_IALPGNADFKA = 8;
-  uint32 Unk3300_GGFCIPAKKDP = 9;
-  repeated uint32 Unk3300_MGELABLMFOE = 13;
+  repeated uint32 old_append_prop_list = 8;
+  uint32 old_promote_level = 9;
+  repeated uint32 cur_append_prop_list = 13;
   int32 retcode = 10;
   uint64 target_reliquary_guid = 6;
-  uint32 Unk3300_MBEBIACJNBB = 4;
+  uint32 cur_promote_level = 4;
 }

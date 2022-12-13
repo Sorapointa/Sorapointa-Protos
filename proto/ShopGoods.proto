@@ -27,7 +27,7 @@ message ShopGoods {
   uint32 bought_num = 14;
   repeated uint32 pre_goods_id_list = 9;
   uint32 min_level = 5;
-  uint32 Unk3300_NMOPAGJFHOO = 11;
+  uint32 mcoin = 11;
   uint32 hcoin = 6;
   uint32 end_time = 3;
   uint32 next_refresh_time = 10;

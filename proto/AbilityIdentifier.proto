@@ -20,9 +20,9 @@ option java_package = "org.sorapointa.proto";
 
 message AbilityIdentifier {
   uint32 instanced_ability_id = 4;
-  uint32 Unk3300_IHCKJKLCICI = 10;
+  uint32 modifier_owner_id = 10;
   bool is_serverbuff_modifier = 14;
   int32 local_id = 7;
-  uint32 Unk3300_OOOLELPBDHJ = 1;
+  uint32 ability_caster_id = 1;
   uint32 instanced_modifier_id = 5;
 }

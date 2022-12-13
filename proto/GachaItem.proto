@@ -22,9 +22,9 @@ import "ItemParam.proto";
 option java_package = "org.sorapointa.proto";
 
 message GachaItem {
-  bool Unk3300_BGIOJBJFMFL = 8;
+  bool is_flash_card = 8;
   repeated GachaTransferItem transfer_items = 6;
-  bool Unk3300_JNOOHBNJFIE = 13;
+  bool is_gacha_item_new = 13;
   ItemParam gacha_item = 5;
   repeated ItemParam token_item_list = 10;
 }
