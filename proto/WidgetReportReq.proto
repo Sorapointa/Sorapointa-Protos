@@ -32,5 +32,5 @@ message WidgetReportReq {
   bool Unk3300_APDFKKNKIJJ = 7;
   bool Unk3300_BCAIBKDIHHF = 6;
   uint32 material_id = 2;
-  bool Unk3300_EFBCLDDKMIM = 14;
+  bool is_clear_sky_crystal_hint = 14;
 }

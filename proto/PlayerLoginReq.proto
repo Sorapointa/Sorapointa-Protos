@@ -57,7 +57,7 @@ message PlayerLoginReq {
   uint32 Unk3300_OOBHAIIIPHH = 85;
   uint32 Unk3300_NDLANBEIGEG = 1320;
   string country_code = 104;
-  uint32 Unk3300_PIPLDEAPMMN = 1790;
+  uint32 gm_uid = 1790;
   TrackingIOInfo tracking_io_info = 1713;
   bool is_transfer = 624;
   string security_library_version = 828;

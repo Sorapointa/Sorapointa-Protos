@@ -30,7 +30,7 @@ message GetPlayerTokenRsp {
   // }
 
   bytes security_cmd_buffer = 6;
-  uint32 Unk3300_PIPLDEAPMMN = 7;
+  uint32 gm_uid = 7;
   bool is_guest = 11;
   bool Unk3300_AJBBIPFMBEL = 126;
   uint32 key_id = 134;
@@ -42,7 +42,7 @@ message GetPlayerTokenRsp {
   uint64 secret_key_seed = 3;
   string token = 13;
   string server_rand_key = 1188;
-  uint32 Unk3300_DILMOPPLPEM = 1670;
+  uint32 cloud_client_ip = 1670;
   string birthday = 1847;
   uint32 tag = 1099;
   string client_ip_str = 1382;

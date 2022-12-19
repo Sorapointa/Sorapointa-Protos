@@ -20,7 +20,7 @@ option java_package = "org.sorapointa.proto";
 
 message RegionalPlayVar {
   uint32 type = 5;
-  float Unk3300_FOBMHHNIPPH = 4;
-  float Unk3300_PIDHFABKIJN = 3;
+  float base_value = 4;
+  float max_value = 3;
   float value = 2;
 }

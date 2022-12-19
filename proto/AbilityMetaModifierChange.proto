@@ -27,9 +27,9 @@ message AbilityMetaModifierChange {
   AbilityAttachedModifier attached_instanced_modifier = 3;
   bool is_attached_parent_ability = 5;
   repeated ModifierProperty properties = 14;
-  bool Unk3300_NOPKODKOHJK = 12;
+  bool is_mute_remote = 12;
   int32 modifier_local_id = 2;
-  bool Unk3300_PBNENPBMNCI = 8;
+  bool is_durability_zero = 8;
   AbilityString parent_ability_name = 13;
   uint32 server_buff_uid = 9;
   uint32 apply_entity_id = 7;

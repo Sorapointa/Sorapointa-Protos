@@ -21,9 +21,9 @@ option java_package = "org.sorapointa.proto";
 message SeaLampActivityDetailInfo {
   repeated uint32 Unk3300_ODBFFAIIPMB = 2;
   uint32 days = 6;
-  uint32 Unk3300_DGMGNJLHFMB = 8;
+  uint32 factor = 8;
   uint32 progress = 5;
   repeated uint32 Unk3300_FGHDJJCLNFN = 14;
-  uint32 Unk3300_GBCCJMBPBBI = 11;
+  uint32 contribution = 11;
   uint32 phase_id = 3;
 }

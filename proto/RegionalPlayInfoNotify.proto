@@ -32,6 +32,6 @@ message RegionalPlayInfoNotify {
   uint32 play_type = 3;
   repeated RegionalPlayVar var_list = 13;
   string play_name = 5;
-  bool Unk3300_FMEPEBIHNOL = 1;
-  bool Unk3300_MBGOJOBNPNG = 14;
+  bool is_enabled = 1;
+  bool is_in_region = 14;
 }

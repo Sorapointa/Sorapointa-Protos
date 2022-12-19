@@ -29,7 +29,7 @@ message GetPlayerTokenReq {
   // }
 
   uint32 uid = 10;
-  uint32 Unk3300_DILMOPPLPEM = 1735;
+  uint32 cloud_client_ip = 1735;
   uint32 platform_type = 2;
   bool is_guest = 14;
   string online_id = 12;
