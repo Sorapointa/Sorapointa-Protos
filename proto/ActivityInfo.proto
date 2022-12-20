@@ -91,7 +91,7 @@ message ActivityInfo {
   uint32 schedule_id = 7;
   uint32 score_limit = 1870;
   bool Unk3300_ICNJJKDHPCH = 14;
-  repeated uint32 Unk3300_BGNIBLKCPCA = 11;
+  repeated uint32 meet_cond_list = 11;
   bool Unk3300_NEPKLLBJFKK = 1645;
   repeated ActivityWatcherInfo watcher_info_list = 6;
   repeated ActivityPushTipsData activity_push_tips_data_list = 1867;
@@ -107,7 +107,7 @@ message ActivityInfo {
   bool Unk3300_MDBDPIBEGGH = 12;
   map<uint32, uint32> wish_gift_num_map = 939;
   uint32 end_time = 10;
-  repeated uint32 Unk3300_HKKNIHNBHAE = 5;
+  repeated uint32 expire_cond_list = 5;
   oneof detail {
     SeaLampActivityDetailInfo sam_lamp_info = 2;
     CrucibleActivityDetailInfo crucible_info = 15;

@@ -23,7 +23,7 @@ option java_package = "org.sorapointa.proto";
 
 message BrickBreakerDetailInfo {
   repeated BrickBreakerActivityStageInfo stage_info_list = 13;
-  repeated BrickBreakerLevelInfo Unk3300_AIEGOACOINO = 9;
-  repeated BrickBreakerLevelInfo Unk3300_BCHEELFPNCD = 11;
+  repeated BrickBreakerLevelInfo dungeon_level_info_list = 9;
+  repeated BrickBreakerLevelInfo world_level_info_list = 11;
   map<uint32, uint32> skill_info_map = 1;
 }

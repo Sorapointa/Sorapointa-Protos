@@ -28,7 +28,7 @@ message ProudSkillExtraLevelNotify {
   // }
 
   uint64 avatar_guid = 13;
-  uint32 Unk3300_ODIOPLHJHAE = 4;
-  uint32 Unk3300_LKNFMODMEIA = 8;
-  uint32 Unk3300_IPDBADAAHBA = 2;
+  uint32 extra_level = 4;
+  uint32 talent_type = 8;
+  uint32 talent_index = 2;
 }

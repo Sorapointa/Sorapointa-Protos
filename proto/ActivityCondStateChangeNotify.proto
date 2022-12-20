@@ -31,8 +31,8 @@ message ActivityCondStateChangeNotify {
 
   uint32 activity_id = 5;
   uint32 schedule_id = 14;
-  repeated uint32 Unk3300_HKKNIHNBHAE = 1;
-  repeated uint32 Unk3300_BGNIBLKCPCA = 4;
+  repeated uint32 expire_cond_list = 1;
+  repeated uint32 meet_cond_list = 4;
   repeated uint32 activated_sale_id_list = 8;
   repeated Uint32Pair disable_transfer_point_interaction_list = 11;
 }

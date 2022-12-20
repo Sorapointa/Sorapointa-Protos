@@ -30,8 +30,8 @@ message PlayerMatchInfoNotify {
   // }
 
   uint32 dungeon_id = 4;
-  uint32 Unk3300_BNEIANJBLBL = 5;
-  uint32 Unk3300_OCILKHJPJED = 10;
+  uint32 match_begin_time = 5;
+  uint32 estimate_match_cost_time = 10;
   uint32 host_uid = 12;
   MatchType match_type = 13;
   uint32 mechanicus_difficult_level = 15;

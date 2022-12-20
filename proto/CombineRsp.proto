@@ -29,9 +29,9 @@ message CombineRsp {
   //   ENET_IS_RELIABLE = 1;
   // }
 
-  repeated ItemParam Unk3300_IAMGGFHOMEC = 11;
-  repeated ItemParam Unk3300_BAKPEKIFJOA = 13;
-  repeated ItemParam Unk3300_CDAFJDFHLKI = 6;
+  repeated ItemParam total_return_item_list = 11;
+  repeated ItemParam total_extra_item_list = 13;
+  repeated ItemParam total_random_item_list = 6;
   uint64 avatar_guid = 7;
   uint32 combine_count = 2;
   uint32 combine_id = 10;
