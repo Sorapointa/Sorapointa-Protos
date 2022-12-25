@@ -28,6 +28,6 @@ message ClientReportNotify {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  string Unk3300_JHJDJEBAFCM = 15;
-  string Unk3300_AMLEAJLJDFO = 10;
+  string report_type = 15;
+  string report_value = 10;
 }

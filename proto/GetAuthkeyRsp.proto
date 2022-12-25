@@ -29,8 +29,8 @@ message GetAuthkeyRsp {
 
   int32 retcode = 8;
   string authkey = 6;
-  uint32 Unk3300_DODLFCNOAMB = 13;
-  uint32 Unk3300_FGBHHPOKCJH = 3;
+  uint32 authkey_ver = 13;
+  uint32 sign_type = 3;
   string auth_appid = 7;
   string game_biz = 1;
 }

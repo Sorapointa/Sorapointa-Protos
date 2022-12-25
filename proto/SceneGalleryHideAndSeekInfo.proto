@@ -19,6 +19,6 @@ syntax = "proto3";
 option java_package = "org.sorapointa.proto";
 
 message SceneGalleryHideAndSeekInfo {
-  repeated uint32 Unk3300_LHMHALKDBBN = 10;
-  repeated uint32 Unk3300_CNLKMGFFAEC = 7;
+  repeated uint32 visible_uid_list = 10;
+  repeated uint32 caught_uid_list = 7;
 }

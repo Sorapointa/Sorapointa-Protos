@@ -28,7 +28,7 @@ message GetAuthkeyReq {
   //   IS_ALLOW_CLIENT = 1;
   // }
 
-  uint32 Unk3300_FGBHHPOKCJH = 6;
+  uint32 sign_type = 6;
   string auth_appid = 13;
-  uint32 Unk3300_DODLFCNOAMB = 15;
+  uint32 authkey_ver = 15;
 }
